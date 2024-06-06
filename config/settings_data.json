@@ -1,0 +1,946 @@
+{
+  "current": {
+    "heading_color": "#ffffff",
+    "text_color": "#677279",
+    "accent_color": "#5ea9a6",
+    "link_color": "#4c390c",
+    "border_color": "#e1e3e4",
+    "background": "#ffffff",
+    "secondary_background": "#ffffff",
+    "error_color": "#ff0000",
+    "success_color": "#00aa00",
+    "primary_button_background": "#00badb",
+    "primary_button_text_color": "#ffffff",
+    "secondary_button_background": "#1e2d7d",
+    "secondary_button_text_color": "#ffffff",
+    "header_background": "#ffffff",
+    "header_text_color": "#8c7c7c",
+    "header_light_text_color": "#333333",
+    "header_accent_color": "#333333",
+    "footer_background_color": "#333333",
+    "footer_heading_text_color": "#ffffff",
+    "footer_body_text_color": "#ffffff",
+    "footer_accent_color": "#cabc99",
+    "product_on_sale_accent": "#ee0000",
+    "product_in_stock_color": "#008a00",
+    "product_low_stock_color": "#ee0000",
+    "product_sold_out_color": "#8a9297",
+    "product_label_1_background": "#008a00",
+    "product_label_2_background": "#00a500",
+    "product_star_color": "#ffbd00",
+    "base_text_font_size": 16,
+    "heading_font": "avenir_next_n4",
+    "text_font": "avenir_next_n4",
+    "underline_links": true,
+    "color_swatch_config": "Oval: #000",
+    "animation_image_zoom": true,
+    "search_mode": "product,article",
+    "show_vendor": true,
+    "show_secondary_image": true,
+    "show_reviews_badge": false,
+    "show_discount": false,
+    "discount_mode": "saving",
+    "product_price_position": "after_title",
+    "product_image_size": "natural",
+    "show_color_swatch": false,
+    "show_inventory_quantity": false,
+    "low_inventory_threshold": 0,
+    "cart_type": "drawer",
+    "cart_empty_button_link": "shopify:\/\/collections\/all",
+    "cart_show_checkout_button": true,
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": "50",
+    "social_facebook": "https:\/\/www.facebook.com\/CapelRugs",
+    "social_twitter": "",
+    "social_pinterest": "",
+    "social_instagram": "https:\/\/www.instagram.com\/capelrugs\/",
+    "social_vimeo": "",
+    "social_tumblr": "",
+    "social_youtube": "",
+    "social_linkedin": "",
+    "social_snapchat": "",
+    "social_fancy": "",
+    "favicon": "shopify:\/\/shop_images\/capel-shopify-neutral_600x_718fa7eb-174a-4409-b61b-2c7889a056e9.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/capel-shopify-neutral_600x_718fa7eb-174a-4409-b61b-2c7889a056e9.webp",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#383838",
+    "checkout_button_color": "#383838",
+    "checkout_error_color": "#ff0000",
+    "share_image": "",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "3f4a33f6-33ca-4bd3-8bc9-4bf075b8dc29": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Style",
+              "hide_item": "style",
+              "image_1": "shopify:\/\/shop_images\/braided-collection.jpg",
+              "image_1_heading": "Braided",
+              "image_1_text": "",
+              "image_1_link": "shopify:\/\/collections\/braided-rugs",
+              "image_2": "shopify:\/\/shop_images\/Avery_Bahktiar_Room_Shot_square.jpg",
+              "image_2_heading": "Transitional",
+              "image_2_text": "",
+              "image_2_link": "shopify:\/\/collections\/transitional-rugs",
+              "image_3": "shopify:\/\/shop_images\/Braymore_-_Sutton_Vintage_Sepia_room_shot.jpg",
+              "image_3_heading": "Traditional",
+              "image_3_text": "",
+              "image_3_link": "shopify:\/\/collections\/traditional-oriental-persian-rugs",
+              "image_4": "shopify:\/\/shop_images\/Zenith_Fossil_Harbor_room_shot_square.jpg",
+              "image_4_heading": "Contemporary",
+              "image_4_text": "",
+              "image_4_link": "shopify:\/\/collections\/contemporary-rugs",
+              "image_5": "shopify:\/\/shop_images\/bordered.jpg",
+              "image_5_heading": "Outdoor",
+              "image_5_text": "",
+              "image_5_link": "shopify:\/\/collections\/outdoor-rugs",
+              "image_6": "shopify:\/\/shop_images\/pink_03343a2b-2ce5-4805-a3df-dd3108a0955f.jpg",
+              "image_6_heading": "Kids",
+              "image_6_text": "",
+              "image_6_link": "shopify:\/\/collections\/kids-rugs",
+              "image_7_heading": "Your image",
+              "image_7_text": "Tell your story",
+              "image_7_link": "",
+              "image_8_heading": "Your image",
+              "image_8_text": "Tell your story",
+              "image_8_link": "",
+              "image_9_heading": "Your image",
+              "image_9_text": "Tell your story",
+              "image_9_link": "",
+              "image_10_heading": "Your image",
+              "image_10_text": "Tell your story",
+              "image_10_link": ""
+            }
+          },
+          "18f7df81-f4ef-4ec8-b03e-32be891dd021": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Construction",
+              "hide_item": "",
+              "image_1": "shopify:\/\/shop_images\/braided-collection_61b81374-907b-4927-b801-369bcf43a9d1.jpg",
+              "image_1_heading": "Braided",
+              "image_1_text": "",
+              "image_1_link": "shopify:\/\/collections\/braided-rugs",
+              "image_2": "shopify:\/\/shop_images\/hand-knotted.webp",
+              "image_2_heading": "Hand Knotted",
+              "image_2_text": "",
+              "image_2_link": "shopify:\/\/collections\/hand-knotted-rugs",
+              "image_3": "shopify:\/\/shop_images\/machine-woven_copy.webp",
+              "image_3_heading": "Machine Made",
+              "image_3_text": "",
+              "image_3_link": "shopify:\/\/collections\/machine-made-rugs",
+              "image_4": "shopify:\/\/shop_images\/hand-tufted.webp",
+              "image_4_heading": "Hand Tufted",
+              "image_4_text": "",
+              "image_4_link": "shopify:\/\/collections\/hand-tufted-rugs",
+              "image_5": "shopify:\/\/shop_images\/custom_woven_a17b4243-a03e-46f2-8839-ccac0548def5.jpg",
+              "image_5_heading": "Flat Woven",
+              "image_5_text": "",
+              "image_5_link": "shopify:\/\/collections\/flat-woven-rugs",
+              "image_6_heading": "Your image",
+              "image_6_text": "Tell your story",
+              "image_6_link": "",
+              "image_7_heading": "Your image",
+              "image_7_text": "Tell your story",
+              "image_7_link": "",
+              "image_8_heading": "Your image",
+              "image_8_text": "Tell your story",
+              "image_8_link": "",
+              "image_9_heading": "Your image",
+              "image_9_text": "Tell your story",
+              "image_9_link": "",
+              "image_10_heading": "Your image",
+              "image_10_text": "Tell your story",
+              "image_10_link": ""
+            }
+          },
+          "90275aee-f042-49a7-8220-8c5f5a93cfa2": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Sizes",
+              "hide_item": "",
+              "image_1_heading": "Your image",
+              "image_1_text": "Tell your story",
+              "image_1_link": "",
+              "image_2_heading": "Your image",
+              "image_2_text": "Tell your story",
+              "image_2_link": "",
+              "image_3_heading": "Your image",
+              "image_3_text": "Tell your story",
+              "image_3_link": "",
+              "image_4_heading": "Your image",
+              "image_4_text": "Tell your story",
+              "image_4_link": "",
+              "image_5_heading": "Your image",
+              "image_5_text": "Tell your story",
+              "image_5_link": "",
+              "image_6_heading": "Your image",
+              "image_6_text": "Tell your story",
+              "image_6_link": "",
+              "image_7_heading": "Your image",
+              "image_7_text": "Tell your story",
+              "image_7_link": "",
+              "image_8_heading": "Your image",
+              "image_8_text": "Tell your story",
+              "image_8_link": "",
+              "image_9_heading": "Your image",
+              "image_9_text": "Tell your story",
+              "image_9_link": "",
+              "image_10_heading": "Your image",
+              "image_10_text": "Tell your story",
+              "image_10_link": ""
+            }
+          },
+          "00f67029-7ed1-4988-a425-8493d5d56fad": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Custom Sizes & Borders",
+              "hide_item": "Custom Sizes & Borders",
+              "image_1": "shopify:\/\/shop_images\/custom-braids-square_61c1b755-16fc-4501-88d6-03f95ae38515.jpg",
+              "image_1_heading": "Custom Braids",
+              "image_1_text": "",
+              "image_1_link": "shopify:\/\/collections\/custom-braids",
+              "image_2": "shopify:\/\/shop_images\/custom_woven.jpg",
+              "image_2_heading": "Custom Flat Woven",
+              "image_2_text": "",
+              "image_2_link": "shopify:\/\/collections\/custom-flat-woven",
+              "image_3": "shopify:\/\/shop_images\/Custom_handmade_2.jpg",
+              "image_3_heading": "Custom Handmade",
+              "image_3_text": "",
+              "image_3_link": "shopify:\/\/collections\/custom-handmade",
+              "image_4": "shopify:\/\/shop_images\/machine_made.jpg",
+              "image_4_heading": "Custom Machine Made",
+              "image_4_text": "",
+              "image_4_link": "shopify:\/\/collections\/custom-machine-made",
+              "image_5": "shopify:\/\/shop_images\/sisal_indoor-outdoor_bases_9a325839-af74-4064-9c87-115ece3ba658.jpg",
+              "image_5_heading": "Sisal & Indoor Outdoor Bases",
+              "image_5_text": "",
+              "image_5_link": "shopify:\/\/collections\/sisal-rugs",
+              "image_6": "shopify:\/\/shop_images\/creative_concepts_-_fabric_border_image.jpg",
+              "image_6_heading": "Custom Fabric Borders",
+              "image_6_text": "",
+              "image_6_link": "shopify:\/\/products\/creative-concepts",
+              "image_7_heading": "Islamorada",
+              "image_7_text": "",
+              "image_7_link": "",
+              "image_8_heading": "Your image",
+              "image_8_text": "Tell your story",
+              "image_8_link": "",
+              "image_9_heading": "Your image",
+              "image_9_text": "Tell your story",
+              "image_9_link": "",
+              "image_10_heading": "Your image",
+              "image_10_text": "Tell your story",
+              "image_10_link": ""
+            }
+          },
+          "c4244c52-3acb-44c4-813b-239efa0c3c87": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Color",
+              "hide_item": "Color",
+              "image_1": "shopify:\/\/shop_images\/Black_and_gray.jpg",
+              "image_1_heading": "Blacks & Greys",
+              "image_1_text": "",
+              "image_1_link": "shopify:\/\/collections\/blacks-greys",
+              "image_2": "shopify:\/\/shop_images\/blues.jpg",
+              "image_2_heading": "Blues",
+              "image_2_text": "",
+              "image_2_link": "shopify:\/\/collections\/blues",
+              "image_3": "shopify:\/\/shop_images\/Browns_and_tans.jpg",
+              "image_3_heading": "Browns & Tans",
+              "image_3_text": "",
+              "image_3_link": "shopify:\/\/collections\/brown-tan-rugs",
+              "image_4": "shopify:\/\/shop_images\/Greens.jpg",
+              "image_4_heading": "Greens",
+              "image_4_text": "",
+              "image_4_link": "shopify:\/\/collections\/green-rugs",
+              "image_5": "shopify:\/\/shop_images\/Reds.jpg",
+              "image_5_heading": "Reds",
+              "image_5_text": "",
+              "image_5_link": "shopify:\/\/collections\/reds",
+              "image_6": "shopify:\/\/shop_images\/Yellows_and_Golds.jpg",
+              "image_6_heading": "Yellows & Golds",
+              "image_6_text": "",
+              "image_6_link": "shopify:\/\/collections\/yellow-gold-rugs",
+              "image_7": "shopify:\/\/shop_images\/White_and_Ivory.jpg",
+              "image_7_heading": "Whites & Ivories",
+              "image_7_text": "",
+              "image_7_link": "shopify:\/\/collections\/white-ivory-rugs",
+              "image_8_heading": "Pinks",
+              "image_8_text": "",
+              "image_8_link": "shopify:\/\/collections\/pinks",
+              "image_9_heading": "Purples",
+              "image_9_text": "",
+              "image_9_link": "shopify:\/\/collections\/blue-purple-rugs",
+              "image_10_heading": "Terracottas",
+              "image_10_text": "",
+              "image_10_link": "shopify:\/\/collections\/terracotta"
+            }
+          },
+          "d3a9bdbc-7643-4cc3-8cc4-b1ea477adb2b": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Shape",
+              "hide_item": "Shape",
+              "image_1": "shopify:\/\/shop_images\/9212-525-R_d8112824-17b3-4106-8ab2-81243b318d3c.jpg",
+              "image_1_heading": "Rectangle",
+              "image_1_text": "",
+              "image_1_link": "shopify:\/\/collections\/shape-rectangle",
+              "image_2": "shopify:\/\/shop_images\/0048-100-Q_d6feeab8-1b60-4d19-9a3e-44930ee53a1f.jpg",
+              "image_2_heading": "Concentric Rectangle",
+              "image_2_text": "",
+              "image_2_link": "shopify:\/\/collections\/shape-concentric-rectangle",
+              "image_3": "shopify:\/\/shop_images\/0048-100-X_817825cf-f190-49c4-9f04-33e594685a09.jpg",
+              "image_3_heading": "Cross Sewn Rectangle",
+              "image_3_text": "",
+              "image_3_link": "shopify:\/\/collections\/shape-cross-sewn-rectangle",
+              "image_4": "shopify:\/\/shop_images\/0048-100-R_623fb630-2d8d-4876-b00e-07941e2a36fc.jpg",
+              "image_4_heading": "Vertical Stripe Rectangle",
+              "image_4_text": "",
+              "image_4_link": "shopify:\/\/collections\/shape-vertical-stripe-rectangle",
+              "image_5": "shopify:\/\/shop_images\/0048-100-V_26b7f741-591d-40cb-8043-b99049742b6a.jpg",
+              "image_5_heading": "Oval",
+              "image_5_text": "",
+              "image_5_link": "shopify:\/\/collections\/oval-rugs",
+              "image_6": "shopify:\/\/shop_images\/0048-200-C_9e190988-8199-4574-bdb2-9dcc7f876cf4.jpg",
+              "image_6_heading": "Round",
+              "image_6_text": "",
+              "image_6_link": "shopify:\/\/collections\/round-rugs",
+              "image_7": "shopify:\/\/shop_images\/0048-100-B_26e5fbc1-5b9f-4c22-b817-d37f2f77ce9a.jpg",
+              "image_7_heading": "Basket",
+              "image_7_text": "",
+              "image_7_link": "shopify:\/\/collections\/baskets",
+              "image_8_heading": "Your image",
+              "image_8_text": "Tell your story",
+              "image_8_link": "",
+              "image_9_heading": "Your image",
+              "image_9_text": "Tell your story",
+              "image_9_link": "",
+              "image_10_heading": "Your image",
+              "image_10_text": "Tell your story",
+              "image_10_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "3f4a33f6-33ca-4bd3-8bc9-4bf075b8dc29",
+          "18f7df81-f4ef-4ec8-b03e-32be891dd021",
+          "90275aee-f042-49a7-8220-8c5f5a93cfa2",
+          "00f67029-7ed1-4988-a425-8493d5d56fad",
+          "c4244c52-3acb-44c4-813b-239efa0c3c87",
+          "d3a9bdbc-7643-4cc3-8cc4-b1ea477adb2b"
+        ],
+        "settings": {
+          "enable_sticky_header": false,
+          "logo": "shopify:\/\/shop_images\/WEBSITE_LOGO_BLUE.jpg",
+          "logo_max_width": 140,
+          "mobile_logo_max_width": 100,
+          "show_locale_selector": true,
+          "show_country_selector": false,
+          "navigation_menu": "main-menu",
+          "navigation_mobile_menu": "",
+          "desktop_navigation_layout": "inline",
+          "desktop_navigation_open_trigger": "hover",
+          "show_navigation_social_media": false,
+          "navigation_phone_number": "Call us 000-000-0000",
+          "navigation_email": "info@yourwebsite.com",
+          "show_condensed_search": true,
+          "show_search_filter": false,
+          "search_menu": "",
+          "show_search_menu_title": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "19281ca7-16b2-400a-a3f0-279d536055a8": {
+            "type": "links",
+            "settings": {
+              "heading": "Company",
+              "menu": "company-footer"
+            }
+          },
+          "13a55121-6c2b-494d-b98a-6a223ebcd701": {
+            "type": "links",
+            "settings": {
+              "heading": "",
+              "menu": "rug-information"
+            }
+          },
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "heading": "Connect With Us",
+              "menu": "connect-footer"
+            }
+          },
+          "footer-2": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Stay Connected",
+              "subheading": "<p>Join our mailing list to get updates:<\/p>",
+              "contact": "1-800-334-3711",
+              "address": "<p>P.O. Box 826<br\/>831 N Main St<br\/>Troy, NC 27371<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "19281ca7-16b2-400a-a3f0-279d536055a8",
+          "13a55121-6c2b-494d-b98a-6a223ebcd701",
+          "footer-1",
+          "footer-2"
+        ],
+        "settings": {
+          "show_social_media": true,
+          "show_payment_icons": true,
+          "show_locale_selector": true,
+          "show_country_selector": true,
+          "show_cookie_bar": false,
+          "text": "<p>Use this bar to show information about your cookie policy.<\/p>"
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "show_announcement": true,
+          "background": "#cabc99",
+          "text_color": "#f5f6f8",
+          "text": "* FREE SHIPPING SITEWIDE * (Pricing & Availability for Contiguous US States Only)",
+          "text_position": "center",
+          "link": "shopify:\/\/collections\/new-arrivals",
+          "show_newsletter": false,
+          "newsletter_button": "Subscribe & Save",
+          "newsletter_title": "Newsletter",
+          "newsletter_content": "<p>Keep up to date on sales and news from Capel Rugs! <\/p>"
+        }
+      },
+      "popups": {
+        "type": "popups",
+        "blocks": {
+          "f784a664-d8bf-4afc-87c2-ad6cdd686d62": {
+            "type": "newsletter",
+            "disabled": true,
+            "settings": {
+              "show_only_on_index": true,
+              "show_only_for_visitors": true,
+              "show_only_once": false,
+              "title": "Sign up for emails",
+              "content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
+              "show_newsletter": true,
+              "apparition_delay": 5
+            }
+          }
+        },
+        "block_order": [
+          "f784a664-d8bf-4afc-87c2-ad6cdd686d62"
+        ],
+        "settings": {
+        }
+      },
+      "static-text-with-icons": {
+        "type": "static-text-with-icons",
+        "blocks": {
+          "static-text-with-icons-0": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-delivery",
+              "title": "Free delivery worldwide",
+              "content": "<p>Short content about your store<\/p>"
+            }
+          },
+          "static-text-with-icons-1": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-returns",
+              "title": "Satisfied or refunded",
+              "content": "<p>Short content about your store<\/p>"
+            }
+          },
+          "static-text-with-icons-2": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-customer-support",
+              "title": "Top-notch support",
+              "content": "<p>Short content about your store<\/p>"
+            }
+          },
+          "static-text-with-icons-3": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-secure-payment",
+              "title": "Secure payments",
+              "content": "<p>Short content about your store<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "static-text-with-icons-0",
+          "static-text-with-icons-1",
+          "static-text-with-icons-2",
+          "static-text-with-icons-3"
+        ],
+        "settings": {
+          "show_section": false,
+          "stack_mobile": false
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "15885745614559378752": {
+        "type": "shopify:\/\/apps\/accessibly\/blocks\/app-embed\/4b59303e-1141-4c8a-945f-bf4adb516864",
+        "disabled": false,
+        "settings": {
+          "themeColor": "#574CD5",
+          "iconColor": "#574CD5",
+          "showLogo": true,
+          "topBottomPosition": 10,
+          "rightLeftPosition": 10,
+          "iconSize": "small",
+          "iconCustomSize": 64,
+          "position": "middle-right"
+        }
+      },
+      "starapps-vsk": {
+        "type": "shopify:\/\/apps\/swatch-king-variants-options\/blocks\/variant-swatch-king\/0850b1e4-ba30-4a0d-a8f4-f9a939276d7d",
+        "disabled": false,
+        "settings": {
+          "alignment": "left",
+          "swatch_location": "After title",
+          "switch_on_hover": false,
+          "preselect_variant": false
+        }
+      },
+      "starapps-vtk": {
+        "type": "shopify:\/\/apps\/variant-title-king\/blocks\/starapps-vtk-embed\/b9b7a642-58c3-4fe1-8f1b-ed3e502da04b",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Metal": {
+      "heading_color": "#1e2d7d",
+      "text_color": "#677279",
+      "accent_color": "#00badb",
+      "link_color": "#00badb",
+      "border_color": "#e1e3e4",
+      "background": "#f3f5f6",
+      "secondary_background": "#ffffff",
+      "error_color": "#ff0000",
+      "success_color": "#00aa00",
+      "primary_button_background": "#00badb",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#1e2d7d",
+      "secondary_button_text_color": "#ffffff",
+      "header_background": "#1e2d7d",
+      "header_text_color": "#ffffff",
+      "header_light_text_color": "#a3afef",
+      "header_accent_color": "#00badb",
+      "product_on_sale_accent": "#ee0000",
+      "product_in_stock_color": "#008a00",
+      "product_low_stock_color": "#ee0000",
+      "product_sold_out_color": "#8a9297",
+      "product_label_1_background": "#008a00",
+      "product_label_2_background": "#00a500",
+      "product_star_color": "#ffbd00",
+      "footer_background_color": "#f3f5f6",
+      "footer_heading_text_color": "#1e2d7d",
+      "footer_body_text_color": "#677279",
+      "footer_accent_color": "#00badb",
+      "base_text_font_size": 16,
+      "heading_font": "din_next_n5",
+      "text_font": "din_next_n4",
+      "underline_links": true,
+      "animation_image_zoom": true,
+      "search_mode": "product,article",
+      "show_vendor": true,
+      "show_secondary_image": true,
+      "product_price_position": "after_title",
+      "product_image_size": "natural",
+      "show_discount": true,
+      "discount_mode": "saving",
+      "show_color_swatch": false,
+      "show_inventory_quantity": false,
+      "low_inventory_threshold": 0,
+      "show_reviews_badge": false,
+      "cart_type": "drawer",
+      "cart_empty_button_link": "shopify:\/\/collections\/all",
+      "cart_show_checkout_button": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "share_image": "",
+      "social_facebook": "",
+      "social_twitter": "",
+      "social_pinterest": "",
+      "social_instagram": "",
+      "social_vimeo": "",
+      "social_tumblr": "",
+      "social_youtube": "",
+      "social_linkedin": "",
+      "social_snapchat": "",
+      "social_fancy": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#00badb",
+      "checkout_button_color": "#00badb",
+      "checkout_error_color": "#ff0000",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo": "",
+            "logo_max_width": 140,
+            "mobile_logo_max_width": 100,
+            "navigation_menu": "main-menu",
+            "desktop_navigation_layout": "inline",
+            "desktop_navigation_open_trigger": "hover",
+            "navigation_phone_number": "Call us 000-000-0000",
+            "navigation_email": "info@yourwebsite.com",
+            "search_menu": ""
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>"
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_social_media": true,
+            "show_payment_icons": true
+          }
+        },
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "settings": {
+            "background": "#1e2d7d",
+            "text_color": "#ffffff",
+            "text": "Announce something here",
+            "link": "",
+            "newsletter_button": "Subscribe & Save",
+            "newsletter_title": "Newsletter",
+            "newsletter_content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+          }
+        }
+      }
+    },
+    "Wood": {
+      "heading_color": "#3a2a2f",
+      "text_color": "#3a2a2f",
+      "accent_color": "#ff6128",
+      "link_color": "#ff6128",
+      "border_color": "#e7e2de",
+      "background": "#f7f4f2",
+      "secondary_background": "#ffffff",
+      "error_color": "#f71b1b",
+      "success_color": "#48b448",
+      "primary_button_background": "#ff6128",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#3a2a2f",
+      "secondary_button_text_color": "#ffffff",
+      "header_background": "#3a2a2f",
+      "header_text_color": "#ffffff",
+      "header_light_text_color": "#e9e2dd",
+      "header_accent_color": "#ff6128",
+      "product_on_sale_accent": "#ee0000",
+      "product_in_stock_color": "#008a00",
+      "product_low_stock_color": "#ee0000",
+      "product_sold_out_color": "#d1d1d4",
+      "product_label_1_background": "#ff6128",
+      "product_label_2_background": "#a95ebe",
+      "product_star_color": "#ffb647",
+      "footer_background_color": "#f7f4f2",
+      "footer_heading_text_color": "#3a2a2f",
+      "footer_body_text_color": "#3a2a2f",
+      "footer_accent_color": "#ff6128",
+      "base_text_font_size": 15,
+      "heading_font": "itc_avant_garde_gothic_n5",
+      "text_font": "basic_commercial_n4",
+      "underline_links": true,
+      "animation_image_zoom": true,
+      "search_mode": "product,article,page",
+      "show_vendor": true,
+      "show_secondary_image": true,
+      "show_discount": true,
+      "discount_mode": "percentage",
+      "product_price_position": "after_title",
+      "product_image_size": "square",
+      "show_color_swatch": false,
+      "show_inventory_quantity": true,
+      "low_inventory_threshold": 1,
+      "show_reviews_badge": false,
+      "cart_type": "drawer",
+      "cart_empty_button_link": "shopify:\/\/collections\/all",
+      "cart_show_checkout_button": true,
+      "cart_show_free_shipping_threshold": true,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#f7f4f2",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#ff6128",
+      "checkout_button_color": "#ff6128",
+      "checkout_error_color": "#f71b1b",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo": "",
+            "logo_max_width": 140,
+            "mobile_logo_max_width": 100,
+            "navigation_menu": "main-menu",
+            "desktop_navigation_layout": "inline",
+            "desktop_navigation_open_trigger": "hover",
+            "navigation_phone_number": "Call us 000-000-0000",
+            "navigation_email": "info@yourwebsite.com",
+            "search_menu": ""
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>"
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_social_media": true,
+            "show_payment_icons": true
+          }
+        },
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "settings": {
+            "background": "#3a2a2f",
+            "text_color": "#ffffff",
+            "text": "Announce something here",
+            "link": "",
+            "newsletter_button": "Subscribe & Save",
+            "newsletter_title": "Newsletter",
+            "newsletter_content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+          }
+        }
+      }
+    },
+    "Fabric": {
+      "heading_color": "#222021",
+      "text_color": "#616161",
+      "accent_color": "#cb1836",
+      "link_color": "#cb1836",
+      "border_color": "#e8e8e8",
+      "background": "#f5f5f5",
+      "secondary_background": "#ffffff",
+      "error_color": "#cf0e0e",
+      "success_color": "#1c7b36",
+      "primary_button_background": "#cb1836",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#222021",
+      "secondary_button_text_color": "#ffffff",
+      "header_background": "#222021",
+      "header_text_color": "#ffffff",
+      "header_light_text_color": "#e8e8e8",
+      "header_accent_color": "#cb1836",
+      "footer_background_color": "#222021",
+      "footer_heading_text_color": "#ffffff",
+      "footer_body_text_color": "#ffffff",
+      "footer_accent_color": "#cb1836",
+      "product_on_sale_accent": "#cf0e0e",
+      "product_in_stock_color": "#1c7b36",
+      "product_low_stock_color": "#cf0e0e",
+      "product_sold_out_color": "#8a9297",
+      "product_label_1_background": "#3f6ab1",
+      "product_label_2_background": "#8a44ae",
+      "product_star_color": "#ffbd00",
+      "base_text_font_size": 16,
+      "heading_font": "avenir_next_n7",
+      "text_font": "avenir_next_n5",
+      "underline_links": true,
+      "animation_image_zoom": true,
+      "search_mode": "product,article",
+      "show_vendor": true,
+      "show_secondary_image": true,
+      "show_discount": true,
+      "discount_mode": "percentage",
+      "product_price_position": "before_title",
+      "product_image_size": "square",
+      "show_color_swatch": true,
+      "show_inventory_quantity": true,
+      "low_inventory_threshold": 2,
+      "show_reviews_badge": true,
+      "cart_type": "drawer",
+      "cart_empty_button_link": "shopify:\/\/collections\/all",
+      "cart_show_checkout_button": true,
+      "cart_show_free_shipping_threshold": true,
+      "cart_free_shipping_threshold": "49",
+      "social_facebook": "",
+      "social_twitter": "",
+      "social_pinterest": "",
+      "social_instagram": "",
+      "social_vimeo": "",
+      "social_tumblr": "",
+      "social_youtube": "",
+      "social_linkedin": "",
+      "social_snapchat": "",
+      "social_fancy": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#f5f5f5",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#cb1836",
+      "checkout_button_color": "#cb1836",
+      "checkout_error_color": "#ff0000",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo": "",
+            "logo_max_width": 140,
+            "mobile_logo_max_width": 100,
+            "navigation_menu": "main-menu",
+            "desktop_navigation_layout": "inline",
+            "desktop_navigation_open_trigger": "hover",
+            "navigation_phone_number": "Call us 000-000-0000",
+            "navigation_email": "info@yourwebsite.com",
+            "search_menu": ""
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>"
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_social_media": true,
+            "show_payment_icons": true
+          }
+        },
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "settings": {
+            "background": "#222021",
+            "text_color": "#ffffff",
+            "text": "Announce something here",
+            "link": "",
+            "newsletter_button": "Subscribe & Save",
+            "newsletter_title": "Newsletter",
+            "newsletter_content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+          }
+        }
+      }
+    }
+  }
+}

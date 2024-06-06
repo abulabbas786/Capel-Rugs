@@ -1,0 +1,103 @@
+<div class="container">
+  	{% if section.settings.sectionheading %}
+      <div class="section_heading">
+        <h2 class="section_heading-text">{{section.settings.sectionheading}}</h2>
+      </div>
+ 	{% endif %}
+  	<div class="collection_inner three-in-row {{section.settings.custom_class}}">
+	{%- for block in section.blocks -%}
+      <div class="collection_item">
+        <div class="collection_item-inner">
+          {%- if block.settings.custom_url != blank -%}
+          <a href="{{ block.settings.custom_url }}">
+              {%- if block.settings.image != blank -%}
+                <img src="{{ block.settings.image | img_url : 'master' }}">
+              {%- else -%}
+                {{ 'product-1' | placeholder_svg_tag }}
+              {%- endif -%}
+           </a>
+          {% else %}
+          <div class="image_wrapper">
+          	{%- if block.settings.image != blank -%}
+            	<img src="{{ block.settings.image | img_url : 'master' }}">
+            {%- else -%}
+            	{{ 'product-1' | placeholder_svg_tag }}
+            {%- endif -%}
+          </div>
+          {% endif %}
+          
+          <div class="collection-meta">
+            {%- if block.settings.c_name != blank -%}
+                <h3>{{ block.settings.c_name }}</h3>
+            {%- endif -%}
+
+            {%- if block.settings.c_description != blank -%}
+                <p>{{ block.settings.c_description }}</p>
+            {%- endif -%}
+           </div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "About grid",
+    "tag": "section",
+    "class": "Custom_about_grid",
+	"max_blocks": 3,
+    "settings": [
+      {
+        "type": "text",
+        "id": "sectionheading",
+        "label": "Section heading"
+      },
+	  {
+        "type": "text",
+        "id": "custom_class",
+        "label": "Custom Class"
+      }
+    ],
+    "blocks": [
+		{
+         "name": "Collection item",
+         "type": "list",
+         "settings": [
+           {
+             "type": "image_picker",
+             "id": "image",
+             "label": "Collection image"
+           },
+		   {
+             "type": "text",
+             "id": "c_name",
+             "label": "Collection name",
+			 "default": "Collection name"
+           },
+		   {
+             "type": "richtext",
+             "id": "c_description",
+             "label": "Collection Description",
+			 "default": "<p>Collection Description</p>"
+           },
+		   {
+             "type": "text",
+             "id": "c_button_val",
+             "label": "Collection Button"
+           },
+		   {
+             "type": "url",
+             "id": "custom_url",
+             "label": "Select Url"
+           }
+         ]
+       } 
+    ],
+    "presets":[
+      {
+        "name":"About grid",
+        "category":"Block"
+      }
+    ]
+  }
+{% endschema %}

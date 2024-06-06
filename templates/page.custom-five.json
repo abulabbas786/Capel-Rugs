@@ -1,0 +1,194 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1653981190a0edf6b1": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/spring_fling_2.jpg",
+        "title": "",
+        "custom_class": "custom_image_overlay",
+        "content": "",
+        "show_image_overlay": true,
+        "color": "#ffffff"
+      }
+    },
+    "165462346761bf9f0c": {
+      "type": "two-col-in-row",
+      "blocks": {
+        "e5ddce98-08e5-49ff-bb1f-085e40151906": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/capel_anywhere_captiva_and_retreat_logo.jpg",
+            "c_name": "",
+            "collection": ""
+          }
+        },
+        "68626842-663f-4086-8aca-4624e10b84e0": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TROY-LANDING-PAGE_e587c8aa-6ecf-4ba5-b82b-c52d39826610.gif",
+            "c_name": "",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "e5ddce98-08e5-49ff-bb1f-085e40151906",
+        "68626842-663f-4086-8aca-4624e10b84e0"
+      ],
+      "settings": {
+        "sectionheading": ""
+      }
+    },
+    "1654245879506cb7cb": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "b31fa9dd-617c-428d-810a-c7083a1855b6": {
+          "type": "list",
+          "settings": {
+            "heading1": "The Original.",
+            "content1": "<p>Capel Rugs has been manufacturing rugs in Troy, North Carolina for over 100 years! We are also a direct importer and offer special pricing that others just can't match.  <\/p><p>Troy is home to our <em>only<\/em> Capel Rugs Outlet Store with a large selection of everything from braids to hand knots up to one-of-a-kinds—all with up to 80% savings!<\/p>",
+            "buttontext1": "",
+            "collection1": "",
+            "image1": "shopify:\/\/shop_images\/Capel_Rugs_Troy_Store-4.jpg",
+            "image2": "shopify:\/\/shop_images\/Capel_Rugs_Troy_Outlet_Store-braid.jpg",
+            "image3": "shopify:\/\/shop_images\/Capel_Rugs_Troy_Store-5.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "b31fa9dd-617c-428d-810a-c7083a1855b6"
+      ],
+      "settings": {
+        "continer": true,
+        "ic_image_width": "33%",
+        "ic_image_side": "Right side"
+      }
+    },
+    "165462262478092cb9": {
+      "type": "custom-collection",
+      "blocks": {
+        "41fa113b-67ee-4a11-a5fb-825fcb922717": {
+          "type": "list",
+          "settings": {
+            "video": "",
+            "image": "shopify:\/\/shop_images\/color-story-gif.gif",
+            "c_name": "Selection & Satisfaction",
+            "c_description": "<p>Our huge selection of rugs are hung on swinging arm racks so it is <strong>EASY to browse & <\/strong>when you are ready, we will be glad to assist you with your purchase and explain the 30-day money-back guarantee! <\/p>",
+            "c_button_val": "",
+            "collection": ""
+          }
+        },
+        "f3dcd5ad-44ab-470b-917a-e76d81b22711": {
+          "type": "list",
+          "settings": {
+            "video": "",
+            "image": "shopify:\/\/shop_images\/Clearance_items_6c5d8afa-21c1-406d-8605-b882160d82c6.jpg",
+            "c_name": "SAVINGS",
+            "c_description": "<p>Drive a little and save A LOT! We are right by the factory so we extend big savings to you here at the original factory outlet! <\/p>",
+            "c_button_val": "",
+            "collection": ""
+          }
+        },
+        "28179def-336f-4bdc-b1f1-c201ebfa5d74": {
+          "type": "list",
+          "settings": {
+            "video": "https:\/\/www.youtube.com\/watch?v=DQGXMOb5F6U",
+            "image": "shopify:\/\/shop_images\/private-appointment_3x_540x_946cb202-1f00-4c63-baff-de3e37c17a0f.png",
+            "c_name": "Our Story",
+            "c_description": "<p>Click to watch how these iconic braided rugs are made right here in our factories and then visit the Capel Factory Outlet to purchase these made-in-North Carolina rugs.  <\/p>",
+            "c_button_val": "",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "41fa113b-67ee-4a11-a5fb-825fcb922717",
+        "f3dcd5ad-44ab-470b-917a-e76d81b22711",
+        "28179def-336f-4bdc-b1f1-c201ebfa5d74"
+      ],
+      "settings": {
+        "sectionheading": "The Troy Experience"
+      }
+    },
+    "16548791074ad480f8": {
+      "type": "custom-video-section",
+      "disabled": true,
+      "settings": {
+        "fv_display_wide": true,
+        "fv_no_bottom_margin": true,
+        "fv_heading": "",
+        "fv_video_url": "https:\/\/www.youtube.com\/watch?v=DQGXMOb5F6U"
+      }
+    },
+    "1654246074a9d9ccd7": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/outlet-banner-2_211744d0-31b6-4af1-8025-257eed3df9c3.jpg",
+        "title": "THE LARGEST SELECTION OF BRAIDED RUGS",
+        "custom_class": "custom_image_overlay",
+        "content": "<p>At LEGENDARY Outlet Prices!<\/p>",
+        "show_image_overlay": false,
+        "color": "#ffffff"
+      }
+    },
+    "1654593422a12e3285": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "78e2ff38-1153-48f5-b615-5594885207ac": {
+          "type": "list",
+          "settings": {
+            "heading1": "We've opened sensibly to service you safely.",
+            "content1": "<p>Our first priority is the health and safety of all our associates. We  are adhering to the precautions advised by federal, state, & local  authorities.<\/p>",
+            "buttontext1": "",
+            "collection1": "",
+            "image1": "shopify:\/\/shop_images\/open-sensibly_540x_6dca02d8-bbe3-4d4d-8e31-d186d4e5c0d6.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "78e2ff38-1153-48f5-b615-5594885207ac"
+      ],
+      "disabled": true,
+      "settings": {
+        "continer": true,
+        "ic_image_width": "33%",
+        "ic_image_side": "Left side"
+      }
+    },
+    "1655487709597f4bfc": {
+      "type": "custom-map",
+      "settings": {
+        "heading": "Visit Us today",
+        "heading_color": "#000000",
+        "hours_heading": "Our Hours",
+        "hours": "<p>Mon – Sat, 10AM - 5PM<br\/>Sunday, Closed<\/p><p><a href=\"tel:+1-910=572-7011\" target=\"_blank\" title=\"Call Us\">(910) 572-7011<\/a><\/p>",
+        "address_heading": "Our Location",
+        "map_address": "121 E Main St, Troy, NC 27371",
+        "button_text": "Get directions",
+        "text_position": "text_right",
+        "background_color": "#f7f7f7",
+        "api_key": "",
+        "background_image": "shopify:\/\/shop_images\/Capel_Rugs_Troy_Store-5.jpg",
+        "background_image_position": "center center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1653981190a0edf6b1",
+    "165462346761bf9f0c",
+    "1654245879506cb7cb",
+    "165462262478092cb9",
+    "16548791074ad480f8",
+    "1654246074a9d9ccd7",
+    "1654593422a12e3285",
+    "1655487709597f4bfc"
+  ]
+}

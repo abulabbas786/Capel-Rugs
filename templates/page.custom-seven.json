@@ -1,0 +1,228 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1653981190a0edf6b1": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/spring_fling_2.jpg",
+        "title": "",
+        "custom_class": "custom_image_overlay",
+        "content": "",
+        "show_image_overlay": true,
+        "color": "#ffffff"
+      }
+    },
+    "165462346761bf9f0c": {
+      "type": "two-col-in-row",
+      "blocks": {
+        "e5ddce98-08e5-49ff-bb1f-085e40151906": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/capel_anywhere_captiva_and_retreat_logo.jpg",
+            "c_name": "",
+            "collection": ""
+          }
+        },
+        "68626842-663f-4086-8aca-4624e10b84e0": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/richmond-landing-page-2_c35d372b-e668-4388-b335-37c2cd37a67c.gif",
+            "c_name": "",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "e5ddce98-08e5-49ff-bb1f-085e40151906",
+        "68626842-663f-4086-8aca-4624e10b84e0"
+      ],
+      "settings": {
+        "sectionheading": ""
+      }
+    },
+    "1654245879506cb7cb": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "b31fa9dd-617c-428d-810a-c7083a1855b6": {
+          "type": "list",
+          "settings": {
+            "heading1": "An award-winning experience.",
+            "content1": "<p>Capel Rugs of Richmond has been voted the #1 best place to shop for rugs in R•Home Magazine Reader Favorites for 12 years!<\/p>",
+            "buttontext1": "",
+            "collection1": "",
+            "image1": "shopify:\/\/shop_images\/Capel_Rugs_12_yr_logo_V5.png"
+          }
+        }
+      },
+      "block_order": [
+        "b31fa9dd-617c-428d-810a-c7083a1855b6"
+      ],
+      "settings": {
+        "continer": true,
+        "ic_image_width": "33%",
+        "ic_image_side": "Left side"
+      }
+    },
+    "165462262478092cb9": {
+      "type": "custom-collection",
+      "blocks": {
+        "41fa113b-67ee-4a11-a5fb-825fcb922717": {
+          "type": "list",
+          "settings": {
+            "video": "",
+            "image": "shopify:\/\/shop_images\/richmond-selection-gif.gif",
+            "c_name": "Selection",
+            "c_description": "<p>The latest designer looks, contemporary, casual classics, indoor\/outdoor, custom rugs and more. <strong>VOTED #1 <\/strong>Best place to shop for rugs! <\/p>",
+            "c_button_val": "",
+            "collection": ""
+          }
+        },
+        "f3dcd5ad-44ab-470b-917a-e76d81b22711": {
+          "type": "list",
+          "settings": {
+            "video": "",
+            "image": "shopify:\/\/shop_images\/Clearance_items.jpg",
+            "c_name": "Savings",
+            "c_description": "<p><strong>Unbeatable savings! <\/strong>As a Direct importer and manufacturer, we offer special deals others just can't match! Furnishings 20% OFF & Clearance items up to 70% OFF! <\/p>",
+            "c_button_val": "",
+            "collection": ""
+          }
+        },
+        "28179def-336f-4bdc-b1f1-c201ebfa5d74": {
+          "type": "list",
+          "settings": {
+            "video": "https:\/\/youtu.be\/HgAG-vaSWOM",
+            "image": "shopify:\/\/shop_images\/private-appointment_3x_540x_946cb202-1f00-4c63-baff-de3e37c17a0f.png",
+            "c_name": "Shopping & Satisfaction",
+            "c_description": "<p>Our rugs are hung on swinging arm racks so it is <strong>EASY to browse <\/strong>and when you are ready, our staff will assist you and explain the 30-day money-back guarantee on your rug purchase! <\/p>",
+            "c_button_val": "",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "41fa113b-67ee-4a11-a5fb-825fcb922717",
+        "f3dcd5ad-44ab-470b-917a-e76d81b22711",
+        "28179def-336f-4bdc-b1f1-c201ebfa5d74"
+      ],
+      "settings": {
+        "sectionheading": "What you will find here in Richmond"
+      }
+    },
+    "e9654b23-803a-46c9-8e0e-93abc4afc0c4": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Richmond_store_front_-_1600_x_852_439c5598-9ffa-46b9-92bb-4bd947a7da63.jpg",
+        "image_position": "left",
+        "image_width": 70,
+        "custom_class": "",
+        "wrapp_in_container": false,
+        "title": "VISIT US TODAY!",
+        "content": "<h3>Our Hours<\/h3><p><\/p><p>Mon – Sat, 10AM - 6PM<br\/>Sunday, Closed<\/p><p><a href=\"tel:+1-804=290-8800\" target=\"_blank\" title=\"tel:+1-804=290-8800\">(804) 290-8800<\/a><\/p><p><\/p><h3>Our Location<\/h3><p><a href=\"https:\/\/goo.gl\/maps\/vpzLEtcdURd1B1Tr8\" title=\"https:\/\/goo.gl\/maps\/vpzLEtcdURd1B1Tr8\">3995 Deep Rock Rd, Richmond, VA 23233<\/a><\/p>",
+        "button_text": "",
+        "button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "1654246074a9d9ccd7": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-2_85a20bf9-3e32-4547-a42e-847470cdaeda.jpg",
+        "title": "Shop the BEST rugs at the BEST prices!",
+        "custom_class": "custom_image_overlay",
+        "content": "<p>AND enjoy our FREE design service!<\/p>",
+        "show_image_overlay": false,
+        "color": "#ffffff"
+      }
+    },
+    "16548791074ad480f8": {
+      "type": "custom-video-section",
+      "disabled": true,
+      "settings": {
+        "fv_display_wide": true,
+        "fv_no_bottom_margin": true,
+        "fv_heading": "",
+        "fv_video_url": "https:\/\/youtu.be\/HgAG-vaSWOM"
+      }
+    },
+    "1654593422a12e3285": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "78e2ff38-1153-48f5-b615-5594885207ac": {
+          "type": "list",
+          "settings": {
+            "heading1": "We've opened sensibly to service you safely.",
+            "content1": "<p>Our first priority is the health and safety of all our associates. We  are adhering to the precautions advised by federal, state, & local  authorities.<\/p>",
+            "buttontext1": "",
+            "collection1": "",
+            "image1": "shopify:\/\/shop_images\/open-sensibly_540x_6dca02d8-bbe3-4d4d-8e31-d186d4e5c0d6.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "78e2ff38-1153-48f5-b615-5594885207ac"
+      ],
+      "disabled": true,
+      "settings": {
+        "continer": true,
+        "ic_image_width": "33%",
+        "ic_image_side": "Left side"
+      }
+    },
+    "1655487709597f4bfc": {
+      "type": "custom-map",
+      "disabled": true,
+      "settings": {
+        "heading": "Visit us",
+        "heading_color": "#000000",
+        "hours_heading": "Our Hours",
+        "hours": "<p>Mon – Sat, 10AM - 6PM<br\/>Sunday, Closed<\/p><p><a href=\"tel:+1-804=290-8800\" target=\"_blank\" title=\"tel:+1-804=290-8800\">(804) 290-8800<\/a><\/p>",
+        "address_heading": "Our Location",
+        "map_address": "3995 Deep Rock Rd, Richmond, VA 23233",
+        "button_text": "Get directions",
+        "text_position": "text_right",
+        "background_color": "#f7f7f7",
+        "api_key": "",
+        "background_image": "shopify:\/\/shop_images\/Richmond_store_front_-_1080_x_1080.jpg",
+        "background_image_position": "center center"
+      }
+    },
+    "1655745395ddc93920": {
+      "type": "custom-map",
+      "disabled": true,
+      "settings": {
+        "heading": "Visit Us Today",
+        "heading_color": "#000000",
+        "hours_heading": "Our Hours",
+        "hours": "<p>Mon – Sat, 10AM - 6PM<br\/>Sunday, Closed<\/p><p><a href=\"tel:+1-804=290-8800\" target=\"_blank\" title=\"tel:+1-804=290-8800\">(804) 290-8800<\/a><\/p>",
+        "address_heading": "Our Location",
+        "map_address": "3995 Deep Rock Rd, Richmond, VA 23233",
+        "button_text": "Get directions",
+        "text_position": "text_right",
+        "background_color": "#f7f7f7",
+        "api_key": "",
+        "background_image": "shopify:\/\/shop_images\/Richmond_store_front_-_1600_x_852.jpg",
+        "background_image_position": "center center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1653981190a0edf6b1",
+    "165462346761bf9f0c",
+    "1654245879506cb7cb",
+    "165462262478092cb9",
+    "e9654b23-803a-46c9-8e0e-93abc4afc0c4",
+    "1654246074a9d9ccd7",
+    "16548791074ad480f8",
+    "1654593422a12e3285",
+    "1655487709597f4bfc",
+    "1655745395ddc93920"
+  ]
+}

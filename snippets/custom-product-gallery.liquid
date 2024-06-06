@@ -1,0 +1,174 @@
+
+{%- if product.media.size > 0 -%}
+  <div class="card">
+    <div class="card__section card__section--tight">
+      <div class="product-gallery product-gallery-wrap">
+        {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
+        {%- liquid
+          if section.settings.fabric_patterns
+            assign fabricPattern = section.settings.fabric_patterns | split: ','
+            assign patternBorder = fabricPattern[0] | append: 'R'
+            assign patternCorner = fabricPattern[0] | append: 'C'
+            assign productType = fabricPattern[0] | split: '_' | last | split: '-'
+            assign patternType = productType | last
+            assign patternColor = fabricPattern[0] | split: '-' | first | split: '_'
+            assign patternColorCode = patternColor | last | append: ' '
+            assign patternColorName = patternColor | first
+            if patternType == 'IO'
+              assign patternProductType = 'Indoor/Outdoor'
+            else
+              assign patternProductType = 'Indoor Only'
+            endif
+          endif
+        -%}
+        <div class="loader-wrap">
+        <div id="loader2">
+          <div class="dank-ass-loader">
+            <div class="row">
+              <div class="arrow up outer outer-18"></div>
+              <div class="arrow down outer outer-17"></div>
+              <div class="arrow up outer outer-16"></div>
+              <div class="arrow down outer outer-15"></div>
+              <div class="arrow up outer outer-14"></div>
+            </div>
+            <div class="row">
+              <div class="arrow up outer outer-1"></div>
+              <div class="arrow down outer outer-2"></div>
+              <div class="arrow up inner inner-6"></div>
+              <div class="arrow down inner inner-5"></div>
+              <div class="arrow up inner inner-4"></div>
+              <div class="arrow down outer outer-13"></div>
+              <div class="arrow up outer outer-12"></div>
+            </div>
+            <div class="row">
+              <div class="arrow down outer outer-3"></div>
+              <div class="arrow up outer outer-4"></div>
+              <div class="arrow down inner inner-1"></div>
+              <div class="arrow up inner inner-2"></div>
+              <div class="arrow down inner inner-3"></div>
+              <div class="arrow up outer outer-11"></div>
+              <div class="arrow down outer outer-10"></div>
+            </div>
+            <div class="row">
+              <div class="arrow down outer outer-5"></div>
+              <div class="arrow up outer outer-6"></div>
+              <div class="arrow down outer outer-7"></div>
+              <div class="arrow up outer outer-8"></div>
+              <div class="arrow down outer outer-9"></div>
+            </div>
+          </div>
+          <div class="loader2__text">Your design is being prepared.</div>
+        </div>
+        </div>
+
+        <div
+          class="product-gallery__carousel-wrapper"
+          data-colorNumber="{{ patternColorName | prepend: patternColorCode }}"
+        >
+          <div class="product-gallery__fabric">
+            <img class="preview-gallery-img corner-gallery-img" src="{{ patternCorner | append: '.png' | file_url }}">
+            <img class="preview-gallery-img border-gallery-img" src="{{ patternBorder | append: '.png' | file_url }}">
+          </div>
+          <div
+            class="product-gallery__carousel"
+            data-media-count="{{ product.media.size }}"
+            data-initial-media-id="{{ selected_media.id }}"
+          >
+            {%- for media in product.media -%}
+              {%- assign is_media_group = false -%}
+              {%- assign is_media_filtered = false -%}
+              {%- assign media_alt = media.alt -%}
+
+              {%- if media.alt contains '#' -%}
+                {%- assign is_media_group = true -%}
+                {%- assign alt_parts = media.alt | split: '#' -%}
+
+                {%- comment -%}
+                  If the custom ALT tag contains two parts (for instance "My custom alt # color_blue") then the first part is actually used
+                  as a custom ALT tag
+                {%- endcomment -%}
+
+                {%- if alt_parts.size == 2 and alt_parts.first != blank -%}
+                  {%- assign media_alt = alt_parts.first | strip -%}
+                {%- else -%}
+                  {%- assign media_alt = product.title -%}
+                {%- endif -%}
+
+                {%- assign media_group_parts = alt_parts.last | split: '_' -%}
+
+                {%- for option in product.options -%}
+                  {%- assign downcase_option = option | downcase -%}
+                  {%- assign downcase_group_option = media_group_parts.first | strip | downcase -%}
+
+                  {%- if downcase_option == downcase_group_option -%}
+                    {%- assign option_setting = 'option' | append: forloop.index -%}
+                    {%- assign option_value = product.selected_or_first_available_variant[option_setting] | downcase -%}
+
+                    {%- assign downcase_group_value = media_group_parts.last | strip | downcase -%}
+                    {%- assign media_variant_ids = media.variants | map: 'id' -%}
+
+                    {%- if option_value != downcase_group_value -%}
+                      {%- unless media_variant_ids contains product.selected_or_first_available_variant.id -%}
+                        {%- assign is_media_filtered = true -%}
+                      {%- endunless -%}
+                    {%- endif -%}
+
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+
+              <div
+                class="product-gallery__carousel-item {% if media.id == selected_media.id %}is-selected{% endif %} {% if is_media_filtered %}is-filtered{% endif %}"
+                tabindex="-1"
+                data-media-id="{{ media.id }}"
+                data-media-type="{{ media.media_type | escape }}"
+                {% if media.media_type == 'external_video' %}
+                  data-media-host="{{ media.host | escape }}" data-video-id="{{ media.external_id | escape }}"
+                {% endif %}
+                {% if is_media_group %}
+                  data-group-name="{{ media_group_parts.first | strip | downcase | escape }}"
+                  data-group-value="{{ media_group_parts.last | strip | downcase | escape }}"
+                {% endif %}
+              >
+                <div class="aspect-ratio" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%">
+                  <img
+                    class="product-gallery__image lazyload image--fade-in"
+                    src="{{ media | img_url: 'master' }}"
+                    loading="lazy"
+                    width="100"
+                    height="100"
+                  >
+                  <noscript>
+                    <img
+                      src="{{ media | img_url: '800x' }}"
+                      alt="{{ media_alt | escape }}"
+                      loading="lazy"
+                      width="100"
+                      height="100"
+                    >
+                  </noscript>
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
+          <div class="product_type_data">
+            <span>{{ patternProductType }}</span>
+          </div>
+        </div>
+        <div class="product-gallery__detail">
+          <span class="first_span">Beach Sisal</span>
+          <span class="second_span">Fortune Lava</span>
+          <span class="third_span">Rectangle</span>
+        </div>
+        <div class="changeView">
+          <button class="activeView corner-view" disabled="true">Corner View</button>
+          <button class="full-size">Full Size View</button>
+        </div>
+        <div class="print-product-area">
+          <button class="print-product">Print</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}

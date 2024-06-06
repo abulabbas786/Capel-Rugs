@@ -1,0 +1,122 @@
+<div class="container {{section.settings.custom_class}}">
+  	{%- if section.settings.txt_title != blank -%}
+  	<div class="section_heading">
+      <h2 class="section_heading-text">{{section.settings.txt_title}}</h2>
+  	</div>
+  	{%- endif -%}
+  	<div class="grid_inner four-in-row">
+	{%- for block in section.blocks -%}
+      <div class="grid_item">
+        <div class="grid_item-inner">
+          <a href="{%- if block.settings.w_redirect -%} {{ block.settings.txt_link_2 }} {%- else -%} {{ block.settings.txt_link_1 }} {%- endif -%}">
+            {%- if block.settings.txt_image_1 != blank -%}
+              <img src="{{ block.settings.txt_image_1 | img_url : 'master' }}">
+            {%- else -%}
+              {{ 'product-1' | placeholder_svg_tag }}
+            {%- endif -%}
+          </a>
+          <div class="collection-meta">
+            {%- if block.settings.txt_title_text_1 != blank -%}
+                <h3>{{ block.settings.txt_title_text_1 }}</h3>
+            {%- endif -%}
+               
+            {%- if block.settings.txt_text_1 != blank -%}
+                <p>{{ block.settings.txt_text_1 }}</p>
+            {%- endif -%}
+                
+          </div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Text columns with image",
+    "tag": "section",
+    "class": "text_column_image",
+	"max_blocks": 4,
+    "settings": [
+      {
+        "type": "text",
+        "id": "txt_title",
+        "label": "Heading",
+        "default": "Text columns with images"
+      },
+      {
+        "type": "select",
+        "id": "txt_align_text",
+        "label": "Text alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Centered"
+          }
+      	]
+      },
+	  {
+        "type": "text",
+        "id": "custom_class",
+        "label": "Custom class"
+      }
+    ],
+    "blocks": [
+		{
+         "name": "Collection item",
+         "type": "list",
+         "settings": [
+            {
+              "type": "header",
+              "content": "Columns"
+            },
+            {
+              "type": "image_picker",
+              "id": "txt_image_1",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "txt_link_1",
+              "label": "Section id",
+              "info": "If want to scroll page to section you need to pass id like this : #idname"
+             },
+			 {
+              "type": "url",
+              "id": "txt_link_2",
+              "label": "Url to redirect",
+              "info": "If want to redirect page, pass your url here."
+             },
+			{
+              "type": "checkbox",
+              "id": "w_redirect",
+              "label": "Want to redirect page?",
+              "default": false
+            },
+             {
+              "type": "text",
+              "id": "txt_title_text_1",
+              "label": "Heading",
+              "default": "Page / section name"
+             },
+            {
+              "type": "richtext",
+              "id": "txt_text_1",
+              "label": "Text"
+            }
+         ]
+       } 
+    ],
+    "presets":[
+      {
+        "name":"Text columns with image",
+        "category":"Block2"
+      }
+    ]
+  }
+{% endschema %}
+

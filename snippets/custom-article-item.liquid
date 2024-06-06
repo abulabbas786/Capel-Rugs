@@ -1,0 +1,67 @@
+<div class="article-item article-item--featured">
+  {%- if article.image -%}
+    <a href="{{ article.url }}" class="article-item__image-container">
+      {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,300,400,500,600,700,800,900,1000,1200,1400', image: article.image -%}{%- endcapture -%}
+      {%- assign image_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+      <div class="aspect-ratio" style="padding-bottom: {{ 100.0 | divided_by: article.image.aspect_ratio }}%">
+        <img class="article-item__image lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ article.image.alt | escape }}">
+
+        <noscript>
+          <img class="article-item__image" src="{{ article.image | img_url: 'master' }}" alt="{{ article.image.alt | escape }}">
+        </noscript>
+      </div>
+    </a>
+   {%- endif -%}
+      <div class="meta_content_post">
+        {%- if request.page_type == 'index' -%}
+          <h3 class="article-item__title heading h4">
+            <a href="{{ article.url }}" class="link">{{ article.title }}</a>
+          </h3>
+        {%- else -%}
+          <h2 class="article-item__title heading {% if featured %}h1{% else %}h3{% endif %}">
+            <a href="{{ article.url }}" class="link">{{ article.title }}</a>
+          </h2>
+    	{%- endif -%}
+
+        {%- capture article_meta -%}
+          {%- if section.settings.show_category and article.tags.size > 0 -%}
+            <span class="article-item__meta-item">{{ article.tags.first }}</span>
+          {%- endif -%}
+
+          {%- if section.settings.show_author -%}
+            <span class="article-item__meta-item">{{ 'blog.article.written_by' | t: author: article.author }}</span>
+          {%- endif -%}
+
+          {%- if section.settings.show_date -%}
+            <time class="article-item__meta-item">{{ article.published_at | date: format: 'short_month_day_year' }}</time>
+          {%- endif -%}
+        {%- endcapture -%}
+
+        {%- if article_meta != blank -%}
+          <div class="article-item__meta">
+            {{ article_meta }}
+          </div>
+        {%- endif -%}
+
+        {%- if section.settings.show_excerpt -%}
+          <div class="article-item__excerpt rte">
+            
+          </div>
+        {%- endif -%}
+        <a href="{{ article.url }}" class="article-more">
+          Keep reading
+          <svg width="18px" height="7px" viewBox="0 0 27 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-1291.000000, -306.000000)" fill="#353535" fill-rule="nonzero" id="Footer---Light">
+                <g transform="translate(0.000000, 120.000000)">
+                  <g id="Email-input" transform="translate(940.000000, 168.000000)">
+                    <path id="Line-2" d="M368.309343,18.8190816 L377.519864,24 L368.309343,29.1809184 L367.819082,28.3093429 L374.589,24.5 L351.5,24.5 L351.5,23.5 L374.593,23.5 L367.819082,19.6906571 L368.309343,18.8190816 Z"></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+  </div>
+</div>

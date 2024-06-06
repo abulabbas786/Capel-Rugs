@@ -1,0 +1,16 @@
+{% assign descriptions = collection.description | split: "<!-- split -->" %}
+{% assign short_desc = descriptions[0] %}
+{% assign long_desc = descriptions[1] %}
+
+<div class="lower-collection-description desktop-12 tablet-6 mobile-3">
+  <div class="rte">
+  {{ short_desc | remove: "[banner]" }}
+</div>
+</div>
+
+<script>
+  setTimeout(function(){
+    document.getElementById("defaultOpen").click();
+  }, 1000);
+   
+</script>

@@ -1,0 +1,360 @@
+{
+  "sections": {
+    "1653378630ef9a5e16": {
+      "type": "custom_banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/memorial_day_sale_2024_-_1200x628_6baeda39-44dd-4453-9dd5-f2890318529d.jpg",
+        "image-mobile": "shopify:\/\/shop_images\/Capel_Rugs_-_Memorial_day_sale_-_960x1200_860d0f1d-527a-4687-8267-90168c812e0a.jpg",
+        "collection": "shopify:\/\/collections\/best-sellers"
+      }
+    },
+    "16578866754f5e2c75": {
+      "type": "custom-slideshow",
+      "blocks": {
+        "7fb87a73-4a59-4fa0-bba3-cbbd880e3a9c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sweet_summertime_dockside.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_image_sweet_summer_time_dockside.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 28,
+            "text_color": "#ffffff",
+            "title": "",
+            "content": "",
+            "show_caption": true,
+            "text_align": "center",
+            "button_background": "#cabc99",
+            "button_text_color": "#000000",
+            "button_text": "DOCKSIDE COLLECTION",
+            "link": "shopify:\/\/products\/dockside-teal"
+          }
+        },
+        "3cbc062c-6a47-421a-80f8-bf369cf55f81": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/welcome.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/welcome_mobile.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 0,
+            "text_color": "#ffffff",
+            "title": "Slide title",
+            "content": "Tell your story",
+            "show_caption": false,
+            "text_align": "left",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "",
+            "link": "shopify:\/\/collections\/new-arrivals"
+          }
+        },
+        "1657886675a9e29986-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/made-in-america-sale-gif.gif",
+            "mobile_image": "shopify:\/\/shop_images\/Memorial-Day-sale-mobile-banner-15.gif",
+            "show_overlay": true,
+            "overlay_opacity": 0,
+            "text_color": "#ffffff",
+            "title": "",
+            "content": "",
+            "show_caption": false,
+            "text_align": "center",
+            "button_background": "#1e2d7d",
+            "button_text_color": "#ffffff",
+            "button_text": "",
+            "link": "shopify:\/\/collections\/made-in-the-usa"
+          }
+        }
+      },
+      "block_order": [
+        "7fb87a73-4a59-4fa0-bba3-cbbd880e3a9c",
+        "3cbc062c-6a47-421a-80f8-bf369cf55f81",
+        "1657886675a9e29986-0"
+      ],
+      "settings": {
+        "edge_to_edge": false,
+        "section_size": "preserve_ratio",
+        "carousel_effect": "fade",
+        "autoplay": true,
+        "cycle_speed": 4
+      }
+    },
+    "b123c166-b666-4ba0-9ee0-627461d6f5d2": {
+      "type": "custom-slideshow",
+      "blocks": {
+        "template--15969631240372__b123c166-b666-4ba0-9ee0-627461d6f5d2-16885885837b7fca18-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Easter_sale_banner_3044ce12-e7c5-4a49-9a2f-dfad82b291c9.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Happy_Easter_-_Sale_March_22-_April_2_2024_square_15_off.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 30,
+            "text_color": "#ffffff",
+            "title": "Slide title",
+            "content": "Tell your story",
+            "show_caption": false,
+            "text_align": "left",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "",
+            "link": "shopify:\/\/collections\/best-sellers"
+          }
+        },
+        "template--15969631240372__b123c166-b666-4ba0-9ee0-627461d6f5d2-16885885837b7fca18-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/flat_woven_MOBILE.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 0,
+            "text_color": "#060606",
+            "title": "BLEISURE",
+            "content": "Traveling for business and leisure, the influence of global patterns, colors, and cultures that inspire your home design.",
+            "show_caption": true,
+            "text_align": "left",
+            "button_background": "#060606",
+            "button_text_color": "#ffffff",
+            "button_text": "Shop Now",
+            "link": "shopify:\/\/collections\/flat-woven-rugs"
+          }
+        },
+        "ec4ec357-eed5-40be-a7d5-13160c7f02ad": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lodge_Vail_winter_773bc58a-5d74-497d-bb96-4038c0286a5c.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Lodge_Vail_winter_mobile_a4ede775-7fca-48a6-a938-686b2f4be790.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 100,
+            "text_color": "#4c390c",
+            "title": "Vail",
+            "content": "Get warm and cozy this season with our new Vail Collection!",
+            "show_caption": true,
+            "text_align": "left",
+            "button_background": "#bba47f",
+            "button_text_color": "#000000",
+            "button_text": "shop now",
+            "link": "shopify:\/\/products\/vail-fawn"
+          }
+        },
+        "image_Wk3Ecf": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Presidents_day_sale_retail_site_banner_2-2024.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Q1_promo_-_ad_president_s_day_2-2024_15_off.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 30,
+            "text_color": "#ffffff",
+            "title": "Slide title",
+            "content": "Tell your story",
+            "show_caption": false,
+            "text_align": "left",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": "shopify:\/\/collections\/best-sellers"
+          }
+        },
+        "image_tj36KD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Creative-Concepts.gif",
+            "mobile_image": "shopify:\/\/shop_images\/creative-concepts-mobile-2.gif",
+            "show_overlay": false,
+            "overlay_opacity": 30,
+            "text_color": "#ffffff",
+            "title": "Slide title",
+            "content": "Tell your story",
+            "show_caption": false,
+            "text_align": "left",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "",
+            "link": "shopify:\/\/products\/creative-concepts"
+          }
+        }
+      },
+      "block_order": [
+        "template--15969631240372__b123c166-b666-4ba0-9ee0-627461d6f5d2-16885885837b7fca18-0",
+        "template--15969631240372__b123c166-b666-4ba0-9ee0-627461d6f5d2-16885885837b7fca18-1",
+        "ec4ec357-eed5-40be-a7d5-13160c7f02ad",
+        "image_Wk3Ecf",
+        "image_tj36KD"
+      ],
+      "settings": {
+        "edge_to_edge": false,
+        "section_size": "preserve_ratio",
+        "carousel_effect": "slide",
+        "autoplay": true,
+        "cycle_speed": 5
+      }
+    },
+    "16533786537ac9bb97": {
+      "type": "custom-collection",
+      "blocks": {
+        "42b94480-a3cf-4c96-a74e-a95a54452248": {
+          "type": "list",
+          "settings": {
+            "video": "",
+            "image": "shopify:\/\/shop_images\/capel_anywhere_captiva_and_retreat_logo.jpg",
+            "c_name": "Capel Anywhere",
+            "c_description": "<p>Shop our collection of outdoor area rugs.  <\/p>",
+            "c_button_val": "Shop now",
+            "collection": "shopify:\/\/collections\/outdoor-rugs"
+          }
+        },
+        "a4d6bef3-3814-4df5-821f-3a2970a9cb14": {
+          "type": "list",
+          "settings": {
+            "video": "",
+            "image": "shopify:\/\/shop_images\/new-intros-2024.gif",
+            "c_name": "New Arrivals",
+            "c_description": "<p>Shop our recently added collections. <\/p><p> <\/p>",
+            "c_button_val": "Shop Now",
+            "collection": "shopify:\/\/collections\/new-arrivals"
+          }
+        },
+        "178a5706-0197-494f-a5de-6f2e5cd8f3e3": {
+          "type": "list",
+          "settings": {
+            "video": "",
+            "image": "shopify:\/\/shop_images\/blues_0f1b10e6-ee1a-4df3-b1e1-0ab69302a8ab.jpg",
+            "c_name": "Beautifully Blue",
+            "c_description": "<p>Shop our best-selling Blue area rugs! <\/p>",
+            "c_button_val": "Shop Now",
+            "collection": "shopify:\/\/collections\/blues"
+          }
+        }
+      },
+      "block_order": [
+        "42b94480-a3cf-4c96-a74e-a95a54452248",
+        "a4d6bef3-3814-4df5-821f-3a2970a9cb14",
+        "178a5706-0197-494f-a5de-6f2e5cd8f3e3"
+      ],
+      "settings": {
+        "sectionheading": "Explore our featured collections"
+      }
+    },
+    "16533786778fa2a118": {
+      "type": "custom-featured-collection",
+      "settings": {
+        "collection": "best-sellers",
+        "title": "Our Most Popular",
+        "products_count": 16,
+        "layout": "vertical",
+        "stack_products": true,
+        "show_quick_buy": false,
+        "hide_price": true,
+        "hide_vendor": true,
+        "link_title": "View all",
+        "link_url": ""
+      }
+    },
+    "16533786748fea754b": {
+      "type": "custom-shop-by-size",
+      "blocks": {
+        "3ac5dfa0-b39c-447f-9b9b-d25549cb3d45": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ShopBySize-Large_900x_1b4d2cbf-ecb2-4966-8ef5-1cb1e438a860.jpg",
+            "collection": "shopify:\/\/collections\/large-rugs"
+          }
+        },
+        "6ecfb8d7-6187-4f4e-adb3-5a3f5fffb0b7": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ShopBySize-Medium_900x_7c078601-a4f5-44bc-999c-d7a486bcf29b.jpg",
+            "collection": "shopify:\/\/collections\/medium-rugs"
+          }
+        },
+        "85f7e5fe-7480-4336-8541-905ce0bf1a94": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ShopBySize-Small_900x_996f69dc-6f47-44ad-8abf-07bd937a748b.jpg",
+            "collection": "shopify:\/\/collections\/small-rugs"
+          }
+        },
+        "c36b03c1-0450-48be-862f-15f3ff0ec8df": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ShopBySize-Runners_900x_b0421269-609f-4d8b-a91d-b7ced179b791.jpg",
+            "collection": "shopify:\/\/collections\/shape-runner"
+          }
+        },
+        "ff676aea-2d52-46ee-a59a-0e61fa8472ba": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ShopBySize-Round_900x_f2bbe9c4-c6bf-4800-9906-b42c94c60c7a.jpg",
+            "collection": "shopify:\/\/collections\/rounds"
+          }
+        },
+        "74dcb7ca-535f-4a77-a8ff-deb1910110f7": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ShopBySize-Baskets_900x_0e5b78cc-177d-4682-a1e2-49e9d8a622e2.jpg",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "3ac5dfa0-b39c-447f-9b9b-d25549cb3d45",
+        "6ecfb8d7-6187-4f4e-adb3-5a3f5fffb0b7",
+        "85f7e5fe-7480-4336-8541-905ce0bf1a94",
+        "c36b03c1-0450-48be-862f-15f3ff0ec8df",
+        "ff676aea-2d52-46ee-a59a-0e61fa8472ba",
+        "74dcb7ca-535f-4a77-a8ff-deb1910110f7"
+      ],
+      "settings": {
+        "sectionheading": "Shop by Size"
+      }
+    },
+    "1653415863f3eecf5b": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "67529d20-b3f7-40f7-ae83-908068a19c90": {
+          "type": "list",
+          "settings": {
+            "heading1": "OUR SIGNATURE STYLE",
+            "content1": "<p>Browse our collections of famous <a href=\"https:\/\/www.capelrugs.com\/collections\/braided-rugs\" title=\"Braided Rugs\">Braided Rugs<\/a>, including<a href=\"https:\/\/www.capelrugs.com\/collections\/american-legacy\" title=\"American Legacy\"> American Legacy<\/a>,<a href=\"https:\/\/www.capelrugs.com\/collections\/homecoming\" title=\"Homecoming\"> Homecoming<\/a>, and<a href=\"https:\/\/www.capelrugs.com\/collections\/sea-glass\" title=\"Sea Glass\"> Sea Glass<\/a>.<\/p>",
+            "buttontext1": "SHOP ALL BRAIDS",
+            "collection1": "shopify:\/\/collections\/braided-rugs",
+            "image1": "shopify:\/\/shop_images\/braided_1080x_70880bea-be02-4442-b205-6bd8c24200c3.jpg",
+            "image2": "shopify:\/\/shop_images\/famous-braids-american-legacy_1080x_656e7a67-2b0b-4b7d-9300-efad460f8edf.jpg",
+            "image3": "shopify:\/\/shop_images\/famous-braids-seaglass_1080x_44e8d333-893d-4b57-b689-377fe83e4b23.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "67529d20-b3f7-40f7-ae83-908068a19c90"
+      ],
+      "settings": {
+        "continer": false,
+        "ic_image_width": "50%",
+        "ic_image_side": "Right side"
+      }
+    },
+    "16534594926d849f26": {
+      "type": "custom-review-section",
+      "settings": {
+        "heading": "Our Friends & Family Love Our Area Rugs",
+        "rich_text": "",
+        "page": "reviews"
+      }
+    }
+  },
+  "order": [
+    "1653378630ef9a5e16",
+    "16578866754f5e2c75",
+    "b123c166-b666-4ba0-9ee0-627461d6f5d2",
+    "16533786537ac9bb97",
+    "16533786778fa2a118",
+    "16533786748fea754b",
+    "1653415863f3eecf5b",
+    "16534594926d849f26"
+  ]
+}

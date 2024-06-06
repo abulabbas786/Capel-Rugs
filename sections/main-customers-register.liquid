@@ -1,0 +1,83 @@
+<section data-section-id="{{ section.id }}" data-section-type="register">
+  <div class="container">
+    {%- form 'create_customer', name: 'create', class: 'form form--main', id: 'create_customer' -%}
+      <header class="form__header">
+        <h1 class="form__title heading h1">{{ 'customer.register.create_account' | t }}</h1>
+        <p class="form__legend">{{ 'customer.register.description' | t }}</p>
+      </header>
+
+      {%- if form.errors -%}
+        <div class="alert alert--error" id="register-form-error">
+          <ul class="alert__error-list" role="list">
+            {%- for field in form.errors -%}
+              {%- if field == 'form' -%}
+                <li class="alert__error-item">{{ form.errors.messages[field] }}</li>
+              {%- else -%}
+                <li class="alert__error-item"><strong>{{ form.errors.translated_fields[field] }}</strong> {{ form.errors.messages[field] }}</li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+
+      {%- if request.locale.iso_code == 'ja' -%}
+        <div class="form__input-wrapper form__input-wrapper--labelled">
+          <label for="customer[last_name]" class="form__floating-label">{{ 'customer.register.last_name' | t }}</label>
+          <input type="text" id="customer[last_name]" class="form__field form__field--text" name="customer[last_name]" autocomplete="family-name" required="required">
+          
+        </div>
+
+        <div class="form__input-wrapper form__input-wrapper--labelled">
+          <label for="customer[first_name]" class="form__floating-label">{{ 'customer.register.first_name' | t }}</label>
+          <input type="text" id="customer[first_name]" class="form__field form__field--text" name="customer[first_name]" autocomplete="given-name" required="required">
+          
+        </div>
+      {%- else -%}
+        <div class="form__input-wrapper form__input-wrapper--labelled">
+          <label for="customer[first_name]" class="form__floating-label">{{ 'customer.register.first_name' | t }}</label>
+          <input data-status="false" type="text" id="customer[first_name]" class="form__field form__field--text ced_name" name="customer[first_name]" autocomplete="given-name" required="required">
+          
+           <p class="ced_name_error ced_error"></p>
+        </div>
+       
+        <div class="form__input-wrapper form__input-wrapper--labelled">
+          <label for="customer[last_name]" class="form__floating-label">{{ 'customer.register.last_name' | t }}</label>
+          <input data-status="true" type="text" id="customer[last_name]" class="form__field form__field--text ced_last_name" name="customer[last_name]" autocomplete="family-name" required="required">
+          
+          <p class="ced_last_name_error ced_error"></p>
+        </div>
+        
+      {%- endif -%}
+
+      <div class="form__input-wrapper form__input-wrapper--labelled">
+        <label for="customer[email]" class="form__floating-label">{{ 'customer.register.email' | t }}</label>
+        <input data-status="false" type="email" id="customer[email]" class="form__field form__field--text ced_email" name="customer[email]" autocomplete="email" required="required" {% if form.errors contains 'email' %}aria-invalid="true" aria-describedby="register-form-error"{% endif %}>
+        
+        <p class="ced_email_error ced_error"></p>
+      </div>
+      
+      <div class="form__input-wrapper form__input-wrapper--labelled">
+         <label for="customer[password]" class="form__floating-label">{{ 'customer.register.password' | t }}</label>
+        <input data-status="false" type="password" id="customer[password]" class="form__field form__field--text ced_password" name="customer[password]" required="required" autocomplete="new-password" {% if form.errors contains 'password' %}aria-invalid="true" aria-describedby="register-form-error"{% endif %}>
+       
+        <p class="ced_password_error ced_error"></p>
+      </div>
+      
+
+
+      <button data-submit type="submit" class="form__submit button button--primary button--full">{{ 'customer.register.submit' | t }}</button>
+
+      <small class="form__spam-disclaimer">{{- 'shopify.online_store.spam_detection.disclaimer_html' | t -}}</small>
+
+      <div class="form__secondary-action">
+        <p>{{ 'customer.register.already_have_account' | t }} <a href="{{ routes.account_login_url }}" class="link link--accented">{{ 'customer.register.login' | t }}</a></p>
+      </div>
+    {%- endform -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Register"
+}
+{% endschema %}

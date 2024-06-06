@@ -1,0 +1,120 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1653981190a0edf6b1": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/rug-info_copy_9ff96860-4202-43dc-af06-32d0b80fb009.jpg",
+        "title": "Rug Information",
+        "custom_class": "custom_image_overlay",
+        "content": "<p>Care, Cleaning, Or Sizing Questions?  We've Got You Covered!<\/p>",
+        "show_image_overlay": true,
+        "color": "#ffffff"
+      }
+    },
+    "1656422798d2e3a4e6": {
+      "type": "about_grid",
+      "blocks": {
+        "ee6917b5-e94f-48f1-9b74-4648fda453b7": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/care_1_540x_cefeb662-b59d-4d19-a747-47dae8c14775.png",
+            "c_name": "Rug Care",
+            "c_description": "<p>You can expect years of beauty and enjoyment from a Capel braided rug when it is maintained properly.  Click to learn how to care for your <br\/>Capel rug.<\/p>",
+            "c_button_val": "",
+            "custom_url": "shopify:\/\/pages\/rug-care"
+          }
+        },
+        "0edce384-de80-49bb-9828-687d7917a076": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cleaning_540x_d77fe297-4a6f-4807-ae4c-47e5a7b16aeb.png",
+            "c_name": "Cleaning Guide",
+            "c_description": "<p>Spot Cleaning Guide © by The Carpet and Rug Institute, Dalton, GA.<\/p>",
+            "c_button_val": "",
+            "custom_url": "shopify:\/\/pages\/cleaning-guide"
+          }
+        },
+        "da2a2c17-1f60-4918-bf6e-8fe4393a0eeb": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/capel-anywhere_540x_009c17bb-2f71-42bc-82ec-e5a9bbfa3cac.png",
+            "c_name": "Capel Anywhere Rug Care",
+            "c_description": "<p>Our Indoor \/ Outdoor collections can provide better service and wear if a few important tips are considered.<\/p>",
+            "c_button_val": "",
+            "custom_url": "shopify:\/\/pages\/capel-anywhere"
+          }
+        }
+      },
+      "block_order": [
+        "ee6917b5-e94f-48f1-9b74-4648fda453b7",
+        "0edce384-de80-49bb-9828-687d7917a076",
+        "da2a2c17-1f60-4918-bf6e-8fe4393a0eeb"
+      ],
+      "settings": {
+        "sectionheading": "How Do I Care For My Capel Rug?",
+        "custom_class": "meta_center"
+      }
+    },
+    "16564234783e2a96e3": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "176e11b4-9180-4163-8096-ad0ac58c16e2": {
+          "type": "list",
+          "settings": {
+            "heading1": "Rug Sizing",
+            "content1": "<p>Nothing can bring a room together like the right rug.  We want to make <br\/>it easier for you to select the right size rug to fit your space.  A few<br\/> inches can make all the difference between a rug pulling the room <br\/>together or making it feel separated.  When choosing rug size and <br\/>orientation, make sure it is proportional to the space and placed in the<br\/> proper orientation to match the room. <\/p>",
+            "buttontext1": "Sizing guide",
+            "collection1": "shopify:\/\/pages\/sizing-guide",
+            "image1": "shopify:\/\/shop_images\/bedroom-sizing_3024x_a246d3b5-f76c-4107-b110-1694cf114c01.jpg",
+            "image2": "shopify:\/\/shop_images\/dining-room-sizing_3024x_c3cbe274-d83e-4294-b265-4d4bdd1f2573.jpg",
+            "image3": "shopify:\/\/shop_images\/living-room-sizing_3024x_2bbdb64b-086e-4001-9869-9b0978392985.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "176e11b4-9180-4163-8096-ad0ac58c16e2"
+      ],
+      "settings": {
+        "continer": true,
+        "ic_image_width": "50%",
+        "ic_image_side": "Left side"
+      }
+    },
+    "165642368239175961": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "0cf9506e-af43-4207-aec9-cfe6038bd08e": {
+          "type": "list",
+          "settings": {
+            "heading1": "Rug Glossary",
+            "content1": "<p>Braided, flat woven, denier, pile height....  We've put together a rug glossary to help you navigate the terminology you may find as you shop for the perfect rug for your perfect space.<\/p>",
+            "buttontext1": "Rug Glossary",
+            "collection1": "shopify:\/\/pages\/rug-glossary",
+            "image1": "shopify:\/\/shop_images\/glossary_720x_1ac1fb4f-b3d4-4915-8602-ee27766316a2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "0cf9506e-af43-4207-aec9-cfe6038bd08e"
+      ],
+      "settings": {
+        "continer": true,
+        "ic_image_width": "50%",
+        "ic_image_side": "Right side"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1653981190a0edf6b1",
+    "1656422798d2e3a4e6",
+    "16564234783e2a96e3",
+    "165642368239175961"
+  ]
+}

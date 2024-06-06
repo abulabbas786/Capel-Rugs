@@ -1,0 +1,64 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "show_collection_image": true,
+        "collapse_collection_description": false,
+        "collection_image_size": "small",
+        "products_per_row": "4",
+        "default_products_per_page": 24,
+        "default_view_layout": "grid",
+        "show_quick_buy": "list",
+        "show_quick_view": "list_grid",
+        "quick_links": "",
+        "quick_links_show_products_count": true,
+        "show_filters": false,
+        "show_filter_color_swatch": false,
+        "open_group_filters_mode": "all_closed"
+      }
+    },
+    "165528536843967395": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "title": "Image with text overlay",
+        "custom_class": "",
+        "content": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+        "show_image_overlay": false,
+        "color": "#ffffff"
+      }
+    },
+    "16538955689de30460": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "e00540c1-7e10-4751-ad45-7ac76ff7e71e": {
+          "type": "shopify:\/\/apps\/smart-search-filter\/blocks\/app-block\/d8f24ada-02b1-458a-bbeb-5bf16d5c921e",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e00540c1-7e10-4751-ad45-7ac76ff7e71e"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165528536843967395",
+    "16538955689de30460",
+    "recently-viewed-products"
+  ]
+}

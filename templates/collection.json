@@ -1,0 +1,101 @@
+{
+  "sections": {
+    "165389714770de0d58": {
+      "type": "custom-collection-banner",
+      "disabled": true,
+      "blocks": {
+        "87401479-b8b3-43c4-abf0-7e10ec9778ea": {
+          "type": "image",
+          "settings": {
+            "collection_name": "Custom Braids",
+            "image": "shopify:\/\/shop_images\/custom-braids.webp"
+          }
+        },
+        "830fedde-c5a3-4e8a-9a75-844dd52fb723": {
+          "type": "image",
+          "settings": {
+            "collection_name": "Custom flat woven",
+            "image": "shopify:\/\/shop_images\/custom-flat-woven.webp"
+          }
+        },
+        "b3fd327d-40a4-4cb8-b2a1-240b7ed70147": {
+          "type": "image",
+          "settings": {
+            "collection_name": "custom handmade",
+            "image": "shopify:\/\/shop_images\/custom-handmade.webp"
+          }
+        },
+        "c1256338-06f3-40cc-8698-7cdedb1ca056": {
+          "type": "image",
+          "settings": {
+            "collection_name": "Coastal",
+            "image": "shopify:\/\/shop_images\/unnamed_30167a49-ee9f-492b-bb69-eed63b037b98.png"
+          }
+        }
+      },
+      "block_order": [
+        "87401479-b8b3-43c4-abf0-7e10ec9778ea",
+        "830fedde-c5a3-4e8a-9a75-844dd52fb723",
+        "b3fd327d-40a4-4cb8-b2a1-240b7ed70147",
+        "c1256338-06f3-40cc-8698-7cdedb1ca056"
+      ],
+      "settings": {
+      }
+    },
+    "16538955689de30460": {
+      "type": "apps",
+      "blocks": {
+        "e00540c1-7e10-4751-ad45-7ac76ff7e71e": {
+          "type": "shopify:\/\/apps\/smart-search-bar-filters\/blocks\/app-block\/d8f24ada-02b1-458a-bbeb-5bf16d5c921e",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e00540c1-7e10-4751-ad45-7ac76ff7e71e"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "show_collection_image": false,
+        "collapse_collection_description": false,
+        "collection_image_size": "medium",
+        "products_per_row": "4",
+        "default_products_per_page": 24,
+        "default_view_layout": "grid",
+        "show_quick_buy": "list",
+        "show_quick_view": "list_grid",
+        "quick_links": "",
+        "quick_links_show_products_count": true,
+        "show_filters": false,
+        "show_filter_color_swatch": false,
+        "open_group_filters_mode": "all_closed"
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": false
+      }
+    },
+    "1656421115166cc5bb": {
+      "type": "section-collections-description",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "165389714770de0d58",
+    "16538955689de30460",
+    "main",
+    "recently-viewed-products",
+    "1656421115166cc5bb"
+  ]
+}

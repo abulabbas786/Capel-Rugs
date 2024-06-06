@@ -1,0 +1,250 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1655712914a54b050c": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/outlet-banner-2_211744d0-31b6-4af1-8025-257eed3df9c3.jpg",
+        "title": "Shop By Shape or Size",
+        "custom_class": "",
+        "content": "<p>and More !<\/p>",
+        "show_image_overlay": false,
+        "color": "#ffffff"
+      }
+    },
+    "165571611178e62456": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "491869ab-86a4-4ad6-989c-f7ecdb70e2fb": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "shape-rectangle",
+            "heading": "Rectangle"
+          }
+        },
+        "1b233622-7b18-4a50-92e9-64dea376c067": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "shape-concentric-rectangle",
+            "heading": "Concentric"
+          }
+        },
+        "72d83e75-2433-4f6d-82a1-88fa155f537f": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "shape-vertical-stripe-rectangle",
+            "heading": "Vertical Stripe"
+          }
+        },
+        "fd6fd0da-798e-4816-80dd-de799c0c3309": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "shape-cross-sewn-rectangle",
+            "heading": "Cross-sewn"
+          }
+        },
+        "f6dc6fad-b30c-455e-bff3-af7bfadc9e0c": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "oval-rugs",
+            "heading": "Oval"
+          }
+        },
+        "d62d941e-af55-42e0-bc9c-eb566996afd0": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "round-rugs",
+            "heading": "Round"
+          }
+        },
+        "d1521b51-96b9-4111-aace-13cd5f192f44": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "baskets",
+            "heading": "Baskets"
+          }
+        }
+      },
+      "block_order": [
+        "491869ab-86a4-4ad6-989c-f7ecdb70e2fb",
+        "1b233622-7b18-4a50-92e9-64dea376c067",
+        "72d83e75-2433-4f6d-82a1-88fa155f537f",
+        "fd6fd0da-798e-4816-80dd-de799c0c3309",
+        "f6dc6fad-b30c-455e-bff3-af7bfadc9e0c",
+        "d62d941e-af55-42e0-bc9c-eb566996afd0",
+        "d1521b51-96b9-4111-aace-13cd5f192f44"
+      ],
+      "settings": {
+        "sectionheading": "Our Shapes",
+        "item_count": 4
+      }
+    },
+    "165583064245fff9dc": {
+      "type": "custom-collection-page",
+      "blocks": {
+        "d4650f03-cbcb-4abe-8deb-026a80f710d4": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "2-x-3"
+          }
+        },
+        "4a3c1c93-1845-4811-bab2-6497dae854e0": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "3-x-5"
+          }
+        },
+        "7501c601-c8b1-4d24-8cbb-529a39f77d8d": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "4-x-6"
+          }
+        },
+        "469f6e66-ea2a-40c2-8980-0bc07776b29b": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "5-x-8"
+          }
+        },
+        "7d318164-b6a6-4c9a-8c95-d7aab280a887": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "6-x-9"
+          }
+        },
+        "e5fa6545-e6ac-415b-94e6-53e2dafa4ece": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "7-x-9"
+          }
+        },
+        "3db12367-f461-45be-8be4-d64f021ab45d": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "8-x-10"
+          }
+        },
+        "4c8859b1-59e3-4534-bf9f-dae0849ef958": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "8-x-11"
+          }
+        },
+        "08a0a71b-a7eb-42c1-ba3f-17e194e314fe": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "9-x-12"
+          }
+        },
+        "f6765b97-23e0-444e-8876-b5e4f242ebd6": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "10-x-14"
+          }
+        },
+        "200973fb-7fd9-4da2-ad78-9c16721af4c7": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "rounds"
+          }
+        },
+        "ce334e01-6d21-4d05-80f2-15e306ba4556": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "baskets-1"
+          }
+        }
+      },
+      "block_order": [
+        "d4650f03-cbcb-4abe-8deb-026a80f710d4",
+        "4a3c1c93-1845-4811-bab2-6497dae854e0",
+        "7501c601-c8b1-4d24-8cbb-529a39f77d8d",
+        "469f6e66-ea2a-40c2-8980-0bc07776b29b",
+        "7d318164-b6a6-4c9a-8c95-d7aab280a887",
+        "e5fa6545-e6ac-415b-94e6-53e2dafa4ece",
+        "3db12367-f461-45be-8be4-d64f021ab45d",
+        "4c8859b1-59e3-4534-bf9f-dae0849ef958",
+        "08a0a71b-a7eb-42c1-ba3f-17e194e314fe",
+        "f6765b97-23e0-444e-8876-b5e4f242ebd6",
+        "200973fb-7fd9-4da2-ad78-9c16721af4c7",
+        "ce334e01-6d21-4d05-80f2-15e306ba4556"
+      ],
+      "settings": {
+        "sectionheading": "Our Sizes",
+        "item_count": 4
+      }
+    },
+    "165571679081e478cf": {
+      "type": "text-columns-with-image",
+      "blocks": {
+        "7606572d-c461-4747-a6d1-2fbcfdae9d82": {
+          "type": "list",
+          "settings": {
+            "txt_image_1": "shopify:\/\/shop_images\/rug-blog-thumbnail_900x_4bb1a54d-e468-4918-a562-8a6cec0e1c5d.webp",
+            "txt_link_1": "",
+            "txt_link_2": "",
+            "w_redirect": false,
+            "txt_title_text_1": "Rug Blog",
+            "txt_text_1": "<p>Design trends, special features, partnerships... You'll find these and more in our blog.  <\/p>"
+          }
+        },
+        "2b86bd73-c7af-4fa1-b706-3b4ac3236036": {
+          "type": "list",
+          "settings": {
+            "txt_image_1": "shopify:\/\/shop_images\/we-are-capel-thumbnail_360x_80274ed6-721d-4f4a-be52-84797bfd3c12.webp",
+            "txt_link_1": "",
+            "txt_link_2": "",
+            "w_redirect": false,
+            "txt_title_text_1": "We Are Capel",
+            "txt_text_1": "<p>We want to invite you to get to know some of our team members and learn more about some <a href=\"https:\/\/www.capel100.com\/timeline\" target=\"_blank\">Capel history<\/a> along the way.<\/p>"
+          }
+        },
+        "eff62377-cb23-46f3-9d26-983a878edff5": {
+          "type": "list",
+          "settings": {
+            "txt_image_1": "shopify:\/\/shop_images\/rug-info-thumbnail_360x_fdf6c1bc-0971-4e40-86f8-429eba0f42b6.webp",
+            "txt_link_1": "",
+            "txt_link_2": "",
+            "w_redirect": false,
+            "txt_title_text_1": "Rug Information",
+            "txt_text_1": "<p>Need help with rug care, cleaning, or sizing?  It's all right here.<\/p>"
+          }
+        },
+        "4ffc2a24-f2e9-4f60-bc77-d3d28dd60178": {
+          "type": "list",
+          "settings": {
+            "txt_image_1": "shopify:\/\/shop_images\/our-history-thumbnail_360x_d1b1090b-8f63-49aa-9acb-2dd63d3166f8.webp",
+            "txt_link_1": "",
+            "txt_link_2": "",
+            "w_redirect": false,
+            "txt_title_text_1": "Our History",
+            "txt_text_1": "<p>Over 100 years and counting.  Click to learn more about our rich <a href=\"http:\/\/www.capel100.com\" target=\"_blank\" title=\"http:\/\/www.capel100.com\">history<\/a>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7606572d-c461-4747-a6d1-2fbcfdae9d82",
+        "2b86bd73-c7af-4fa1-b706-3b4ac3236036",
+        "eff62377-cb23-46f3-9d26-983a878edff5",
+        "4ffc2a24-f2e9-4f60-bc77-d3d28dd60178"
+      ],
+      "settings": {
+        "txt_title": "...And More",
+        "txt_align_text": "center",
+        "custom_class": "and_more"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1655712914a54b050c",
+    "165571611178e62456",
+    "165583064245fff9dc",
+    "165571679081e478cf"
+  ]
+}

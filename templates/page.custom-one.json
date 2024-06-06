@@ -1,0 +1,67 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1653981190a0edf6b1": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cp1a.jpg",
+        "title": "",
+        "custom_class": "custom_image_overlay",
+        "content": "<p>An introduction into our world and what goes into your products<\/p>",
+        "show_image_overlay": true,
+        "color": "#ffffff"
+      }
+    },
+    "165398014708a4c3bf": {
+      "type": "rich-text",
+      "settings": {
+        "text_width": "narrow",
+        "title": "GET TO KNOW OUR TEAM",
+        "custom_class": "team_richtext",
+        "content": "<p>As our customers have come to love our fabulous rugs and quality service, you have requested more information about Capel and the people behind the rugs. Each month, we feature 2 team members from different departments whose talents help us create rugs that beautify your homes. We hope you enjoy getting to know us and some <a href=\"https:\/\/www.capel100.com\/timeline\" target=\"_blank\">Capel history<\/a> along the way.<\/p>",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "1653980414b511e868": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cp1b.jpg",
+        "image_position": "left",
+        "image_width": 50,
+        "custom_class": "custom_team",
+        "wrapp_in_container": false,
+        "title": "Chad",
+        "content": "<p><strong>Department: IT<\/strong><\/p><p><strong>How long have you worked at Capel?<\/strong><em> 11 years as a full-time employee, over 20 years total<\/em><\/p><p><strong>What role do you play in making rugs that beautify our customers’ homes?<\/strong> <em>I am the IT Director, so my role is to keep the systems running that allow us to track the inventory, sales, shipments, etc. of our rugs. I also manage our websites and other digital\/electronic channels.<\/em><\/p><p><strong>What do you enjoy doing when you are not at work?<\/strong><em> Playing golf and tennis; kayaking; spending time with my family and my church.<\/em><\/p><p><strong>What food could you not live without?<\/strong><em> That's a tough one...It would have to be either pizza or Mexican food.<\/em><\/p><p><strong>What is a favorite memory or funny story of working at Capel?<\/strong> <em>This wasn't funny at the time, but it's certainly a memory that will last forever. When I was still contracting with Capel I did an overnight conversion on site. My family came with. My daughter was playing in a spinning chair and accidentally fell out of the chair and gashed her head. We took her to McDonald's to help \"ease the pain.\" Who would've thought that some 15 years later she would be working with Capel.<\/em><\/p><p><strong>What is your favorite rug?<\/strong> <em>I love all the braids, but my favorite is probably the <\/em><a href=\"\/products\/american-legacy-prairie\" target=\"_blank\" title=\"American Legacy Prairie\"><span style=\"text-decoration:underline\"><em>American Legacy Prairie<\/em><\/span><\/a><em>. <\/em><\/p><p><strong>What do you enjoy most about working at Capel and being part of the Capel family? <\/strong><em>I really love the people and team that I work with directly. The people in the IT Department are great and thought I am not on site, we have a lot of fun and laughs together.<\/em><\/p>",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "16539803545e0c950d": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cp1c.jpg",
+        "image_position": "right",
+        "image_width": 50,
+        "custom_class": "custom_team",
+        "wrapp_in_container": false,
+        "title": "Brianna",
+        "content": "<p><strong>Department: <\/strong>Graphic Design<\/p><p><strong>How long have you worked at Capel?<\/strong> <em>I just graduated from Liberty University and started working full-time for Capel in January, but before that I worked with them as a remote private contractor, so almost 5 years total.<\/em><\/p><p><strong>What role do you play in making rugs that beautify our customers’ homes?<\/strong> <em>As a graphic designer, I help with everything from web design to product photography to print materials. I make sure that the beauty and quality of our rugs is communicated across all media.<\/em><\/p><p><strong>What do you enjoy doing when you are not at work?<\/strong> <em>I love spending time with family and friends, hosting game nights, and hanging out at coffee shops.<\/em><\/p><p><strong>Do you have any pets? <\/strong><em>Not right now, but I plan on adopting a Golden Retriever pup soon!<\/em><\/p><p><strong>What is your favorite rug?<\/strong> <em>I love so many of our rugs, especially the ones with unique textures. For that reason, my favorites would have to be <\/em><a href=\"\/products\/bear-creek-grey\" target=\"_blank\" title=\"Bear Creek Grey\"><span style=\"text-decoration:underline\"><em>Bear Creek Grey<\/em><\/span><\/a><em> and <\/em><a href=\"\/products\/dara-smoke\" title=\"Dara Smoke\"><span style=\"text-decoration:underline\"><em>Dara Smoke<\/em><\/span><\/a><em>.<\/em><\/p><p><strong>What do you enjoy most about working for Capel and being part of the Capel family?<\/strong><em> From my experience, everyone at Capel is extremely friendly and caring. I always feel supported.<\/em><\/p><p><strong>Do you have any family members that work at Capel Rugs?<\/strong><em> Yes, my dad is the IT Director.<\/em><\/p>",
+        "button_text": "",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1653981190a0edf6b1",
+    "165398014708a4c3bf",
+    "1653980414b511e868",
+    "16539803545e0c950d"
+  ]
+}

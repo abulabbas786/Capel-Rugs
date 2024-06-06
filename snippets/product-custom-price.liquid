@@ -1,0 +1,58 @@
+<style>
+    .color{
+        color: red;
+        font-weight: 700;
+    }
+</style>
+<div class="main-product-price">
+    <p><strong>{{ 'product.form.dimensions' | t }}</strong><span id="size-availabel">{{ selected_variant.metafields.global.SizeLimts }}</span></p>
+    <div class="product-for-other" {% if selected_variant.option1 != 'Round' and selected_variant.option2 == 'Custom' %}style="display: block;"{% else %}style="display: none;"{% endif %}>
+        <div class="row-data">
+            <div class="first_child_width">
+                <label>Width Inches</label>
+                <input type="number" value=0 name="WidInches" min=0  id="WidInch" >
+                <span id="wEror" class="color" title="Invalid Or Zero Dimensions, Please enter gretter than current"></span>
+<!--                 <span id="octagon-error" class="color" title="Invalid Or Zero Dimension, Please enter gretter than current"></span> -->
+            </div>
+            <div class="second_child_width">
+                <label>Length Inches</label>
+                <input type="number" value = 0 name="LenInches" min=0 id="LenInch">
+                <span id="lEror" class="color" title="Invalid Or Zero Dimensions, Please enter gretter than current"></span>
+            </div>
+            <div class="third_child_width">
+                <label>Square Feet</label>
+                <input style="margin-top:5px"id="SqFeetTot" type="text" name="sftotal" value=0 disabled>               
+            </div>
+            <div class="fourth_child_width">
+                <label>Your Price</label>
+                <input style="margin-top:5px" id="CustPriceTot" type="text" name="custpricetot" value=0 disabled>              
+            </div>
+        </div>
+        <span id="result" class="color"></span>
+        <span id="Both" class="color"></span>
+    </div>
+
+    <div class="product-for-round" {% if selected_variant.option1 == 'Round' and  selected_variant.option2 == 'Custom' %}style="display: block;"{% else %}style="display: none;"{% endif %}>
+      <div class="row-data">  
+            <div class="">
+                <label>Width Inches</label>
+                <input type="number" value = 0 name="WidInches2" min=0 max =11 id="WidInch2">
+                <span id="w2Eror" class="color" title="Invalid Or Zero Dimensions, Please enter gretter than current"></span>
+            </div>
+            <div class="">
+                <label>Square Feet</label>
+                <input style="margin-top:5px"id="SqFeetTotR" type="text" name="sftotalr" value=0 disabled>
+            </div>
+            <div class="">
+                <label>Your Price</label>
+                <input style="margin-top:5px" id="CustPriceTotR" type="text" name="custpricetotr" value=0 disabled>
+            </div>
+        </div>
+        <span id="result2" class="color"></span>
+    </div>
+    <div class="">
+        <button type="button" class="calculate-button">Calculate Sq. Ft.</button>
+      <button style="display:none;" type="button" class="calculate-button2">Calculate Sq. Ft.</button>
+    </div>
+</div>
+

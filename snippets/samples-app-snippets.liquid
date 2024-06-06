@@ -1,0 +1,46 @@
+<script id="samples-button-template" type="text/template">
+  <div class="product-samples-button-wrap">
+      {% assign product_tags = product.tags %}
+      {%  assign myimages = product.images | split: ", " %}
+     {% assign picname2 = '' %}
+      {% for member in myimages %}
+         {%  if member contains 'Swatch' %}
+           {%  assign picname = member |remove_first: ":filepath=>" %}
+           {%  assign picname3 = picname | remove: '"'  %}
+           {%  assign picname2 = picname3 |prepend: "https://cdn.shopify.com/s/files/1/0400/0199/4907/" %}
+             {% break %}
+         {% else %}
+           {% assign product_images = product.images %}
+           {% if product_images.size > 0 %}
+             {% for image in product_images %}
+               {%- assign last_image = image -%}
+             {% endfor %}
+           {% endif %}
+             {% assign picname2 =  last_image  %}
+ 
+         {%  endif %}
+      {% endfor %}
+    
+      <button type="button" class="product-samples-button" product-samples-button>
+          {% if product_tags contains 'ImportSwatch' %}
+              Request 5" x 5" Color Only Swatch (no pattern) $5.00
+          {% elsif product_tags contains 'HKImportSwatch' %}
+              Request 5" x 5" Color Only Swatch (no pattern) $7.50
+          {% else %}
+            Request 3.5" x 7" Swatch $4.00
+          {% endif %}
+      </button>
+      {% if product_tags contains 'ImportSwatch' or product_tags contains 'HKImportSwatch' %}
+          <img  style="padding-left: 20px" width="200" height="200"  src="{{ picname2 | prepend:'https://capelrugs.com/cdn/shop/'}}" alt="Swatch Type">
+      {%  endif %}
+  </div>
+</script>
+
+<script type="text/javascript">
+  window.ProductSample = window.ProductSample || {};
+  if(typeof ProductSample === 'undefined') {
+    var ProductSample = {};
+  };
+  ProductSample.excluded_properties = ["Sample (3.5 x 7 inch) of"];
+  {% comment %} ProductSample.included_properties = _[Swatch];{% endcomment %}
+</script>

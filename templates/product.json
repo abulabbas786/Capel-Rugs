@@ -1,0 +1,146 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_reviews_badge": false,
+            "show_share_buttons": true
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "color_mode": "color",
+            "show_quantity_selector": false,
+            "show_taxes_included": false,
+            "show_inventory_quantity": false,
+            "low_inventory_threshold": 0
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "display_mode": "view_more"
+          }
+        },
+        "4b305cbb-9a37-43b7-bb7f-f706fb8a3e0d": {
+          "type": "liquid",
+          "settings": {
+            "title": "Reviews",
+            "liquid": "<div id=\"stamped-main-widget\" class=\"stamped-main-widget\" data-product-id=\"{{ product.id }}\" data-name=\"{{ product.title | escape }}\" data-url=\"{{ shop.url }}{{ product.url }}\" data-image-url=\"{{ product.featured_image | product_img_url: \"large\" |replace: \" ? \", \" % 3F\" | replace: \"& \",\" % 26\"}}\" data-description=\"{{ product.description | escape }}\" data-product-sku=\"{{product.handle}}\" data-product-type=\"{{product.type}}\"> {{ product.metafields.stamped.reviews }} <\/div>",
+            "display_mode": "collapse"
+          }
+        },
+        "9947a88e-0dae-48dd-ac6c-7808b55b2180": {
+          "type": "liquid",
+          "settings": {
+            "title": "Product Details",
+            "liquid": "{% capture url %}\/collections\/{{ collection.handle }}{% endcapture %}\n<br\/>\n<b>Variant:<\/b> {{ product.selected_or_first_available_variant.title }}\n<br\/>\n<b>Product Type:<\/b> {{ product.type | link_to_type }}\n<br\/>\n<b>Collection:<\/b> {{ collection.title | link_to: url }}",
+            "display_mode": "collapse"
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "variant_selector",
+        "buy_buttons",
+        "description",
+        "4b305cbb-9a37-43b7-bb7f-f706fb8a3e0d",
+        "9947a88e-0dae-48dd-ac6c-7808b55b2180"
+      ],
+      "settings": {
+        "image_size": "small",
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "zoom_effect": "inside",
+        "carousel_effect": "fade"
+      }
+    },
+    "165397884304828cb0": {
+      "type": "recommendation-search",
+      "settings": {
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "show_quick_buy": false
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": false
+      }
+    },
+    "16551266361784c137": {
+      "type": "custom-size-guide",
+      "blocks": {
+        "532e13d5-974e-4add-8d13-f377dd3b8d30": {
+          "type": "image-data",
+          "settings": {
+            "tab_name": "Dining Room",
+            "image_1": "shopify:\/\/shop_images\/RectangleDiningSize1.webp",
+            "image_2": "shopify:\/\/shop_images\/RoundDiningSize2.webp",
+            "image_3": "shopify:\/\/shop_images\/RoundDiningSize3.webp",
+            "image_4": "shopify:\/\/shop_images\/RoundDiningSize1.webp",
+            "image_5": "shopify:\/\/shop_images\/RectangleDiningSize2.webp",
+            "image_6": "shopify:\/\/shop_images\/RectangleDiningSize3.webp"
+          }
+        },
+        "e1bfc122-a2b2-4973-a277-d9193bf30d56": {
+          "type": "image-data",
+          "settings": {
+            "tab_name": "Living Room",
+            "image_1": "shopify:\/\/shop_images\/OvalRoomSize1.webp",
+            "image_2": "shopify:\/\/shop_images\/OvalRoomSize2.webp",
+            "image_3": "shopify:\/\/shop_images\/OvalRoomSize3.webp",
+            "image_4": "shopify:\/\/shop_images\/RectangleRoomSize1.webp",
+            "image_5": "shopify:\/\/shop_images\/RectangleRoomSize2.webp",
+            "image_6": "shopify:\/\/shop_images\/RectangleRoomSize3.webp"
+          }
+        },
+        "58c55585-285e-499d-bf86-4128dd9a39c8": {
+          "type": "image-data",
+          "settings": {
+            "tab_name": "Bedroom",
+            "image_1": "shopify:\/\/shop_images\/BedroomSize1.webp",
+            "image_2": "shopify:\/\/shop_images\/BedroomSize2.webp",
+            "image_3": "shopify:\/\/shop_images\/BedroomSize3.webp"
+          }
+        }
+      },
+      "block_order": [
+        "532e13d5-974e-4add-8d13-f377dd3b8d30",
+        "e1bfc122-a2b2-4973-a277-d9193bf30d56",
+        "58c55585-285e-499d-bf86-4128dd9a39c8"
+      ],
+      "settings": {
+        "heading": "Rug Sizing Guide"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165397884304828cb0",
+    "product-recommendations",
+    "recently-viewed-products",
+    "16551266361784c137"
+  ]
+}

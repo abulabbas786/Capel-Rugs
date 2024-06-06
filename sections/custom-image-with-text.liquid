@@ -1,0 +1,291 @@
+<div class="custom_image_width_text_inner {% if section.settings.ic_image_side == "Right side" %} image_right {% endif %} {% if section.settings.ic_image_side == "Left side" %} image_left {% endif %} {% if section.settings.continer %}container {% endif %} {% if section.settings.ic_image_width == "33%" %} image_width_33 {% endif %} {% if section.settings.ic_image_width == "50%" %} image_width_50 {% endif %}">
+  <div class="inner"> 
+    {%- for block in section.blocks -%}
+    <div class="left">
+      <div class="left_inner">
+        {% if block.settings.heading1 != blank %}
+        <h3> {{ block.settings.heading1 }}</h3>
+        {% endif %}
+        {%- if block.settings.content1 != blank -%}
+        <p> {{ block.settings.content1 }}</p>
+        {%- endif -%}
+        {%- if block.settings.buttontext1 != blank -%}
+        <div class="actions">
+          <a href="{{ block.settings.collection1 }}" class="button">{{ block.settings.buttontext1 }}</a>
+        </div>
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="right">
+      <div class="images_items">
+        <div class="image-item-inner {% if block.settings.image2 != blank %} main-carousel owl-carousel owl-theme{% else %} single_image_wrappper {% endif %}">
+          {% if block.settings.image1 != blank %}
+          <div class="item carousel-cell">
+			
+            {%- capture supported_sizes -%}{%- render 'image-size', sizes: '100,200,300,400,500,600,700,800,900', image:  block.settings.image1  -%}{%- endcapture -%}
+            {%- assign image_url =  block.settings.image1  | img_url: '800x' | replace: '_1x1.', '_{width}x.' -%}
+
+            <img class="desktop-for lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{  block.settings.image1.alt | escape }}">
+            <noscript>
+              <img src="{{  block.settings.image1 | img_url: '800x' }}" alt="{{ collections.alt | escape }}">
+            </noscript>
+            
+          </div>
+          {% else %}
+          <div class="item carousel-cell">
+            {{ 'product-1' | placeholder_svg_tag }}
+          </div>
+          {% endif %}
+          {% if block.settings.image2 != blank %}
+          <div class="item carousel-cell">
+			{%- capture supported_sizes -%}{%- render 'image-size', sizes: '100,200,300,400,500,600,700,800,900', image:  block.settings.image2  -%}{%- endcapture -%}
+            {%- assign image_url =  block.settings.image2  | img_url: '800x' | replace: '_1x1.', '_{width}x.' -%}
+
+            <img class="desktop-for lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{  block.settings.image2.alt | escape }}">
+            <noscript>
+              <img src="{{  block.settings.image2 | img_url: '800x' }}" alt="{{ collections.alt | escape }}">
+            </noscript>
+          </div>
+          {% endif %}
+          {% if block.settings.image3 != blank %}
+          <div class="item carousel-cell">
+			{%- capture supported_sizes -%}{%- render 'image-size', sizes: '100,200,300,400,500,600,700,800,900', image:  block.settings.image3  -%}{%- endcapture -%}
+            {%- assign image_url =  block.settings.image3  | img_url: '800x' | replace: '_1x1.', '_{width}x.' -%}
+
+            <img class="desktop-for lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{  block.settings.image3.alt | escape }}">
+            <noscript>
+              <img src="{{  block.settings.image3 | img_url: '800x' }}" alt="{{ collections.alt | escape }}">
+            </noscript>
+            
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+<link rel="preload" as="style" href="{{ 'owl.carousel.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'owl.carousel.css' | asset_url }}">
+<script src="{{ 'owl.carousel.js' | asset_url }}" defer></script>
+<script>  
+  jQuery(document).ready(function(){
+    jQuery('.image-item-inner.main-carousel').owlCarousel({
+      items:1,
+      lazyLoad:true,
+      loop:true,
+      margin:10,
+      nav: true
+    });
+  });
+</script>
+<style>
+  .custom_image_width_text_inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .custom_image_width_text_inner .inner::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  .custom_image_width_text_inner .inner {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .custom_image_width_text_inner .inner .left, .custom_image_width_text_inner .inner .right {
+    margin-top: auto;
+    margin-bottom: auto;
+    float: left;
+    width: 50%;
+  }
+  .custom_image_width_text_inner .inner .right .images_items {
+    float: left;
+    width: 100%;
+  }
+  .custom_image_width_text_inner .inner .left {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .custom_image_width_text_inner .left h3 {
+    line-height: 1.2;
+  }
+  .custom_image_width_text_inner .left p {
+    margin-bottom: 32px;
+  }
+  .custom_image_width_text_inner .images_items .owl-nav > button {
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    transition: 0.3s all;
+    background-color: rgb(21, 9, 9);
+  }
+  .custom_image_width_text_inner .images_items .owl-nav > button.owl-prev {
+    left: 20px;
+  }
+  .custom_image_width_text_inner .images_items .owl-nav > button.owl-next {
+    right: 20px;
+  }
+  .custom_image_width_text_inner .images_items .owl-nav > button span {
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff;
+    height: auto;
+    display: block;
+  }
+  .custom_image_width_text_inner .inner .right .images_items .owl-dots {
+    display: none;
+  }
+  .custom_image_width_text_inner.image_width_33 .inner .right {
+    width: 33%;
+  }
+  .custom_image_width_text_inner.image_width_33 .inner .left {
+    width: calc(100% - 33%);
+  }
+  .custom_image_width_text_inner.image_width_50 .inner .right {
+    width: 50%;
+  }
+  .custom_image_width_text_inner.image_width_50 .inner .left {
+    width: calc(100% - 50%);
+  }
+
+  @media (min-width: 768px) {
+    .custom_image_width_text_inner.image_left .inner .left {
+      order: 2;
+    }
+    .custom_image_width_text_inner.image_left .inner .right {
+      order: 1;
+    }
+  }
+
+  @media (max-width: 740px) {
+    .custom_image_width_text_inner .inner .left, .custom_image_width_text_inner .inner .right {
+      float: none;
+      width: 100%;
+      flex: 0 0 100%;
+    }
+    .custom_image_width_text_inner .inner .left {
+      order: 2;
+      margin-top: 15px;
+      padding-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 25px;
+    }
+    .custom_image_width_text_inner .inner .right {
+      order: 1;
+    }
+    .custom_image_width_text_inner .left p {
+      margin-bottom: 15px;
+    }
+  }
+</style>
+{% schema %}
+  {
+    "name": "Custom Image with text",
+    "tag": "section",
+    "class": "Custom_image_text",
+	"max_blocks": 1,
+    "settings": [
+     	{
+          "type": "checkbox",
+          "id": "continer",
+          "label": "Enable container width",
+          "default": false
+        },
+		{
+          "type": "select",
+          "id": "ic_image_width",
+          "label": "Image width",
+          "default": "50%",
+          "options": [
+            {
+              "value":"33%",
+              "label":"33%"
+            },
+            {
+              "value":"50%",
+              "label":"50%"
+            }
+          ]
+        },
+		{
+          "type": "select",
+          "id": "ic_image_side",
+          "label": "Image Align",
+          "default": "Right side",
+          "options": [
+            {
+              "value":"Right side",
+              "label":"Right side"
+            },
+            {
+              "value":"Left side",
+              "label":"Left side"
+            }
+          ]
+        }
+    ],
+    "blocks": [
+		{
+         "name": "Image text item",
+         "type": "list",
+         "settings": [
+			   {
+             "type": "text",
+             "id": "heading1",
+             "label": "Heading",
+			     "default": "What is Lorem Ipsum?"
+           },
+		      {
+             "type": "richtext",
+             "id": "content1",
+             "label": "Content",
+			      "default": "<p>What is Lorem Ipsum?</p>"
+           },
+			    {
+             "type": "text",
+             "id": "buttontext1",
+             "label": "Button text"
+           },
+			{
+             "type": "url",
+             "id": "collection1",
+             "label": "Select collection to redirect"
+           },
+           {
+             "type": "image_picker",
+             "id": "image1",
+             "label": "Image 1"
+           },
+			{
+             "type": "image_picker",
+             "id": "image2",
+             "label": "Image 2"
+           },
+			{
+             "type": "image_picker",
+             "id": "image3",
+             "label": "Image 3"
+           }
+		 ]
+       } 
+    ],
+    "presets":[
+      {
+        "name":"Custom Image with text",
+        "category":"Block2"
+      }
+    ]
+  }
+{% endschema %}

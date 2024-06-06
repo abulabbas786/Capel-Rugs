@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_image": false,
+        "collapse_collection_description": false,
+        "collection_image_size": "small",
+        "products_per_row": "4",
+        "default_products_per_page": 24,
+        "default_view_layout": "grid",
+        "show_quick_buy": "list",
+        "show_quick_view": "list_grid",
+        "quick_links": "",
+        "quick_links_show_products_count": true,
+        "show_filters": false,
+        "show_filter_color_swatch": false,
+        "open_group_filters_mode": "all_closed"
+      }
+    },
+    "165528417314051dde": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/rug-styles_a2aaf1b4-e3f2-40de-b35b-50e6a8e270f5.jpg",
+        "title": "Shop by Construction",
+        "custom_class": "custom_image_overlay",
+        "content": "<p>Explore our multitude of luxurious textures!<\/p>",
+        "show_image_overlay": true,
+        "color": "#ffffff"
+      }
+    },
+    "16538955689de30460": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "e00540c1-7e10-4751-ad45-7ac76ff7e71e": {
+          "type": "shopify:\/\/apps\/searchanise-search-and-filter\/blocks\/app-block\/d8f24ada-02b1-458a-bbeb-5bf16d5c921e",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e00540c1-7e10-4751-ad45-7ac76ff7e71e"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1655356201018fc7f7": {
+      "type": "collection-custom-one",
+      "settings": {
+        "io_image": "shopify:\/\/shop_images\/braided-rugs_1080x_1.jpg",
+        "fc_collection": "braided-rugs",
+        "show_two_item": true,
+        "collection_img_position": false,
+        "custom_class": "custom_border"
+      }
+    },
+    "165535585781cc8a3b": {
+      "type": "collection-custom-one",
+      "settings": {
+        "io_image": "shopify:\/\/shop_images\/hand-knotted-rugs_1080x_f28e3e29-9289-448b-bf12-40c05548b2b4.jpg",
+        "fc_collection": "hand-knotted-rugs",
+        "show_two_item": false,
+        "collection_img_position": true,
+        "custom_class": "custom_border"
+      }
+    },
+    "1655452374a308b40d": {
+      "type": "collection-custom-one",
+      "settings": {
+        "io_image": "shopify:\/\/shop_images\/machine-woven-rugs_1080x_37e03c25-2edf-4d9a-baf3-317268ee2552.jpg",
+        "fc_collection": "machine-made-rugs",
+        "show_two_item": false,
+        "collection_img_position": false,
+        "custom_class": "custom_border"
+      }
+    },
+    "165545307924e89ee5": {
+      "type": "collection-custom-one",
+      "settings": {
+        "io_image": "shopify:\/\/shop_images\/hand-tufted-rugs_1080x_8a36aebd-b10b-40c8-b2d6-fabf41caab86.jpg",
+        "fc_collection": "hand-tufted-rugs",
+        "show_two_item": false,
+        "collection_img_position": true,
+        "custom_class": "custom_border"
+      }
+    },
+    "1655453172bd918d17": {
+      "type": "collection-custom-one",
+      "settings": {
+        "io_image": "shopify:\/\/shop_images\/flat-woven-rugs_1080x_24f150c2-39fb-42e1-ae16-76acaeb27882.jpg",
+        "fc_collection": "flat-woven-rugs",
+        "show_two_item": false,
+        "collection_img_position": false,
+        "custom_class": "custom_border"
+      }
+    },
+    "16554572385562c9e8": {
+      "type": "custom-collection-page",
+      "blocks": {
+        "8d7a11e8-33b5-4762-a794-c2ce3949c5e3": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "hand-loomed-rugs"
+          }
+        },
+        "a4e08138-402d-4153-91ef-e2eba30f7aca": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "indoor-outdoor-bases"
+          }
+        },
+        "843d8ec2-b5d8-4bb1-8836-eab4ddcffbbe": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "indoor-outdoor-bordered"
+          }
+        }
+      },
+      "block_order": [
+        "8d7a11e8-33b5-4762-a794-c2ce3949c5e3",
+        "a4e08138-402d-4153-91ef-e2eba30f7aca",
+        "843d8ec2-b5d8-4bb1-8836-eab4ddcffbbe"
+      ],
+      "settings": {
+        "sectionheading": "",
+        "item_count": 2
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165528417314051dde",
+    "16538955689de30460",
+    "1655356201018fc7f7",
+    "165535585781cc8a3b",
+    "1655452374a308b40d",
+    "165545307924e89ee5",
+    "1655453172bd918d17",
+    "16554572385562c9e8"
+  ]
+}

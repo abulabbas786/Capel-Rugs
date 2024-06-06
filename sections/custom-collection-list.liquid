@@ -1,0 +1,88 @@
+<div class="container">
+  	<div class="section_heading">
+      <h2 class="section_heading-text">{{section.settings.sectionheading}}</h2>
+  	</div>
+  	{%- assign products_per_row = section.settings.item_count | at_most: 6 -%}
+  	<div class="collection_inner items-in-row-{{products_per_row}}">
+	{%- for block in section.blocks -%}
+      <div class="collection_item">
+        <div class="collection_item-inner">
+          {% assign collections = block.settings.fc_collection %}
+            
+          {%- capture supported_sizes -%}{%- render 'image-size', sizes: '100,200,300,400,500,600,700,800,900', image: collections.image  -%}{%- endcapture -%}
+          {%- assign image_url = collections.image  | img_url: '300x' | replace: '_1x1.', '_{width}x.' -%}
+                     
+          <a href="{{ collections.url }}">
+              {% if collections.image %}
+				<img class="lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ collections.image .alt | escape }}">
+                    <noscript>
+                      <img src="{{ collections.image | img_url: '300x' }}" alt="{{ collections.alt | escape }}">
+                    </noscript>
+            
+            {%- else -%}
+            	{{ 'product-1' | placeholder_svg_tag }}
+              {% endif %}
+           </a>
+          <div class="collection-meta">
+            <h3>
+              {% if block.settings.heading != blank %}
+                    {{ block.settings.heading }}
+              {% else %}
+              		{{ collections.title }}
+              {% endif %}
+            </h3>
+          </div>
+          
+         </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Custom Collection list",
+    "tag": "section",
+    "class": "Custom_collection",
+    "settings": [
+      {
+        "type": "text",
+        "id": "sectionheading",
+        "label": "Section heading"
+      },
+	 {
+        "type": "range",
+        "id": "item_count",
+        "label": "Items to show",
+        "min": 2,
+        "max": 6,
+        "step": 1,
+        "default": 2
+    }
+    ],
+    "blocks": [
+		{
+         "name": "Collection item",
+         "type": "list",
+         "settings": [
+           {
+             "id": "fc_collection",
+             "type": "collection",
+             "label": "Collection"
+           },
+           {
+             "id": "heading",
+             "type": "text",
+             "label": "Heading",
+             "default":"Collection Name"
+           }
+         ]
+       } 
+    ],
+    "presets":[
+      {
+        "name":"Custom Collection list",
+        "category":"collection"
+      }
+    ]
+  }
+{% endschema %}

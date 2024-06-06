@@ -1,0 +1,366 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "165600217081a90d0b": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/outlet-banner_14b52335-ae44-4f33-a25e-1bffc99ad66a.jpg",
+        "title": "Over 100 Years Of Heritage In Every Rug",
+        "custom_class": "custom_image_overlay",
+        "content": "",
+        "show_image_overlay": false,
+        "color": "#ffffff"
+      }
+    },
+    "1655712914a54b050c": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Capel_Factory_0349.jpg",
+        "title": "WELCOME TO CAPEL",
+        "custom_class": "",
+        "content": "<p><strong>We are over 100 years strong.  A. Leon Capel started making rugs in 1917. We’ve been<br\/>growing his family business ever since. Explore the rich history that made Capel Rugs what it is today.<\/strong><\/p><p><a href=\"https:\/\/youtu.be\/EIS4lZiBQ84\" target=\"_blank\" title=\"https:\/\/youtu.be\/EIS4lZiBQ84\">Click here to watch our 100 years in the making <\/a><\/p>",
+        "show_image_overlay": true,
+        "color": "#ffffff"
+      }
+    },
+    "165600220406b75445": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "text_width": "regular",
+        "title": "WELCOME TO CAPEL",
+        "custom_id": "",
+        "custom_class": "about_us_rich_text",
+        "content": "<p>We are over 100 years strong.  A. Leon Capel started making rugs in 1917. We’ve been<br\/>growing his family business ever since. Explore the rich history that made Capel Rugs what it is today.<\/p>",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "16560582524eeb42f7": {
+      "type": "about_grid",
+      "blocks": {
+        "35f59726-1a4b-4fae-bcd6-87df32397e1a": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/our_story_image.jpg",
+            "c_name": "Our Story",
+            "c_description": "<p>Over 100 years of heritage in every rug. <\/p>",
+            "c_button_val": "READ ON",
+            "custom_url": "shopify:\/\/pages\/our-legacy"
+          }
+        },
+        "2f8651fd-8e7b-40b5-9c6e-d019728d7cfb": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Capel_Factory_0286_0329763f-3caa-4639-9938-b42ed644f975.jpg",
+            "c_name": "Our Craftsmanship",
+            "c_description": "<p>A collection of our videos and images featuring our craftsmanship from manufacturing to the finished product. <\/p>",
+            "c_button_val": "",
+            "custom_url": "shopify:\/\/pages\/our-stories"
+          }
+        },
+        "f069a7a0-768c-47ad-8800-0fd4ad971713": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a._leon_capel.jpg",
+            "c_name": "Our Timeline",
+            "c_description": "<p>Through the years, the Capel name has become synonymous with quality—in  North Carolina and beyond. Here’s a snapshot of our journey. <\/p>",
+            "c_button_val": "",
+            "custom_url": "shopify:\/\/blogs\/rug-blog\/company-timeline"
+          }
+        }
+      },
+      "block_order": [
+        "35f59726-1a4b-4fae-bcd6-87df32397e1a",
+        "2f8651fd-8e7b-40b5-9c6e-d019728d7cfb",
+        "f069a7a0-768c-47ad-8800-0fd4ad971713"
+      ],
+      "settings": {
+        "sectionheading": "Click the images below to explore the Capel legacy",
+        "custom_class": ""
+      }
+    },
+    "1656003039d3ccb813": {
+      "type": "custom-video-section",
+      "disabled": true,
+      "settings": {
+        "fv_display_wide": true,
+        "fv_no_bottom_margin": false,
+        "fv_heading": "100 Year Celebration",
+        "fv_video_url": "https:\/\/youtu.be\/EIS4lZiBQ84"
+      }
+    },
+    "1656003723a854a519": {
+      "type": "gallery",
+      "blocks": {
+        "0a825e56-d4fb-4218-a90c-0b75b49cb254": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/SKM_C36816112217320.jpg"
+          }
+        },
+        "4a01dc09-6c4a-45a4-b6dd-5f15b1152ace": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/SKM_C36816111515380.jpg"
+          }
+        },
+        "78f52229-b587-46f6-955f-950fe405bcd2": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/SKM_C36816112217330.jpg"
+          }
+        },
+        "8a17405d-d23a-4f71-87a1-48e3d67f6b1f": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "History",
+            "image_1": "shopify:\/\/shop_images\/Screen_Shot_2016-04-22_at_12.19.30_PM.jpg"
+          }
+        },
+        "cc811c9f-66a8-4131-90a4-81e9dbfe563b": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/SKM_C36816111515470.jpg"
+          }
+        },
+        "7537d206-b8fa-4dc5-b4b9-f2b4ef380404": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/SKM_C36816111515200.jpg"
+          }
+        },
+        "63792d26-ffe7-404c-a613-53edb1f225ab": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/SKM_C36816111515510.jpg"
+          }
+        },
+        "493283d0-952b-4918-86c8-9fdcc2e9d28c": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/cover_crop.jpg"
+          }
+        },
+        "458cfa97-3337-4281-b444-50af6089e611": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/Capel_Factory_0416.jpg"
+          }
+        },
+        "842a1e30-803c-418d-9e24-49dcd89a2b11": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/Capel_Factory_0286.jpg"
+          }
+        },
+        "2f91ed02-d16b-4567-8685-c6f9a31139fd": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/Screen_Shot_2016-04-22_at_12.16.57_PM_copy.png"
+          }
+        },
+        "2f90224d-a0e1-4c56-a21d-18cb1586324f": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/SKM_C36816112118220.jpg"
+          }
+        },
+        "2430e1ae-5cb3-47d2-8eeb-0a76b9755ab4": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/Screen_Shot_2016-04-22_at_12.20.37_PM_copy.png"
+          }
+        },
+        "b7aa602e-cf8b-4ec5-90ae-e959c51b3e04": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/SKM_C36816111515240.jpg"
+          }
+        },
+        "1f676eef-bb88-4413-9d85-2278ebfe0de6": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/2332_4740_Tangier_220_Seafoam_RS.jpg"
+          }
+        },
+        "7c73061c-c6ce-40e0-ab96-14c2adc463ea": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/SKM_C36816111515260.jpg"
+          }
+        },
+        "c68658e4-8af5-4d40-947e-287190d30d3f": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/SKM_C36816111515430.jpg"
+          }
+        },
+        "4578951c-bfa8-44b2-a7f6-a33771a7a5b9": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/1-IMG_7821.jpg"
+          }
+        },
+        "6191b563-17ff-46a1-a541-f8a065f21bad": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/2530_9249_Marthas-Vineyard-03_Cream-Blue_640_Cream-Blue_Chamois_RS.jpg"
+          }
+        },
+        "c3c3ea28-ce59-43fb-80fb-2899298d91d9": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/1-IMG_7820.jpg"
+          }
+        },
+        "e0fdaf7b-a58d-49fc-9ad8-9a21f8d18fb9": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/SKM_C36816112118070.jpg"
+          }
+        },
+        "4b526cd6-b216-49c8-b906-d359fb618935": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/Capel_Factory_0389.jpg"
+          }
+        },
+        "2237d663-ce09-47ca-b390-2475b83e332e": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/SKM_C36816112217390.jpg"
+          }
+        },
+        "e64f02f5-241c-48d3-bfce-fa4a42b28ce9": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/2292_Bengal_200-Sea-green_RS.jpg"
+          }
+        },
+        "868a54fa-157b-4d28-b5d3-7d4ba98b9a6a": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/1-MG_7818.jpg"
+          }
+        },
+        "352dcb42-9d1b-420f-a31c-d4d16553bdb0": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/1110_Chenille-Creations-0325_300-Lunar-Gray.jpg"
+          }
+        },
+        "3795e497-0925-4416-b566-2de445a75a70": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/2406_Barletta_7000_Wheat_RS.jpg"
+          }
+        },
+        "2da25ef9-ac60-415f-beb5-6590dd8bae30": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/2721_New-Homestead_0302_410_Vista_RS.jpg"
+          }
+        },
+        "814b555e-e1bd-4807-bcd3-c3d1e9b6e2c9": {
+          "type": "list",
+          "settings": {
+            "title": "",
+            "image_1": "shopify:\/\/shop_images\/1-IMG_7822.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "0a825e56-d4fb-4218-a90c-0b75b49cb254",
+        "4a01dc09-6c4a-45a4-b6dd-5f15b1152ace",
+        "78f52229-b587-46f6-955f-950fe405bcd2",
+        "8a17405d-d23a-4f71-87a1-48e3d67f6b1f",
+        "cc811c9f-66a8-4131-90a4-81e9dbfe563b",
+        "7537d206-b8fa-4dc5-b4b9-f2b4ef380404",
+        "63792d26-ffe7-404c-a613-53edb1f225ab",
+        "493283d0-952b-4918-86c8-9fdcc2e9d28c",
+        "458cfa97-3337-4281-b444-50af6089e611",
+        "842a1e30-803c-418d-9e24-49dcd89a2b11",
+        "2f91ed02-d16b-4567-8685-c6f9a31139fd",
+        "2f90224d-a0e1-4c56-a21d-18cb1586324f",
+        "2430e1ae-5cb3-47d2-8eeb-0a76b9755ab4",
+        "b7aa602e-cf8b-4ec5-90ae-e959c51b3e04",
+        "1f676eef-bb88-4413-9d85-2278ebfe0de6",
+        "7c73061c-c6ce-40e0-ab96-14c2adc463ea",
+        "c68658e4-8af5-4d40-947e-287190d30d3f",
+        "4578951c-bfa8-44b2-a7f6-a33771a7a5b9",
+        "6191b563-17ff-46a1-a541-f8a065f21bad",
+        "c3c3ea28-ce59-43fb-80fb-2899298d91d9",
+        "e0fdaf7b-a58d-49fc-9ad8-9a21f8d18fb9",
+        "4b526cd6-b216-49c8-b906-d359fb618935",
+        "2237d663-ce09-47ca-b390-2475b83e332e",
+        "e64f02f5-241c-48d3-bfce-fa4a42b28ce9",
+        "868a54fa-157b-4d28-b5d3-7d4ba98b9a6a",
+        "352dcb42-9d1b-420f-a31c-d4d16553bdb0",
+        "3795e497-0925-4416-b566-2de445a75a70",
+        "2da25ef9-ac60-415f-beb5-6590dd8bae30",
+        "814b555e-e1bd-4807-bcd3-c3d1e9b6e2c9"
+      ],
+      "settings": {
+        "sectionheading": "Collection of Historical Photos",
+        "item_count": 3,
+        "show_overlay": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165600217081a90d0b",
+    "1655712914a54b050c",
+    "165600220406b75445",
+    "16560582524eeb42f7",
+    "1656003039d3ccb813",
+    "1656003723a854a519"
+  ]
+}

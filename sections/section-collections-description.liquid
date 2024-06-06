@@ -1,0 +1,23 @@
+{% assign descriptions = collection.description | split: "<!-- split -->" %}
+{% assign short_desc = descriptions[0] %}
+{% assign long_desc = descriptions[1] %}
+<section data-section-id="{{ section.id }}" data-section-type="page">
+  <div class="container container--narrow-custom">
+<div class="lower-collection-description desktop-12 tablet-6 mobile-3">
+  <div class="rte">
+  {{ short_desc | remove: "[banner]" }}
+</div>
+</div>
+</div>
+</section>
+{% schema %}
+  {
+    "name": "Collection Description",
+    "settings": [],
+    "presets":[
+      {
+      "name":"Collection Description"
+        }
+     ]
+  }
+{% endschema %}

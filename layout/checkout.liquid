@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+
+   {% comment %} <style>
+      .product__description > span:last-child {
+      	display: none;
+      }
+      .product__description {
+      	display: grid;
+      	grid-template-columns: auto 1fr;
+      }
+      .product__description > * {
+      	grid-column: 1/3;
+      }
+      .product__description > .product__description__variant + span:not(.custom-size), .product__description > .product__description__variant + span.custom-size + span  {
+      	grid-column: 2/3;
+      	display: flex;
+      	align-items: center;
+      	padding-left: 10px;
+      }
+      .product__description > .product__description__variant + span:not(.custom-size) + span, .product__description > .product__description__variant + span.custom-size + span + span {
+      	grid-row: 3;
+      	grid-column: 1/2;
+      	height: 40px;
+      }
+      .product__description__variant {
+      	margin-bottom: 5px;
+      }
+      .product__description__property.custom-size {
+      	grid-row: 4;
+      }
+      .checkout_fabric.checkout__fabric_img {
+      	width: 40px;
+      	height: 40px;
+      	object-fit: cover;
+      }
+    </style> {% endcomment %}
+
+    <style>
+.product__image {
+	display: flex;
+}
+.product__description__property.order-summary__small-text.custom-size + span {
+	display: none;
+}
+      .product__description > :last-child {
+      	display: none;
+      }
+      .product {
+      	position: relative;
+      }
+      .product td {
+      	padding-top: 16px;
+      }
+      .checkout_fabric.checkout__fabric_img {
+      	position: absolute;
+      	width: 4rem;
+      	height: 4rem;
+      	left: 0;
+      	top: 0;
+      	z-index: 2;
+      	border-radius: 8px;
+      }
+      .product:not(:first-child) .checkout_fabric.checkout__fabric_img {
+        top: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    {{ skip_to_content_link }}
+
+    <header class="banner" data-header role="banner">
+      <div class="wrap">
+        {{ content_for_logo }}
+      </div>
+    </header>
+
+    {{ order_summary_toggle }}
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main">
+          <header class="main__header" role="banner">
+            {{ content_for_logo }}
+            {{ breadcrumb }}
+            {{ alternative_payment_methods }}
+          </header>
+          <main class="main__content" role="main">
+            {{ content_for_layout }}
+          </main>
+          <footer class="main__footer" role="contentinfo">
+            {{ content_for_footer }}
+          </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content">
+            {{ content_for_order_summary }}
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    {{ tracking_code }}
+  </body>
+</html>
+<script>
+  
+  const productDesc = document.querySelectorAll(".product__description");
+  productDesc.forEach( ele => {
+    const property = ele.querySelectorAll(".product__description__property");
+    const len = property.length;
+    if(len > 1 && len === 5){
+      property[1].classList.add("custom-size");
+    }
+  console.log(ele)
+    if(len > 1) {
+      const span = property[len - 2];
+      if(typeof span !== "undefined"){
+        if(span.firstElementChild) {
+          const anchor = span.firstElementChild.href;
+          span.innerHTML = "";
+          span.innerHTML = `<img class='checkout_fabric checkout__fabric_img' src='${anchor}' alt='Fabric' >`;
+        }
+        
+        if(span.firstElementChild === null) {
+          var anchor_a = property[len-2];
+          console.log(anchor_a.innerHTML)
+          var anchor_url = anchor_a.innerHTML;
+          let final_anchor = anchor_url.trim().split(':')[1];
+          
+          span.innerHTML = "";
+          span.innerHTML = `<img class='checkout_fabric checkout__fabric_img first' src='${final_anchor}' alt='Fabric' >`;
+        }
+      }
+    }
+  });
+
+  const thumbnail = document.querySelectorAll(".product__image > .product-thumbnail > .product-thumbnail__wrapper > img");
+  const desc = document.querySelectorAll(".product__description");
+
+  thumbnail.forEach( (ele, i) => {
+    if(desc[i].lastElementChild.innerHTML.includes("Base")){
+      const baseImage = desc[i].lastElementChild.innerHTML.trim().split("Base:")[1].trim();
+      localStorage.setItem("baseImage", baseImage);
+      if( typeof baseImage !== "undefined"){
+        thumbnail[i].src = baseImage;
+      }
+      else {
+        thumbnail[i].src = localStorage.getItem("baseImage");
+      }
+    }
+  })
+
+</script>

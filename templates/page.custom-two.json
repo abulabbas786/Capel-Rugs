@@ -1,0 +1,98 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1653981190a0edf6b1": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/colorful_afdf5482-6710-4456-ab0f-cd26d6f8b9ec.jpg",
+        "title": "Customer Service",
+        "custom_class": "custom_image_overlay",
+        "content": "<p>An introduction into our world and what goes into your products<\/p>",
+        "show_image_overlay": true,
+        "color": "#000000"
+      }
+    },
+    "16541679088cfdf425": {
+      "type": "rich-text",
+      "settings": {
+        "text_width": "narrow",
+        "title": "Contact Us by Phone or Mail",
+        "custom_id": "contact",
+        "custom_class": "csutom_richtext team_richtext",
+        "content": "<p>We are here for you and invite you to reach out to us anytime.  We have chat available here on our site M-F from 8 to 5pm EST.<\/p><p>We can also be reached by telephone at 1-800-334-3711 or fax us at 910-572-7042, or if you prefer you may correspond with us via mail at the address below.<\/p><p>Capel Incorporated<\/p><p>PO Box 826<\/p><p>831 North Main Street<\/p><p>Troy, NC 27371<\/p><p>And finally, you can also reach out to us through the contact form below.<\/p>",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "165416876169e191e4": {
+      "type": "contact-form",
+      "blocks": {
+        "6e24cd6d-4c5b-4978-a6e9-a4da234c4029": {
+          "type": "text",
+          "settings": {
+            "title": "Subject",
+            "use_long_text": false,
+            "is_required": false
+          }
+        },
+        "27435472-f530-44c1-b213-badaf568f1b5": {
+          "type": "text",
+          "settings": {
+            "title": "Company",
+            "use_long_text": false,
+            "is_required": false
+          }
+        },
+        "e5feea5c-0f09-474e-b146-417685b38e68": {
+          "type": "text",
+          "settings": {
+            "title": "Address",
+            "use_long_text": false,
+            "is_required": false
+          }
+        },
+        "36261886-9026-4c44-9fa5-5e3b36de7947": {
+          "type": "text",
+          "settings": {
+            "title": "Website Url",
+            "use_long_text": false,
+            "is_required": false
+          }
+        },
+        "e82a6181-b366-4c3f-a215-82c165cf63f7": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "is_required": false
+          }
+        }
+      },
+      "block_order": [
+        "6e24cd6d-4c5b-4978-a6e9-a4da234c4029",
+        "27435472-f530-44c1-b213-badaf568f1b5",
+        "e5feea5c-0f09-474e-b146-417685b38e68",
+        "36261886-9026-4c44-9fa5-5e3b36de7947",
+        "e82a6181-b366-4c3f-a215-82c165cf63f7"
+      ],
+      "settings": {
+        "form_heading": "Contact Us",
+        "custom_class": "Custom_contact_form",
+        "show_store_info": false,
+        "store_heading": "Find us",
+        "store_info": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1653981190a0edf6b1",
+    "16541679088cfdf425",
+    "165416876169e191e4"
+  ]
+}

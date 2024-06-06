@@ -1,0 +1,73 @@
+{%if template contains 'index'%}
+<style>
+  .herro_banner{
+    min-height : 600px; 
+  }
+  @media (max-width: 1150px) {
+    .herro_banner{
+      min-height : 400px; 
+    }
+  }   
+  @media (max-width: 740px) { 
+    .herro_banner{
+      min-height : 200px; 
+    }
+  }
+</style>
+{%endif%}
+<div class="herro_banner">
+  <div class="image_wrapp">
+    <a href="{{ section.settings.collection }}" title="">
+      
+      	{%- capture supported_sizes -%}{%- render 'image-size', sizes: '900,1200,1400,1600,1800,2000', image: section.settings.image  -%}{%- endcapture -%}
+            {%- assign image_url =  section.settings.image | img_url: '1800x' | replace: '_1x1.', '_{width}x.' -%}
+
+            <img class="lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ section.settings.image.alt | escape }}">
+            <noscript>
+              <img src="{{ section.settings.image  | img_url: '1800x' }}" alt="{{ collections.alt | escape }}">
+            </noscript>
+            
+      
+      	{%- capture supported_sizes -%}{%- render 'image-size', sizes: '100,200,300,400,500,600,700,800,900', image:  section.settings.image-mobile  -%}{%- endcapture -%}
+            {%- assign image_url =  section.settings.image-mobile  | img_url: '800x' | replace: '_1x1.', '_{width}x.' -%}
+
+            <img class="desktop-for lazyload image--fade-in mobile_view" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{   section.settings.image-mobile.alt | escape }}">
+            <noscript>
+              <img src="{{  section.settings.image-mobile | img_url: '800x' }}" alt="{{ collections.alt | escape }}">
+            </noscript>
+          
+          </a>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Custom Banner",
+    "tag": "section",
+    "class": "Custom_banner",
+    "settings": [ {
+      		"type": "image_picker",
+         	"id": "image",
+         	"label": "Image"
+		},
+		{
+      		"type": "image_picker",
+         	"id": "image-mobile",
+         	"label": "Mobile Image"
+		},
+		{
+            "type": "url",
+            "id": "collection",
+            "label": "Add collection"
+         }
+    ],
+    "blocks": [
+	
+       
+    ],
+    "presets":[
+      {
+        "name":"Custom Banner"
+      }
+    ]
+  }
+{% endschema %}

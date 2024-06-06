@@ -1,0 +1,589 @@
+
+{%- assign selected_variant = product.selected_or_first_available_variant -%}
+{%- assign product_form_id = 'product_form_' | append: section.id | append: product.id -%}
+{% capture 'upload_svg' %}
+<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M17.4147 9.50004C17.4147 9.29008 17.3313 9.08871 17.1828 8.94025C17.0344 8.79178 16.8331 8.70837 16.6231 8.70837C16.4132 8.70837 16.2118 8.79178 16.0634 8.94025C15.915 9.08871 15.8316 9.29008 15.8316 9.50004H17.4147ZM9.49904 3.16671C9.70897 3.16671 9.91031 3.0833 10.0588 2.93483C10.2072 2.78637 10.2906 2.585 10.2906 2.37504C10.2906 2.16508 10.2072 1.96371 10.0588 1.81525C9.91031 1.66678 9.70897 1.58337 9.49904 1.58337V3.16671ZM15.4358 15.8334H3.5623V17.4167H15.4358V15.8334ZM3.16652 15.4375V3.56254H1.58339V15.4375H3.16652ZM15.8316 9.50004V15.4375H17.4147V9.50004H15.8316ZM3.5623 3.16671H9.49904V1.58337H3.5623V3.16671ZM3.5623 15.8334C3.45734 15.8334 3.35667 15.7917 3.28244 15.7174C3.20822 15.6432 3.16652 15.5425 3.16652 15.4375H1.58339C1.58339 15.9624 1.79188 16.4659 2.163 16.837C2.53412 17.2082 3.03746 17.4167 3.5623 17.4167V15.8334ZM15.4358 17.4167C15.9606 17.4167 16.464 17.2082 16.8351 16.837C17.2062 16.4659 17.4147 15.9624 17.4147 15.4375H15.8316C15.8316 15.5425 15.7899 15.6432 15.7156 15.7174C15.6414 15.7917 15.5407 15.8334 15.4358 15.8334V17.4167ZM3.16652 3.56254C3.16652 3.45756 3.20822 3.35688 3.28244 3.28264C3.35667 3.20841 3.45734 3.16671 3.5623 3.16671V1.58337C3.03746 1.58337 2.53412 1.79189 2.163 2.16306C1.79188 2.53422 1.58339 3.03763 1.58339 3.56254H3.16652Z" fill="#333333"/>
+  <path d="M2.37506 13.8542L6.60771 9.97421C6.75037 9.84346 6.93599 9.76949 7.12948 9.76628C7.32297 9.76307 7.51093 9.83084 7.65785 9.95679L12.6667 14.25M11.0834 12.2708L12.9727 10.3815C13.1075 10.2467 13.2864 10.165 13.4765 10.1515C13.6667 10.1379 13.8553 10.1935 14.0078 10.3079L16.6251 12.2708M14.6459 7.125V2.375M12.6667 4.35417L14.6459 2.375L16.6251 4.35417" stroke="#333333" stroke-width="1.83" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+{% endcapture %}
+{% capture 'octagon' %}
+<svg width="32px" height="32px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <path d="M164.45081,228H91.54919a11.92111,11.92111,0,0,1-8.48535-3.51489L31.51465,172.936A11.92138,11.92138,0,0,1,28,164.45068V91.54932A11.92138,11.92138,0,0,1,31.51465,83.064L83.06384,31.51489A11.92111,11.92111,0,0,1,91.54919,28h72.90162a11.92111,11.92111,0,0,1,8.48535,3.51489L224.48535,83.064A11.92138,11.92138,0,0,1,228,91.54932v72.90136a11.92138,11.92138,0,0,1-3.51465,8.48536l-51.54919,51.54907A11.92111,11.92111,0,0,1,164.45081,228ZM91.54919,36a3.97317,3.97317,0,0,0-2.82836,1.17163L37.17151,88.7207A3.97415,3.97415,0,0,0,36,91.54932v72.90136a3.97415,3.97415,0,0,0,1.17151,2.82862l51.54932,51.54907A3.97317,3.97317,0,0,0,91.54919,220h72.90162a3.97317,3.97317,0,0,0,2.82836-1.17163l51.54932-51.54907A3.97415,3.97415,0,0,0,220,164.45068V91.54932a3.97415,3.97415,0,0,0-1.17151-2.82862L167.27917,37.17163A3.97317,3.97317,0,0,0,164.45081,36Z"/>
+</svg>
+{% endcapture %}
+{% capture 'rectangle' %}
+<svg width="40px" height="38px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="12" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="62" height="40"/>
+</svg>
+{% endcapture %}
+
+<div class="card {% if product.media.size > 0 %}card--collapsed{% endif %} {% if template.name == 'product' %}card--sticky{% endif %}">
+  {%- if section.settings.enable_image_zoom -%}
+    <div id="product-zoom-{{ section.id }}" class="product__zoom-wrapper"></div>
+  {%- endif -%}
+
+  <div class="card__section uniq_card" data-varient="{{selected_variant.id}}">
+    {%- form 'product', product, id: product_form_id, class: 'product-form' -%}
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'product_meta' -%}
+            {%- render 'product-meta', product: product, block: block -%}
+          {%- when 'variant_selector' -%}
+            {%- comment -%}------ Custom Variant code -----{%- endcomment -%}
+            {%- liquid
+              if section.settings.fabric_color
+                assign fabricColors = section.settings.fabric_color | split: ','
+              endif
+
+              if section.settings.fabric_solid
+                assign fabricSolids = section.settings.fabric_solid | split: ','
+              endif
+
+              if section.settings.fabric_stripes
+                assign fabricStripes = section.settings.fabric_stripes | split: ','
+              endif
+
+              if section.settings.fabric_patterns
+                assign fabricPatterns = section.settings.fabric_patterns | split: ','
+              endif
+
+              if section.settings.fabric_size
+                assign fabricSizes = section.settings.fabric_size | split: ','
+              endif
+            -%}
+
+            {% assign metafield_solid = product.metafields.custom.fabric_solid %}
+            {% assign metafield_pattern = product.metafields.custom.fabric_patterns %}
+            {% assign metafield_stripes = product.metafields.custom.fabric_stripes %}
+            {% assign metafield_specialOrder = product.metafields.custom.fabrics_special_order | split: ',' %}
+            <span style="display:none;" class="getAllSolid">{{ product.metafields.custom.fabric_solid | json }}</span>
+
+          
+            <input type="hidden" name="properties[Style]" id="BaseCodeName" value="Beach Sisal">
+            <input type="hidden" name="properties[Color]" id="FabricColorCode" value="Fortune Lava">
+            <input style="display:none;" id="skus" type="text" name="properties[SKU]" value="">
+            <input type="hidden" name="properties[Fabric Size]" id="fabric-size" value="{{ fabricSizes[0] }}">
+            <input
+              id="imageChange"
+              name="properties[Fabric]"
+              type="hidden"
+              value="{{ fabricPatterns[0] | append: 'C.png' | file_url }}"
+            >
+
+          {% comment %}Loading special oredr and instock images on page load to  {% endcomment %}
+          <div class="displayNoneImages" style="display:none">
+          {% for specialImg in metafield_specialOrder %}
+            <img width="100%" height="100%" 
+            src="{{ specialImg | remove:'_Square' | append: '.png' | strip | file_url }}" 
+            data-img="{{ specialImg }}" 
+            alt="Special OrderImg{{ forloop.index }}">
+            
+            <img width="100%" height="100%" 
+            src="{{ specialImg | remove:'IOC_Square' | append:'IOR' | append: '.png' | strip | file_url }}" 
+            data-img="{{ specialImg }}" 
+            alt="Special OrderImg{{ forloop.index }}">
+          {% endfor %}
+          </div>
+          
+            {%- for media in product.media limit: 1 -%}
+              {% if media.media_type == 'image' %}
+                <input type="hidden" name="properties[Base]" id="fabric-base" value="{{ media | img_url:'' }}">
+              {% endif %}
+            {% endfor %}
+
+            <div class="custom-variant variant--base">
+              <h4 style="font-weight: normal;">Choose Base</h4>
+
+              <div
+                class="custom-variant-select select--base"
+                data-first-base="{{ product.media[2] | split: 'products/' | last | split: '_' | last | split: '.' | first | replace: 'Base', '' }}"
+              >
+                {%- for media in product.media -%}
+                  {% assign mediaTitle = media | split: 'products/' | last | split: '.' | first %}
+
+                  {% assign is6 = false %}
+                  {% if mediaTitle contains '6x6' %}
+                    {% assign is6 = true %}
+                  {% endif %}
+
+                  {% if mediaTitle contains '15x15' %}
+                    {% assign idfor15 = media.id %}
+                    {% assign image15 = media | img_url: '' %}
+                  {% endif %}
+
+                  {% if mediaTitle contains '30x54' %}
+                    {% assign idfor30 = media.id %}
+                  {% endif %}
+
+                  {% if media.media_type == 'image' and is6 %}
+                    {% assign mediaTitleWithBase = mediaTitle | split: '_' | last %}
+                    {% assign mediaTitleWithoutBase = mediaTitle | split: '_' | last | replace: 'Base', '' %}
+
+                    <img
+                      {% if forloop.index == 3 %}
+                        class="active-fabric-base"
+                      {% endif %}
+                      title="{{ mediaTitleWithoutBase }}"
+                      src="{{ media | img_url: '' }}"
+                      alt=""
+                      loading="lazy"
+                      width="100"
+                      height="100"
+                      data-media-id="{{ idfor15 }}"
+                      data-media30-id="{{ idfor30 }}"
+                      data-image15-url="{{ image15 }}"
+                    >
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+
+            {% assign Imglimit = 3 %}
+            {% capture fabricPattern %}  
+              {% for pattern in fabricPatterns  %}
+                
+               
+                {% assign lessPattern = forloop.index %}
+                {% assign patternBorder = pattern | append: 'R' %}
+                {% assign patternCorner = pattern | append: 'C' %}
+                {% assign productType = pattern | split: "_" | last | split: "-" %}
+                {% assign patternProductType = productType | last %}
+                {% assign patternColor = pattern | split: "-" | first | split: '_' %}
+                {% assign patternColorName = patternColor | first %}
+                {% assign patternColorCode = patternColor | last | append: ' ' %}
+
+                {% comment %}Adding Test_ To the image name for rendering {% endcomment %}
+                {% assign FinalImageNameWithTest = patternCorner | append :'_Square' %}
+                
+                <img data-code="{{patternColorCode}}" data-style-number="{{ patternColorCode | append: patternColorName }}" 
+                data-product-type="{% if patternProductType == 'IO' %}Indoor/Outdoor{%  else %}Indoor{% endif %}" 
+                class="instock-fabric {% if forloop.index == 1 %} active-fabric {% endif %} "
+                title="{{ patternColorCode }}{{ '-' }}{{ pattern | split: '_' | first }}" 
+                  data-border-src="{{ patternBorder | append: '.png' | file_url  }}"  
+                  src="{{ FinalImageNameWithTest | append: '.png' | file_url }}" alt="{{ patternCorner }}" 
+                  data-corner-img="{{ pattern | remove:'Test' | append: 'C.png' | file_url}}"
+                loading="lazy" width="100" height="100" data-img-name="Pattern" />
+              {% endfor %}
+            {% endcapture %}
+
+            {% capture fabricSolid %}
+              {% for solid in fabricSolids  %}
+                {% assign lessSolid = forloop.index %}
+                {% assign solidBorder = solid | append: 'R' %}
+                {% assign solidCorner = solid | append: 'C' %}
+                {% assign productType = solid | split: "_" | last | split: "-" %}
+                {% assign solidProductType = productType | last %}
+                {% assign solidColor = solid | split: "-" | first | split: '_' %}
+                {% assign solidColorName = solidColor | first %}
+                {% assign solidColorCode = solidColor | last | append: ' ' %}
+                
+                {% comment %}Adding Test_ To the image name for rendering {% endcomment %}
+                {% assign imageNameWithTest = solidCorner | append :'_Square' %}
+      
+                <img class="instock-fabric" data-code="{{solidColorCode}}"  data-style-number="{{ solidColorCode | append: solidColorName }}" 
+                data-product-type="{% if solidProductType == 'IO' %}Indoor/Outdoor{%  else %}Indoor{% endif %}" 
+                title="{{ solidColorCode }}{{ '-' }}{{ solid | split: '_' | first }}" 
+                  data-border-src="{{ solidBorder | append: '.png' | file_url  }}" 
+                src="{{ imageNameWithTest | append: '.png' | file_url }}" alt="{{ solidCorner }}"
+                loading="lazy" width="100" height="100" data-img-name="Solid" />
+              {% endfor %}
+            {% endcapture %}
+
+            {% capture fabricStripe %}
+              {% for stripe in fabricStripes %}
+                {% assign lessStripe = forloop.index %}
+                {% assign stripeBorder = stripe | append: 'R' %}
+                {% assign stripeCorner = stripe | append: 'C' %}
+                {% assign productType = stripe | split: "_" | last | split: "-" %}
+                {% assign stripeProductType = productType | last %}
+                {% assign stripeColor = stripe | split: "-" | first | split: '_' %}
+                {% assign stripeColorName = stripeColor | first %}
+                {% assign stripeColorCode = stripeColor | last | append: ' ' %}
+
+                {% comment %}Adding Test_ To the image name for rendering {% endcomment %}
+                {% assign imageFabricNameWithTest = stripeCorner | append :'_Square' %}
+                
+                <img class="instock-fabric" data-code="{{stripeColorCode}}" 
+                data-style-number="{{ stripeColorCode | append: stripeColorName }}" 
+                data-product-type="{% if stripeProductType == 'IO' %}Indoor/Outdoor{%  else %}Indoor{% endif %}" 
+                title="{{ stripeColorCode }}{{ '-' }}{{ stripe | split: '_' | first }}" 
+                data-border-src="{{ stripeBorder | append: '.png' | file_url }}" 
+                src="{{ imageFabricNameWithTest | append: '.png' | file_url }}" alt="stripeBorder"
+                loading="lazy" width="100" height="100" data-img-name="Stripe" />
+              {% endfor %}
+            {% endcapture %}
+
+            <div class="fucntionality_change_button">
+          <div class="fucntionality_change_button__options">
+              <h4 style="font-weight: normal;margin: 0">Choose Fabric:</h4>
+            <div class="fucntionality_change_button__options--option">
+              <span class="activeBtn changeButton">In Stock</span>
+              <span class="changeButton">Special Order</span>
+            </div>
+          </div>
+              <div class="custom-variant-select--header">
+                <button class="view-all--fabric view--modal" type="button">View All</button>
+              </div>
+            </div>
+
+            {% comment %}For front view 9 pages {% endcomment %}
+
+            <div class="custom-variant variant--fabric inStockMain">
+              <div class="custom-variant-select select--fabric for-pattern {% if lessPattern < 10 %}less-than-9{% endif %}">
+                <div class="base-fabric--slider">
+                  {{ fabricPattern }}
+                  {{ fabricSolid }}
+                  {{ fabricStripe }}
+                </div>
+              </div>
+            </div>
+            <div class="specialOrderMain custom-variant" style="display:none;">
+              <div class="special_orderFabric select--fabric">
+                {% for special in metafield_specialOrder  %}
+                  {% assign fabric_spe = special | split:'_'%}
+                  {% assign fabric_spe_Name = fabric_spe[0] %}
+                  {% assign fabric_spe = fabric_spe[1] | split:'-' %}
+                  {% assign fabric_spec_code = fabric_spe[0] | append : '-' | append : fabric_spe[1]%}
+                  <img
+                    data-special-color="{{ special | strip |remove:'-IOC_Square'}}"
+                    class="special__order{% if forloop.index == 1 %} active-special {% endif %}"
+                    src="{{ special | strip | append: '.png' | file_url }}"
+                    data-border-src="{{ special| strip |remove:'-IOC_Square' | append: '-IOR' | append: '.png' | file_url }}"
+                    width="100"
+                    height="100"
+                    alt="Specia fabric image"
+                    style="cursor:pointer"
+                    title="{{ fabric_spec_code }}{{"-"}}{{ fabric_spe_Name }}"
+                  >
+                {% endfor %}
+              </div>
+            </div>
+            {%- render 'product-variant-selector', product: product, form: form, block: block -%}
+
+            <div class="custom-variant variant--size-shape">
+              {%- comment -%} <h4>Size & Shape</h4> {%- endcomment -%}
+
+              <h5 style="font-weight: normal;">{{- section.settings.fabric_size_label -}}</h5>
+              <div class="custom-variant-select select--size">
+                {% for size in fabricSizes %}
+                  <span
+                    {% if forloop.index == 1 %}
+                      class="active-fabric-size"
+                    {% endif %}
+                  >
+                    {{- size -}}
+                    <input value="{{- size -}}" title="{{ size | prepend: 'Size-' }}" type="button"
+                  ></span>
+                {% endfor %}
+              </div>
+            </div>
+
+            <div class="variantAvailability">
+              <p>
+                <strong>{{ 'product.form.date_available' | t }}</strong>
+                <span id="nextAvailability" > Make-To-Order (requires 2-3 week production time)</span>
+              </p>
+            </div>
+
+            <div class="product-pricing" id="product-custom-price">
+              {% render 'product-custom-price', selected_variant: selected_variant %}
+            </div>
+
+          {%- when 'buy_buttons' -%}
+            {%- render 'product-buy-buttons', product: product, form: form, block: block -%}
+
+          {%- when 'text' -%}
+            {%- if block.settings.content != blank -%}
+              <div class="product-meta__text rte" {{ block.shopify_attributes }}>
+                {{- block.settings.content -}}
+              </div>
+            {%- endif -%}
+
+          {%- when 'button' -%}
+            {%- if block.settings.text != blank -%}
+              <a
+                href="{{ block.settings.link }}"
+                class="product-meta__button button button--primary"
+                {{ block.shopify_attributes }}
+              >
+                {{- block.settings.text | escape -}}
+              </a>
+            {%- endif -%}
+
+          {%- when 'store_pickup' -%}
+            {%- comment -%}The availability container will be added automatically if there is store pickup available{%- endcomment -%}
+            <div class="product-meta__store-availability-container" {{ block.shopify_attributes }}>
+              {%- render 'store-availability', product_variant: product.selected_or_first_available_variant -%}
+            </div>
+
+          {%- when 'featured_description' -%}
+            {%- comment -%}This is only shown on the featured product section{%- endcomment -%}
+            {%- if product.description != blank -%}
+              <div class="product-meta__description rte" {{ block.shopify_attributes }}>
+                {{ product.description | remove: 'data-section-type="product"' }}
+              </div>
+            {%- endif -%}
+
+          {%- when '@app' -%}
+            {%- render block -%}
+        {%- endcase -%}
+      {%- endfor -%}
+    {%- endform -%}
+
+    {%- assign product_meta_block = section.blocks | where: 'type', 'product_meta' | first -%}
+    {%- if product_meta_block != blank and product_meta_block.settings.show_share_buttons -%}
+      <div class="product-meta__share-buttons">
+        <span class="text--strong">{{ 'product.general.share' | t }}</span>
+
+        {%- assign share_url = shop.url | append: product.url | url_param_escape -%}
+        {%- assign twitter_text = product.title | url_param_escape -%}
+        {%- assign pinterest_description = product.description | strip_html | truncatewords: 15 | url_param_escape -%}
+        {%- assign pinterest_image = product.featured_media | img_url: '1024x' | prepend: 'https:' -%}
+
+        <ul class="social-media__item-list list--unstyled" role="list">
+          <li class="social-media__item social-media__item--facebook">
+            <a
+              href="https://www.facebook.com/sharer.php?u={{ share_url }}"
+              target="_blank"
+              rel="noopener"
+              aria-label="{{ 'general.social.facebook_share' | t }}"
+            >
+              {%- render 'icon', icon: 'facebook' -%}
+            </a>
+          </li>
+
+          <li class="social-media__item social-media__item--pinterest">
+            <a
+              href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}"
+              target="_blank"
+              rel="noopener"
+              aria-label="{{ 'general.social.pinterest_pin' | t }}"
+            >
+              {%- render 'icon', icon: 'pinterest' -%}
+            </a>
+          </li>
+
+          <li class="social-media__item social-media__item--twitter">
+            <a
+              href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}"
+              target="_blank"
+              rel="noopener"
+              aria-label="{{ 'general.social.twitter_tweet' | t }}"
+            >
+              {%- render 'icon', icon: 'twitter' -%}
+            </a>
+          </li>
+
+          <li class="social-media__item">
+            <a
+              href="mailto:?&subject={{ product.title | escape }}&body={{ share_url }}"
+              aria-label="{{ 'general.social.email_share' | t }}"
+            >
+              {%- render 'icon', icon: 'email' -%}
+            </a>
+          </li>
+        </ul>
+      </div>
+    {%- endif -%}
+  </div>
+
+  {% comment %}
+    ------------------------------------------------------------------------------
+    Product Data. This must be outputted for all products (including home page).
+
+    IMPORTANT: THIS CODE IS VITAL. DO NOT EDIT IT NOR REMOVE IT. MAKE SURE TO KEEP
+    THE EXACT SAME ATTRIBUTES.
+    ------------------------------------------------------------------------------
+  {% endcomment %}
+
+  {%- assign variant_selector_block = section.blocks | where: 'type', 'variant_selector' | first -%}
+
+  <script type="application/json" data-product-json>
+    {
+      "product": {{ product | json }},
+      "options_with_values": {{ product.options_with_values | json }},
+      "selected_variant_id": {{ selected_variant.id }}
+      {%- if variant_selector_block.settings.show_inventory_quantity -%}
+        ,"inventories": {
+          {%- for variant in product.variants -%}
+            {%- if variant.available -%}
+              {%- if variant.inventory_management and variant.inventory_policy == 'deny' and variant_selector_block.settings.low_inventory_threshold > 0 -%}
+                {%- if variant.inventory_quantity <= variant_selector_block.settings.low_inventory_threshold -%}
+                  {%- capture inventory_message -%}{{ 'product.form.low_stock_with_quantity_count' | t: count: variant.inventory_quantity }}{%- endcapture -%}
+                {%- else -%}
+                  {%- capture inventory_message -%}{{ 'product.form.in_stock_with_quantity_count' | t: count: variant.inventory_quantity }}{%- endcapture -%}
+                {%- endif -%}
+              {%- else -%}
+                {%- if variant.inventory_policy == 'continue' and variant.inventory_quantity <= 0 and selected_variant.requires_shipping -%}
+                  {%- if variant.incoming -%}
+                    {%- capture next_incoming_date -%}{{ variant.next_incoming_date | date: format: 'date' }}{%- endcapture -%}
+                    {%- capture inventory_message -%}{{ 'product.form.incoming_stock' | t: next_incoming_date: next_incoming_date }}{%- endcapture -%}
+                  {%- else -%}
+                    {%- capture inventory_message -%}{{ 'product.form.oversell_stock' | t }}{%- endcapture -%}
+                  {%- endif -%}
+                {%- else %}
+                  {%- capture inventory_message -%}{{ 'product.form.in_stock' | t }}{%- endcapture -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- else -%}
+              {%- capture inventory_message -%}{{ 'product.form.sold_out' | t }}{%- endcapture -%}
+            {%- endif -%}
+
+            "{{ variant.id }}": {
+              "inventory_management": {{ variant.inventory_management | json }},
+              "inventory_policy": {{ variant.inventory_policy | json }},
+              "inventory_quantity": {{ variant.inventory_quantity | json }},
+              "inventory_message": {{ inventory_message | json }}
+            }{% unless forloop.last %},{% endunless %}
+          {%- endfor -%}
+        }
+      {%- endif -%}
+    }
+  </script>
+</div>
+
+{% comment %}For view all modal insides images all Loops  {% endcomment %}
+
+<div class="all-fabric--modal modal-popup">
+  <div class="all-fabric--wrapper wrapper-img" data-visible="">
+    <div class="all-fabric--header">
+      <h3 id="view_all_heading">In Stock Fabric Patterns</h3>
+      <button class="close--modal">Close</button>
+    </div>
+    <div class="all-fabric--images for-pattern select--fabric" data-img-name="pattern">
+      <div class="instock-modal">
+        {% for pattern in fabricPatterns %}
+          {% assign patternBorder = pattern | append: 'R' %}
+          {% assign patternCorner = pattern | append: 'C' %}
+          {% assign productType = pattern | split: '_' | last | split: '-' %}
+          {% assign patternProductType = productType | last %}
+          {% assign patternColor = pattern | split: '-' | first | split: '_' %}
+          {% assign patternColorName = patternColor | first %}
+          {% assign patternColorCode = patternColor | last | append: ' ' %}
+
+          {% comment %}Adding Test_ To the image name for rendering {% endcomment %}
+          {% assign FinalImageNameWithTest = patternCorner | append: '_Square' %}
+
+          <img
+            class="instock-fabric"
+            data-code="{{ patternColorCode }}"
+            data-style-number="{{ patternColorCode | append: patternColorName }}"
+            data-product-type="{% if patternProductType == 'IO' %}Indoor/Outdoor{%  else %}Indoor{% endif %}"
+            title="{{ patternColorCode }}{{ "-" }}{{ pattern | split: '_' | first }}"
+            data-border-src="{{ patternBorder | append: '.png' | file_url }}"
+            src="{{ FinalImageNameWithTest | append: '.png' | file_url }}"
+            alt=""
+            loading="lazy"
+            width="100"
+            height="100"
+          >
+        {% endfor %}
+
+        {% for solid in fabricSolids %}
+          {% assign solidBorder = solid | append: 'R' %}
+          {% assign solidCorner = solid | append: 'C' %}
+          {% assign productType = solid | split: '_' | last | split: '-' %}
+          {% assign solidProductType = productType | last %}
+          {% assign solidColor = solid | split: '-' | first | split: '_' %}
+          {% assign solidColorName = solidColor | first %}
+          {% assign solidColorCode = solidColor | last | append: ' ' %}
+
+          {% comment %}Adding Test_ To the image name for rendering {% endcomment %}
+          {% assign imageFabricNameWithTest = solidCorner | append: '_Square' %}
+          <img
+            class="instock-fabric"
+            data-code="{{ solidColorCode }}"
+            data-style-number="{{ solidColorCode | append: solidColorName }}"
+            data-product-type="{% if solidProductType == 'IO' %}Indoor/Outdoor{%  else %}Indoor{% endif %}"
+            title="{{ solidColorCode }}{{ "-" }}{{ solid | split: '_' | first }}"
+            data-border-src="{{ solidBorder | append: '.png' | file_url }}"
+            src="{{ imageFabricNameWithTest | append: '.png' | file_url }}"
+            alt=""
+            loading="lazy"
+            width="100"
+            height="100"
+          >
+        {% endfor %}
+
+        {% for stripe in fabricStripes %}
+          {% assign stripeBorder = stripe | append: 'R' %}
+          {% assign stripeCorner = stripe | append: 'C' %}
+          {% assign productType = stripe | split: '_' | last | split: '-' %}
+          {% assign stripeProductType = productType | last %}
+          {% assign stripeColor = stripe | split: '-' | first | split: '_' %}
+          {% assign stripeColorName = stripeColor | first %}
+          {% assign stripeColorCode = stripeColor | last | append: ' ' %}
+
+          {% comment %}Adding Test_ To the image name for rendering {% endcomment %}
+          {% assign imageFabricNameWithTest = stripeCorner | append: '_Square' %}
+
+          <img
+            class="instock-fabric"
+            data-code="{{ stripeColorCode }}"
+            data-style-number="{{ stripeColorCode | append: stripeColorName }}"
+            data-product-type="{% if stripeProductType == 'IO' %}Indoor/Outdoor{%  else %}Indoor{% endif %}"
+            title="{{ stripeColorCode }}{{ "-" }}{{ stripe | split: '_' | first }}"
+            data-border-src="{{ stripeBorder | append: '.png' | file_url }}"
+            stripeCorner
+            src="{{ imageFabricNameWithTest | append: '.png' | file_url }}"
+            alt=""
+            loading="lazy"
+            width="100"
+            height="100"
+          >
+        {% endfor %}
+      </div>
+      <div class="specialOder-modal special_orderFabric" style="display:none;">
+        {% for special in metafield_specialOrder %}
+          {% assign fabric_spe = special | split:'_'%}
+          {% assign fabric_spe_Name = fabric_spe[0] %}
+          {% assign fabric_spe = fabric_spe[1] | split:'-' %}
+          {% assign fabric_spec_code = fabric_spe[0] | append : '-' | append : fabric_spe[1]%}
+          <img
+            src="{{- special| strip | append: '.png' | file_url  -}}"
+            data-border-src="{{ special | strip |remove:'-IOC_Square' | append: '-IOR' | append: '.png' | file_url }}"
+            class="special__order"
+            width="100"
+            height="100"
+            alt="specialOrderImage"
+            title="{{ fabric_spec_code }}{{"-"}}{{ fabric_spe_Name }}"
+          >
+        {% endfor %}
+      </div>
+    </div>
+    {% comment %}
+      <div class="all-fabric--images for-solid select--fabric" data-img-name="solid">
+        {% for solid in fabricSolids %}
+          {% assign solidBorder = solid | append: 'R' %}
+          {% assign solidCorner = solid | append: 'C' %}
+          {% assign productType = solid | split: "_" | last | split: "-" %}
+                {% assign solidProductType = productType | last %}
+                {% assign solidColor = solid | split: "-" | first | split: '_' %}
+                {% assign solidColorName = solidColor | first %}
+                {% assign solidColorCode = solidColor | last | append: ' ' %}
+                <img  data-style-number="{{ solidColorCode | append: solidColorName }}"
+                  data-product-type="{% if solidProductType == 'IO' %}Indoor/Outdoor{%  else %}Indoor{% endif %}"
+                  title="{{ solidColorCode }}{{ "-" }}{{ solid | split: '_' | first }}" data-border-src="{{ solidBorder | append: '.png' | file_url }}" src="{{ solidCorner | append: '.png' | file_url }}" alt="" loading="lazy" width="100" height="100" />
+        {% endfor %}
+      </div>
+      <div class="all-fabric--images for-stripe select--fabric" data-img-name="stripe">
+        {% for stripe in fabricStripes %}
+          {% assign stripeBorder = stripe | append: 'R' %}
+          {% assign stripeCorner = stripe | append: 'C' %}
+          {% assign productType = stripe | split: "_" | last | split: "-" %}
+                {% assign stripeProductType = productType | last %}
+                {% assign stripeColor = stripe | split: "-" | first | split: '_' %}
+                {% assign stripeColorName = stripeColor | first %}
+                {% assign stripeColorCode = stripeColor | last | append: ' ' %}
+
+                <img data-style-number="{{ stripeColorCode | append: stripeColorName }}"
+                  data-product-type="{% if stripeProductType == 'IO' %}Indoor/Outdoor{%  else %}Indoor{% endif %}"
+                  title="{{ stripeColorCode }}{{ "-" }}{{ stripe | split: '_' | first }}"
+                  data-border-src="{{ stripeBorder | append: '.png' | file_url }}" stripeCorner src="{{ stripeCorner | append: '.png' | file_url }}"
+                  alt="" loading="lazy" width="100" height="100" />
+        {% endfor %}
+      </div>
+    {% endcomment %}
+  </div>
+</div>

@@ -1,0 +1,209 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "show_collection_image": true,
+        "collapse_collection_description": false,
+        "collection_image_size": "small",
+        "products_per_row": "4",
+        "default_products_per_page": 24,
+        "default_view_layout": "grid",
+        "show_quick_buy": "list",
+        "show_quick_view": "list_grid",
+        "quick_links": "",
+        "quick_links_show_products_count": true,
+        "show_filters": false,
+        "show_filter_color_swatch": false,
+        "open_group_filters_mode": "all_closed"
+      }
+    },
+    "165389714770de0d58": {
+      "type": "custom-collection-banner",
+      "disabled": true,
+      "blocks": {
+        "87401479-b8b3-43c4-abf0-7e10ec9778ea": {
+          "type": "image",
+          "settings": {
+            "collection_name": "Custom Braids",
+            "image": "shopify:\/\/shop_images\/custom-braids.webp"
+          }
+        },
+        "830fedde-c5a3-4e8a-9a75-844dd52fb723": {
+          "type": "image",
+          "settings": {
+            "collection_name": "Custom flat woven",
+            "image": "shopify:\/\/shop_images\/custom-flat-woven.webp"
+          }
+        },
+        "b3fd327d-40a4-4cb8-b2a1-240b7ed70147": {
+          "type": "image",
+          "settings": {
+            "collection_name": "custom handmade",
+            "image": "shopify:\/\/shop_images\/custom-handmade.webp"
+          }
+        }
+      },
+      "block_order": [
+        "87401479-b8b3-43c4-abf0-7e10ec9778ea",
+        "830fedde-c5a3-4e8a-9a75-844dd52fb723",
+        "b3fd327d-40a4-4cb8-b2a1-240b7ed70147"
+      ],
+      "settings": {
+      }
+    },
+    "16538955689de30460": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "e00540c1-7e10-4751-ad45-7ac76ff7e71e": {
+          "type": "shopify:\/\/apps\/smart-search-bar-filters\/blocks\/app-block\/d8f24ada-02b1-458a-bbeb-5bf16d5c921e",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e00540c1-7e10-4751-ad45-7ac76ff7e71e"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": false
+      }
+    },
+    "1655474857f865b186": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/colorstory_e2a25668-c7e2-462e-872b-106868ac959f.gif",
+        "title": "Shop by Color",
+        "custom_class": "custom_image_overlay",
+        "content": "<p>Find the perfect hue to match your home.<\/p>",
+        "show_image_overlay": false,
+        "color": "#ffffff"
+      }
+    },
+    "1655475243c607ea1e": {
+      "type": "collection-custom-one",
+      "settings": {
+        "fc_collection": "2023-pantone-color-of-the-year-inspired-rugs",
+        "show_two_item": false,
+        "collection_img_position": false,
+        "custom_class": ""
+      }
+    },
+    "165547530393092731": {
+      "type": "custom-collection-page",
+      "blocks": {
+        "bf0a8cbf-4f61-402e-a7e4-19f2a025f35a": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "blacks-greys"
+          }
+        },
+        "bcca2077-fc57-41cf-9511-e307f6c27800": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "fc_collection": "grey-rugs"
+          }
+        },
+        "bf073ac4-3087-4eb2-bb20-45f6ed0e630b": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "fc_collection": "red-terra-cotta-pink-rugs"
+          }
+        },
+        "c5bfabf1-24b8-4228-8cda-0acab603b399": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "brown-tan-rugs"
+          }
+        },
+        "653fe0e7-1f32-45a5-b633-88cbef9c9ef8": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "white-ivory-rugs"
+          }
+        },
+        "78145e81-b5a3-41f7-a8cd-6245c71737ba": {
+          "type": "list",
+          "disabled": true,
+          "settings": {
+            "fc_collection": "black-rugs"
+          }
+        },
+        "1af670e8-a7fc-443a-ad19-dd559d71bc78": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "green-rugs"
+          }
+        },
+        "d5682fa4-8fba-4733-aa00-a173ae406647": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "yellow-gold-rugs"
+          }
+        },
+        "c3613e89-ecad-4587-befb-2e931ec3ff82": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "blues"
+          }
+        },
+        "9ce88add-fd8d-4259-b127-be31888146a2": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "pinks"
+          }
+        },
+        "805282a8-b156-4b1d-a7ca-56b8dd19e311": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "blue-purple-rugs"
+          }
+        },
+        "6964daea-2e29-4aa9-b061-cd77b59deda7": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "multi-colored-rugs"
+          }
+        }
+      },
+      "block_order": [
+        "bf0a8cbf-4f61-402e-a7e4-19f2a025f35a",
+        "bcca2077-fc57-41cf-9511-e307f6c27800",
+        "bf073ac4-3087-4eb2-bb20-45f6ed0e630b",
+        "c5bfabf1-24b8-4228-8cda-0acab603b399",
+        "653fe0e7-1f32-45a5-b633-88cbef9c9ef8",
+        "78145e81-b5a3-41f7-a8cd-6245c71737ba",
+        "1af670e8-a7fc-443a-ad19-dd559d71bc78",
+        "d5682fa4-8fba-4733-aa00-a173ae406647",
+        "c3613e89-ecad-4587-befb-2e931ec3ff82",
+        "9ce88add-fd8d-4259-b127-be31888146a2",
+        "805282a8-b156-4b1d-a7ca-56b8dd19e311",
+        "6964daea-2e29-4aa9-b061-cd77b59deda7"
+      ],
+      "settings": {
+        "sectionheading": "",
+        "item_count": 3
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165389714770de0d58",
+    "16538955689de30460",
+    "recently-viewed-products",
+    "1655474857f865b186",
+    "1655475243c607ea1e",
+    "165547530393092731"
+  ]
+}

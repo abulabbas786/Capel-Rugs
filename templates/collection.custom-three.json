@@ -1,0 +1,187 @@
+{
+  "sections": {
+    "165528541222d2917a": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/blues_-_style.jpg",
+        "title": "Shop by Style",
+        "custom_class": "custom_image_overlay",
+        "content": "<p>We have a style to match yours!<\/p>",
+        "show_image_overlay": false,
+        "color": "#ffffff"
+      }
+    },
+    "16538955689de30460": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "e00540c1-7e10-4751-ad45-7ac76ff7e71e": {
+          "type": "shopify:\/\/apps\/smart-search-bar-filters\/blocks\/app-block\/d8f24ada-02b1-458a-bbeb-5bf16d5c921e",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e00540c1-7e10-4751-ad45-7ac76ff7e71e"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": false
+      }
+    },
+    "1655470127249ee82e": {
+      "type": "collection-custom-one",
+      "settings": {
+        "io_image": "shopify:\/\/shop_images\/braided-collection.jpg",
+        "fc_collection": "braided-rugs",
+        "show_two_item": false,
+        "collection_img_position": false,
+        "custom_class": ""
+      }
+    },
+    "1655470552c507a695": {
+      "type": "collection-custom-one",
+      "settings": {
+        "fc_collection": "transitional-rugs",
+        "show_two_item": false,
+        "collection_img_position": true,
+        "custom_class": ""
+      }
+    },
+    "16554705698364f57d": {
+      "type": "collection-custom-one",
+      "settings": {
+        "fc_collection": "traditional-oriental-persian-rugs",
+        "show_two_item": false,
+        "collection_img_position": false,
+        "custom_class": ""
+      }
+    },
+    "165547057964c4fa92": {
+      "type": "collection-custom-one",
+      "settings": {
+        "io_image": "shopify:\/\/shop_images\/Zenith_Fossil_Harbor_room_shot_square.jpg",
+        "fc_collection": "contemporary-rugs",
+        "show_two_item": false,
+        "collection_img_position": true,
+        "custom_class": ""
+      }
+    },
+    "1655470765165b590e": {
+      "type": "custom-collection-page",
+      "blocks": {
+        "04c1b473-2565-4309-b6e5-c44a99c49f62": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "mid-century-modern"
+          }
+        },
+        "514048ff-ea37-4108-ad40-339ff53e1757": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "farmhouse-rugs"
+          }
+        },
+        "9630aa4d-461a-4226-a147-6064e5ba3f20": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "coastal-rugs"
+          }
+        },
+        "a654bcbb-c640-457e-81cf-7acdb4b5bb74": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "moroccan-shag-rugs"
+          }
+        },
+        "4b8c63b5-4980-49a6-af9c-798509ec665d": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "country-rugs"
+          }
+        },
+        "91cd48f9-f339-499d-84bb-587e142efbe7": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "lodge-southwest-rugs"
+          }
+        },
+        "6f47ddfa-ac52-418c-95ca-a55476e68aeb": {
+          "type": "list",
+          "settings": {
+            "fc_collection": "bordered-rugs"
+          }
+        }
+      },
+      "block_order": [
+        "04c1b473-2565-4309-b6e5-c44a99c49f62",
+        "514048ff-ea37-4108-ad40-339ff53e1757",
+        "9630aa4d-461a-4226-a147-6064e5ba3f20",
+        "a654bcbb-c640-457e-81cf-7acdb4b5bb74",
+        "4b8c63b5-4980-49a6-af9c-798509ec665d",
+        "91cd48f9-f339-499d-84bb-587e142efbe7",
+        "6f47ddfa-ac52-418c-95ca-a55476e68aeb"
+      ],
+      "settings": {
+        "sectionheading": "",
+        "item_count": 2
+      }
+    },
+    "1655471076d9d49e8e": {
+      "type": "collection-custom-one",
+      "settings": {
+        "fc_collection": "outdoor-rugs",
+        "show_two_item": false,
+        "collection_img_position": false,
+        "custom_class": ""
+      }
+    },
+    "1655471111a5810ca0": {
+      "type": "collection-custom-one",
+      "settings": {
+        "fc_collection": "kids-rugs",
+        "show_two_item": false,
+        "collection_img_position": true,
+        "custom_class": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_image": true,
+        "collapse_collection_description": false,
+        "collection_image_size": "small",
+        "products_per_row": "4",
+        "default_products_per_page": 24,
+        "default_view_layout": "grid",
+        "show_quick_buy": "list",
+        "show_quick_view": "list_grid",
+        "quick_links": "",
+        "quick_links_show_products_count": true,
+        "show_filters": false,
+        "show_filter_color_swatch": false,
+        "open_group_filters_mode": "all_closed"
+      }
+    }
+  },
+  "order": [
+    "165528541222d2917a",
+    "16538955689de30460",
+    "recently-viewed-products",
+    "1655470127249ee82e",
+    "1655470552c507a695",
+    "16554705698364f57d",
+    "165547057964c4fa92",
+    "1655470765165b590e",
+    "1655471076d9d49e8e",
+    "1655471111a5810ca0",
+    "main"
+  ]
+}

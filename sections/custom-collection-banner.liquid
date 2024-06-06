@@ -1,0 +1,56 @@
+<style>
+.custom-collection_banner {
+  margin-top: 35px;
+}
+.custom-collection_banner .collection__title {
+  text-transform: capitalize;
+}
+</style>
+{% assign collectionName = collection.title | downcase %}
+<div class="custom-collection_banner container">
+    {% for block in section.blocks %}
+    {% assign collectionBlockName = block.settings.collection_name | downcase %}
+    {% if collectionName == collectionBlockName %}
+    <div class="image_wrapp">
+        {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | img_url : 'master' }}" srcset="{{ block.settings.image | img_url : '' }}" alt="{{ block.settings.image.alt | escape }}" height="" width="" />
+        {% endif %}
+    </div>
+    {% endif %}
+    {% endfor %}
+    <h1 class="collection__title heading h1">{{ collectionName }}</h1>
+  </div>
+  {% schema %}
+    {
+      "name": "Custom Banner",
+      "class": "custom_collection_banner",
+      "blocks": [
+          {
+              "type": "image",
+              "name": "Image",
+              "settings": [
+              {
+                  "type": "text",
+                  "id": "collection_name",
+                  "label": "Collection Name",
+                  "info": "Write collection name for showing banner image"
+              },
+              {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+              }
+            ]
+          }
+      ],
+      "presets":[
+        {
+          "name":"Custom Collection Banner"
+        }
+      ],
+      "templates": [
+        "collection"
+      ]
+    }
+  {% endschema %}
+  

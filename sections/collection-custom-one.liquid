@@ -1,0 +1,107 @@
+<div class="collection-template {{ section.settings.custom_class }}" data-section-id="{{ section.id }}" data-section-type="collection-section">
+  
+  <div class="container">
+    <div class="collection_item_wrapper {% if section.settings.collection_img_position %} image_in_right {% endif %}">
+      <div class="collection_item image_wrapper">
+        {% assign collection = section.settings.fc_collection %}
+        
+   {%- capture image -%}
+        {%- if section.settings.fc_collection != blank -%}
+    
+            {%- capture supported_sizes -%}{%- render 'image-size', sizes: '300,400,500,600,700,800,900,1000,1100,1200', image: section.settings.image -%}{%- endcapture -%}
+            {%- assign image_url = collection.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+            <img class="lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ section.settings.image.alt | escape }}">
+
+            <noscript>
+              <img src="{{ collection.image | img_url: '800x' }}" alt="{{ collection.image.alt | escape }}">
+            </noscript>
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+    {%- endcapture -%}
+     
+        {% if section.settings.fc_collection != blank %}
+        <a href="{{ collection.url }}" class="inner">
+          <div class="collection_caption">
+            <h3>{{ collection.title }}</h3>
+          </div>
+          {{ image }}
+
+          </a>
+        {% else %}
+         <a href="{{ collection.url }}" class="inner">
+          <div class="collection_caption">
+            <h3>{{ 'Collection title' }}</h3>
+          </div>
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          </a>
+        {% endif %}
+
+      </div>
+      <div class="collection_item">
+        {% if section.settings.fc_collection != blank %}
+
+        {% assign collection = section.settings.fc_collection %}
+         {% for product in collection.products limit: 2  %}
+            <div class="product-index desktop-3 tablet-3 mobile-half" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}">
+                {% render 'custom-product-grid-item', product: product %}
+            </div>
+          {% endfor %}
+
+        {% if section.settings.show_two_item %}
+         {% for product in collection.products limit: 2 offset: 2  %}
+             <div class="product-index desktop-3 tablet-3 mobile-half" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}">
+                {% render 'custom-product-grid-item', product: product %}
+             </div>
+           {% endfor %}
+        {% endif %}
+
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+ 
+</div>
+{% schema %}
+  {
+    "name": "Custom Collections",
+
+    "settings":[
+       {
+             "type": "image_picker",
+             "id": "io_image",
+             "label": "Image"
+       },
+       {
+           "id": "fc_collection",
+           "type": "collection",
+           "label": "Collection"
+         },
+        {
+           "type": "checkbox",
+           "label": "Show Only 2 Item",
+           "id": "show_two_item",
+           "default": false
+         },
+		 {
+           "type": "checkbox",
+           "label": "Collection image in right?",
+           "id": "collection_img_position",
+           "default": false
+         },
+		 {
+           "id": "custom_class",
+           "type": "text",
+           "label": "Custom class"
+         }
+      ],
+      "presets": [
+      {
+        "category": "Collection",
+        "name": "Custom Collections"
+      }
+    ]
+  }
+{% endschema %}

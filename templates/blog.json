@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "165580258279e1648a": {
+      "type": "custom_banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/100Years.webp",
+        "collection": ""
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "articles_per_page": 12,
+        "highlight_first_article": false,
+        "show_tags": false,
+        "show_category": true,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpt": true
+      }
+    }
+  },
+  "order": [
+    "165580258279e1648a",
+    "main"
+  ]
+}

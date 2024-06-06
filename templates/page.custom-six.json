@@ -1,0 +1,195 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1653981190a0edf6b1": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/spring_fling_2.jpg",
+        "title": "",
+        "custom_class": "custom_image_overlay",
+        "content": "",
+        "show_image_overlay": true,
+        "color": "#ffffff"
+      }
+    },
+    "165462346761bf9f0c": {
+      "type": "two-col-in-row",
+      "blocks": {
+        "e5ddce98-08e5-49ff-bb1f-085e40151906": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/capel_anywhere_captiva_and_retreat_logo.jpg",
+            "c_name": "",
+            "collection": ""
+          }
+        },
+        "68626842-663f-4086-8aca-4624e10b84e0": {
+          "type": "list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/indy--landing-page-gif.gif",
+            "c_name": "",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "e5ddce98-08e5-49ff-bb1f-085e40151906",
+        "68626842-663f-4086-8aca-4624e10b84e0"
+      ],
+      "settings": {
+        "sectionheading": ""
+      }
+    },
+    "165462262478092cb9": {
+      "type": "custom-collection",
+      "blocks": {
+        "41fa113b-67ee-4a11-a5fb-825fcb922717": {
+          "type": "list",
+          "settings": {
+            "video": "",
+            "image": "shopify:\/\/shop_images\/color-story-gif.gif",
+            "c_name": "SELECTION",
+            "c_description": "<p>The latest designer looks, contemporary, casual classics, indoor\/outdoor, custom rugs and more. <strong>Over 10,000 rugs!<\/strong> The largest selection of rugs in Indy. <\/p>",
+            "c_button_val": "",
+            "collection": ""
+          }
+        },
+        "f3dcd5ad-44ab-470b-917a-e76d81b22711": {
+          "type": "list",
+          "settings": {
+            "video": "",
+            "image": "shopify:\/\/shop_images\/Clearance_items.jpg",
+            "c_name": "SAVINGS",
+            "c_description": "<p><strong>Unbeatable savings! <\/strong>As a Direct importer and manufacturer we offer special deals others just can't match! Clearance items up to 70% OFF! <\/p>",
+            "c_button_val": "",
+            "collection": ""
+          }
+        },
+        "28179def-336f-4bdc-b1f1-c201ebfa5d74": {
+          "type": "list",
+          "settings": {
+            "video": "https:\/\/youtu.be\/HgAG-vaSWOM",
+            "image": "shopify:\/\/shop_images\/indy-store-interior_540x_1a93fa06-d8cc-4281-a63f-b542de993f54.png",
+            "c_name": "SHOPPING & SATISFACTION",
+            "c_description": "<p>Our rugs are hung on swinging arm racks so it is <strong>EASY to browse <\/strong>and when you are ready, Sally and Zan have over 40 years of combined rug experience to help you find the perfect rug. <\/p>",
+            "c_button_val": "",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "41fa113b-67ee-4a11-a5fb-825fcb922717",
+        "f3dcd5ad-44ab-470b-917a-e76d81b22711",
+        "28179def-336f-4bdc-b1f1-c201ebfa5d74"
+      ],
+      "settings": {
+        "sectionheading": "The Indy Experience"
+      }
+    },
+    "1654593422a12e3285": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "78e2ff38-1153-48f5-b615-5594885207ac": {
+          "type": "list",
+          "settings": {
+            "heading1": "Indy's #1 Destination for Rugs",
+            "content1": "",
+            "buttontext1": "",
+            "collection1": "",
+            "image1": "shopify:\/\/shop_images\/open-sensibly_540x_6dca02d8-bbe3-4d4d-8e31-d186d4e5c0d6.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "78e2ff38-1153-48f5-b615-5594885207ac"
+      ],
+      "disabled": true,
+      "settings": {
+        "continer": true,
+        "ic_image_width": "33%",
+        "ic_image_side": "Left side"
+      }
+    },
+    "1654245879506cb7cb": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "b31fa9dd-617c-428d-810a-c7083a1855b6": {
+          "type": "list",
+          "settings": {
+            "heading1": "The Indy experience.",
+            "content1": "<p><strong>Selection: <\/strong>The latest designer looks, contemporary, casual classics, indoor\/outdoor, custom rugs and more. Over 10,000 rugs! Then largest selection of rugs in Indy. <\/p><p><strong>Unbeatable savings: <\/strong>Direct importer and manufacturer offering special deals others just can't match! <\/p><p><strong>Fun Shopping Experience: <\/strong>Rugs are hung on swinging arm racks so it is easy to browse and when you are ready, Sally and Zan have over 40 years of combined rug experience to help you find the perfect rug. <\/p><p><strong>Satisfaction Guaranteed: <\/strong>30 day unconditional money back guarantee. We like happy customers! <\/p>",
+            "buttontext1": "",
+            "collection1": "",
+            "image1": "shopify:\/\/shop_images\/indy-store-interior_540x_1a93fa06-d8cc-4281-a63f-b542de993f54.png",
+            "image2": "shopify:\/\/shop_images\/indy-store-exterior-2_540x_6038857f-731b-4c96-a339-f76738bd749b.png"
+          }
+        }
+      },
+      "block_order": [
+        "b31fa9dd-617c-428d-810a-c7083a1855b6"
+      ],
+      "disabled": true,
+      "settings": {
+        "continer": true,
+        "ic_image_width": "33%",
+        "ic_image_side": "Right side"
+      }
+    },
+    "16548791074ad480f8": {
+      "type": "custom-video-section",
+      "disabled": true,
+      "settings": {
+        "fv_display_wide": true,
+        "fv_no_bottom_margin": true,
+        "fv_heading": "Indy Store Tour",
+        "fv_video_url": "https:\/\/youtu.be\/HgAG-vaSWOM"
+      }
+    },
+    "1655487709597f4bfc": {
+      "type": "custom-map",
+      "settings": {
+        "heading": "Visit Us",
+        "heading_color": "#000000",
+        "hours_heading": "Our Hours",
+        "hours": "<p>Tues – Fri, 10AM - 6PM<br\/>Saturday, 10AM - 5PM<br\/>Sunday & Monday Closed<\/p><p><a href=\"tel:+1-317-813-7847\" title=\"Call Us\">(317) 813-7847<\/a><\/p>",
+        "address_heading": "Our Location",
+        "map_address": "8603 Allisonville Rd, Indianapolis, IN 46250",
+        "button_text": "Get directions",
+        "text_position": "text_right",
+        "background_color": "#f7f7f7",
+        "api_key": "",
+        "background_image": "shopify:\/\/shop_images\/indy-store-exterior_2ef1a933-50ef-4ab5-8d3a-0486e4dc8457.png",
+        "background_image_position": "center center"
+      }
+    },
+    "1654246074a9d9ccd7": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-2_7a227807-d5e1-42eb-bd7c-f177fe570b98.jpg",
+        "title": "SAVE BIG ON RUGS AT OUR FLAGSHIP STORE!",
+        "custom_class": "custom_image_overlay",
+        "content": "<p>HUGE selection, even BIGGER savings<\/p>",
+        "show_image_overlay": false,
+        "color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1653981190a0edf6b1",
+    "165462346761bf9f0c",
+    "165462262478092cb9",
+    "1654593422a12e3285",
+    "1654245879506cb7cb",
+    "16548791074ad480f8",
+    "1655487709597f4bfc",
+    "1654246074a9d9ccd7"
+  ]
+}

@@ -1,0 +1,78 @@
+<div class="container">
+  	<div class="section_heading">
+      <h2 class="section_heading-text">{{section.settings.sectionheading}}</h2>
+  	</div>
+  {%- assign products_per_row = section.settings.item_count | at_most: 6 -%}
+  	<div class="collection_inner items-in-row-{{products_per_row}}">
+	{%- for block in section.blocks -%}
+      <div class="collection_item">
+        <div class="collection_item-inner">
+          {% assign collections = block.settings.fc_collection %}
+          <a href="{{ collections.url }}">
+              {% if collections.image %}
+            	
+               <img src="{{ collections.image | img_url: '500x500' }}" alt="{{ collections.image.alt | escape }}" srcset="{{collections.image | img_url: ''}}" width="" height=""/>
+              {%- else -%}
+            	{{ 'product-1' | placeholder_svg_tag }}
+              {% endif %}
+           </a>
+          <div class="collection-meta">
+            <p>
+              <a href="{{ collections.url }}">
+                  {% if collections.title %}
+                    {{ collections.title }}
+                  {% else %}
+                	"Lorem ipsum"
+                  {% endif %}
+               </a>
+            </p>
+          </div>
+          
+         </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Custom Collection page",
+    "tag": "section",
+    "class": "Custom_collection",
+	
+    "settings": [
+      {
+        "type": "text",
+        "id": "sectionheading",
+        "label": "Section heading"
+      },
+	 {
+        "type": "range",
+        "id": "item_count",
+        "label": "Items to show",
+        "min": 2,
+        "max": 6,
+        "step": 1,
+        "default": 2
+     }
+    ],
+    "blocks": [
+		{
+         "name": "Collection item",
+         "type": "list",
+         "settings": [
+           {
+             "id": "fc_collection",
+             "type": "collection",
+             "label": "Collection"
+           }
+         ]
+       } 
+    ],
+    "presets":[
+      {
+        "name":"Custom Collection page",
+        "category":"Block2"
+      }
+    ]
+  }
+{% endschema %}

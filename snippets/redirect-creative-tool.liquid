@@ -1,0 +1,18 @@
+
+ let seTime =  setInterval(function(){
+  var a = document.querySelector(".snize-search-results-content").querySelectorAll('li');
+a.forEach(function name(params) {
+    if(params.firstChild.href.includes('creative') || params.firstChild.href.includes('islamorada')){
+      let getSlug = params.firstChild.href;
+      let arr_prams = getSlug.split('/');
+      let handle = arr_prams[arr_prams.length-1];
+      console.log(handle)
+      jQuery.getJSON(window.Shopify.routes.root + 'products/'+handle, function(product) {
+        if(!product.product.tags.includes('DaltonBases')){
+         params.firstChild.setAttribute('href','/products/creative-concepts')
+        }
+      } );
+    }
+})
+     },2000);
+  

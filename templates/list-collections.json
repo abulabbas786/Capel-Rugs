@@ -1,0 +1,49 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-collections-list",
+      "blocks": {
+        "3f5c507b-4e1c-4cb5-b196-be6aecc2bc62": {
+          "type": "collection",
+          "settings": {
+            "collection": "rectangle-rugs"
+          }
+        },
+        "fa632689-6cbf-4ebf-88c8-fab05ee1bfb1": {
+          "type": "collection",
+          "settings": {
+            "collection": "oval-rugs"
+          }
+        },
+        "df85a703-4caa-4a0d-b499-5d6a21e5ea04": {
+          "type": "collection",
+          "settings": {
+            "collection": "round-rugs"
+          }
+        },
+        "fd162e87-d3ee-4e7a-b00f-476722f53b0d": {
+          "type": "collection",
+          "settings": {
+            "collection": "baskets"
+          }
+        }
+      },
+      "block_order": [
+        "3f5c507b-4e1c-4cb5-b196-be6aecc2bc62",
+        "fa632689-6cbf-4ebf-88c8-fab05ee1bfb1",
+        "df85a703-4caa-4a0d-b499-5d6a21e5ea04",
+        "fd162e87-d3ee-4e7a-b00f-476722f53b0d"
+      ],
+      "settings": {
+        "collections_to_show": "selected",
+        "collection_linklist": "",
+        "show_collection_title": true,
+        "show_collection_overlay": true,
+        "collection_overlay_opacity": 20
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,83 @@
+<div class="container">
+  	{% if section.settings.sectionheading != blank %}
+      <div class="section_heading">
+          <h2 class="section_heading-text">{{section.settings.sectionheading}}</h2>
+      </div>
+   {% endif %}
+  	<div class="collection_inner two-in-row">
+	{%- for block in section.blocks -%}
+      <div class="collection_item">
+        <div class="collection_item-inner">
+          {%- if block.settings.collection != blank -%}
+          <a href="{{ block.settings.collection }}">
+              {%- if block.settings.image != blank -%}
+                <img src="{{ block.settings.image | img_url : 'master' }}">
+              {%- else -%}
+                {{ 'product-1' | placeholder_svg_tag }}
+              {%- endif -%}
+           </a>
+          {% else %}
+          <div class="image_wrapper">
+          	{%- if block.settings.image != blank -%}
+            	<img src="{{ block.settings.image | img_url : 'master' }}">
+            {%- else -%}
+            	{{ 'product-1' | placeholder_svg_tag }}
+            {%- endif -%}
+          </div>
+          {% endif %}
+          
+          <div class="collection-meta">
+            {%- if block.settings.c_name != blank -%}
+                <h3>{{ block.settings.c_name }}</h3>
+            {%- endif -%}
+		</div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Two col in row",
+    "tag": "section",
+    "class": "Custom_col_two",
+	"max_blocks": 4,
+    "settings": [
+      {
+        "type": "text",
+        "id": "sectionheading",
+        "label": "Section heading"
+      }
+    ],
+    "blocks": [
+		{
+         "name": "Collection item",
+         "type": "list",
+         "settings": [
+           {
+             "type": "image_picker",
+             "id": "image",
+             "label": "Collection image"
+           },
+		   {
+             "type": "text",
+             "id": "c_name",
+             "label": "Collection name",
+			 "default": "Offer name"
+           },
+		   {
+             "type": "url",
+             "id": "collection",
+             "label": "Select collection"
+           }
+         ]
+       } 
+    ],
+    "presets":[
+      {
+        "name":"Two columns in row",
+        "category":"Block2"
+      }
+    ]
+  }
+{% endschema %}

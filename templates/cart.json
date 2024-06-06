@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {
+        "enable_order_notes": true,
+        "show_payment_icons": true,
+        "gift_wrap_product": "",
+        "gift_wrap_text": "Do you want a gift wrap?",
+        "gift_wrap_button": "Add a gift wrap",
+        "show_shipping_estimator": true,
+        "shipping_estimator_default_country": "United States",
+        "trust_heading": "Our guarantees",
+        "upsell_heading": "Complete your cart",
+        "upsell_collection": "",
+        "upsell_products_count": 4,
+        "thank_you": "Thank you for ordering a Capel custom rug. Please 1) check that your order is entered correctly, 2) read the terms and conditions",
+        "heading": "TERMS & CONDITIONS:",
+        "content": "Custom orders may not be cancelled once production begins. Production begins upon receipt of this order which serves as your authorization. Returns are allowed only in the unlikely event of defective materials or craftsmanship. Please be aware there is a size allowance of plus or minus 2%. Capel will replace\/repair the rug at its discretion. Return authorization must be received before returning any rug."
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recently-viewed-products"
+  ]
+}
